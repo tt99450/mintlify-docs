@@ -1,0 +1,35 @@
+---
+title: "How to hide the \"Allow Attendees To...\" selections"
+description: "To prevent BBB conferences from being setup with incorrect attendee settings the following code can be added to hide the \"Allow Attendees To...\"..."
+---
+
+To prevent BBB conferences from being setup with incorrect attendee settings the following code can be added to hide the "Allow Attendees To..." selections when creating a BBB conference from within Canvas.
+
+This will only affect teacher and administrator accounts.  This is done to reduce the impact on students browsers.
+
+Add the following code to your Canvas theme JavaScript:
+
+```javascript
+////////////////////////////////////////////////////////
+// Hide BigBlueButton Conferences "Allow Attendees To..." selections
+////////////////////////////////////////////////////////
+
+if(windowUrl.includes('/conferences') === true) {
+  if(ENV.current_user_roles.indexOf('teacher') > 0 || ENV.current_user_roles.indexOf('admin') > 0) {
+    $(document).click(function() {
+      setTimeout(function() {
+        $("span").each(function() {
+          var text = $(this).text();
+          if(text === 'Allow Attendees To...') {
+            $(this).parent().parent().hide()
+          }
+        });
+      }, 10);
+    });
+  }
+}
+```
+
+Screenshot of Allow Attendees To... prior to implementing code.
+
+Screenshot of Allow Attendees To... post to implementing code.

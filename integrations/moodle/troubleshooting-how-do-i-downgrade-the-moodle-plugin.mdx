@@ -1,0 +1,68 @@
+---
+title: "How do I downgrade the Moodle Plugin?"
+description: "The version can be found either using an Admin account and navigating to: Dashboard -&gt; Site administration -&gt; Plugins -&gt; Plugins overview..."
+---
+
+The version can be found either using an Admin account and navigating to:
+
+Dashboard -> Site administration -> Plugins -> Plugins overview -> BigBlueButtonBN
+
+Or editing the file version.php directly in the plugin directory:
+
+$plugin->version = 9999999999;
+
+So, let's assume we have versions:
+
+**My old BBB plugins on Moodle 3.0.9:**
+
+1) mod\_bigbluebuttonbn version 2015062101
+
+**The new BBB plugins that I wanted to use on Moodle 3.0.9:**
+
+1) mod\_bigbluebuttonbn version 2016051919
+
+**Pre-installation steps:**
+
+a) I have the code in a [git](https://moodle.org/mod/glossary/showentry.php?eid=10110&displayformat=dictionary "Glossary of common terms: Git") repository so if I need to, I can checkout the folders and revert the file changes.
+
+b) It is important to keep a back up of the tables that the plugins use. From their "db/install.[xml](https://moodle.org/mod/glossary/showentry.php?eid=9348&displayformat=dictionary "Glossary of common terms: XML")", there are two tables:  
+   b.1) bigbluebuttonbn and bigbluebuttonbn\_log for bigbluebuttonbn
+
+c) I exported the tables one by one:
+
+c.1)   my[sql](https://moodle.org/mod/glossary/showentry.php?eid=6851&displayformat=dictionary "Glossary of common terms: SQL")dump -u MYUSERNAME -p MYDATABASE mdl\_bigbluebuttonbn > /tmp/moodlelive\_bigbluebuttonbn\_table.sql  
+c.2)   mysqldump -u MYUSERNAME -p MYDATABASE mdl\_bigbluebuttonbn\_log > /tmp/moodlelive\_bigbluebuttonbnlog\_table.sql
+
+**Upgrade steps:**
+
+a) rm -rf mod/bigbluebuttonbn
+
+c) Then, I  'wget' and 'unzip' the zip files from the Moodle plugin directory, in my mod folder.
+
+d) From the front-end, I followed the steps and upgraded the plugins.
+
+Let's suppose that I am not happy with the new plugins; something does not work and I want to downgrade. At this stage, if I have created new meetings, they will be lost, if I apply the following steps, so please make sure that you only want to downgrade without migrating any "new" data.
+
+**Downgrade steps:**
+
+a) rm -rf mod/bigbluebuttonbn
+
+b) git checkout -- mod/bigbluebuttonbn
+
+*At the moment, I have got the old plugin files that were stored in my GIT repository.*
+
+c) A table in the [database](https://moodle.org/mod/glossary/showentry.php?eid=15&displayformat=dictionary "Glossary of common terms: database") keeps the new versions of the plugins that I installed. I must update these values otherwise Moodle will never use the older plugins versions and I will not be able to downgrade!
+
+c.1) ID for mod\_bigbluebuttonbn: select \* from mdl\_config\_plugins where plugin = 'mod\_bigbluebuttonbn';
+
+c.3) update mdl\_config\_plugins set value = '2015062101' where id = THE\_ID\_FROM e.1;
+
+c.4) update mdl\_config\_plugins set value = '2014070401' where id = THE\_ID\_FROM e.2;
+
+d) So, up until now we have put in place the older versions in the database and we need to import the backups:
+
+d.1) [mysql](https://moodle.org/mod/glossary/showentry.php?eid=27&displayformat=dictionary "Glossary of common terms: MySQL") -u MYUSERNAME -p MYDATABASE < /tmp/moodlelive\_bigbluebuttonbn\_table.sql
+
+d.2) mysql -u MYUSERNAME -p MYDATABASE < /tmp/moodlelive\_bigbluebuttonbnlog\_table.sql
+
+Refreshing the front-end will prompt you to update the database. Click on the button and then check if you can use the plugins - perhaps you will need to update the server and the [URL](https://moodle.org/mod/glossary/showentry.php?eid=31&displayformat=dictionary "Glossary of common terms: URL") of BBB [server](https://moodle.org/mod/glossary/showentry.php?eid=30&displayformat=dictionary "Glossary of common terms: server") on the appropriate screen.

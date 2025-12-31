@@ -1,0 +1,72 @@
+---
+title: "How to disable IPV6"
+description: "If your connection to BigBlueButton repeatedly reconnects, and you connecting from home, your router might be inadvertently closing your connection...."
+---
+
+If your connection to BigBlueButton repeatedly reconnects, and you connecting from home, your router might be inadvertently closing your connection.
+
+If this is the case (especially if you are using Spectrum in the US), you can resolve this by disabling IPV6 on your computer or router.
+
+## Disable IPV6 on Windows 10
+
+On Windows 10, right-click on the “**Network ![Windows 10 Network Icon](/images/4r4aezh4fi2hu3r1ummexkzcvq8ht7n7.jpg "Windows 10 Network Icon") / Wi-Fi****![Windows 10 Network Icon](/images/pyzl69tqpolp0rn9k36jhwo3ee0g9zuu.jpg "Windows 10 Network Icon")**” icon on the bottom-right corner of your screen.  You'll see a pop-up menu.
+
+![Open Network Settings](/images/bbex32h65fl5fy97btps71ndozy5kmhc.png "Open Network Settings")
+
+Click **Open Network and Sharing Center**.  You'll see the Settings dialog.
+
+![Network Sharing Center](/images/iff9tqhfex8rwb1ubkd3y0mxrcqvokcr.png "Network Sharing Center")
+
+Click **Change adapter options** (highlighted in the picture above).  You'll see a list of network adaptors. Look for the currently active adaptor (it will be either **Ethernet**or **Wi-Fi**).
+
+![Network Adapters](/images/5r6rgh3kkdietg84hx1n8vir509sfey1.png "Network Adapters")
+
+Right click on your active network adapter and select **Properties**.
+
+![Adapter Properties](/images/xosvx7peb02jlb9f1cy6ulqq107o7d3g.png "Adapter Properties")
+
+In the **Properties** window, scroll down until you see **Internet Protocol Version 6 (TCP/IPv6)**.
+
+![Properties Window](/images/8e4itodb1912szkqdjfl1818r1gmel2l.png "Properties Window")
+
+Un-check the **Internet Protocol Version 6 (TCP/IPv6)** checkbox, click on **OK** to save the changes, and restart your computer.
+
+## Disable IPV6 on Mac OS X
+
+To disable IPV6 on Mac OS X, do the following
+
+1. Open **System Preferences** and click the **Network** icon.
+
+2. Select the network you are using - It will usually be labeled **Wi-Fi.**
+
+![mceclip0.png](/images/mceclip0_2.png)
+
+3. Click the **Advanced..** button.
+
+![mceclip1.png](/images/mceclip1_3.png)
+
+4. Click the **TCP/IP** tab.
+
+![mceclip3.png](/images/mceclip3.png)
+
+5. Select the Configure IPv6 drop-down menu and set it to **Link-local only**.
+
+![mceclip4.png](/images/mceclip4.png)
+
+6. Click the **OK** button.
+
+Restart you Mac.
+
+## Disable IPV6 on your Spectrum Router
+
+If you have the **rac2v1k** spectrum router, you can disable IPV6 using router's web-based interface.
+
+To login to the router's web-based interface, look for the URL and login password are on the back of the router.  It's likely [http://192.168.1.1](http://192.168.1.1/) and admin/admin.
+
+Once logged in, click **Advanced** (at the top), then click **IPV6** (left-hand side), and then under IPV6 LAN settings, choose **Disable** (as show below)
+
+![mceclip0.png](/images/mceclip0_3.png)
+
+then click **Apply**.
+
+After a few moments, the router will indicate the update is complete.  Try logging into the BigBlueButton session again.

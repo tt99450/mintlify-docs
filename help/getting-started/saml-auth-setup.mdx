@@ -1,0 +1,145 @@
+---
+title: "SAML Auth Setup"
+description: "What do we need to do.... Setting up a new customer for using Personal Rooms with SAML can be now a little more complicated depending of the SAML..."
+---
+
+# What do we need to do....
+
+Setting up a new customer for using Personal Rooms with SAML can be now a little more complicated depending of the SAML system they use.
+
+This guide is for internal use only and describes the steps for setting up a customer on Personal Rooms using SAML.
+
+## Prerequisites
+
+Th customer needs to have an account created in our Load Balancer System. What we need to know is the `<CUSTOMER_ID>`, E.g. bn-staging
+
+## KeyCloak Setup
+
+### Sign in to KeyCloak
+
+Using the admin account, sign into the corresponding KC server.
+
+Staging region is fixed.
+
+- Staging: [https://kc-staging.rna1.blindside-dev.com/auth](https://kc-staging.rna1.blindside-dev.com/auth)
+
+Production will vary for each region. Check out:
+
+- North America: https://kc.rna1.blindsidenetworks.com/auth
+- Canada: https://kc.rna2.blindsidenetworks.com/auth
+- Europe: https://kc.reu1.blindsidenetworks.com/auth
+- Oceania (Australia): https://kc.roc2.blindsidenetworks.com/auth
+
+### Create a Realm
+
+Hover the mouse on **Select realm** (top left corner) and click on **Add realm**.
+
+Simply use the `<CUSTOMER_ID>` as the **name** and click on **Create**
+
+### Add a Client
+
+Click on the section **Clients** (left menu bar, under Configuration) and click on **Create**.
+
+Input *greenlight* as the **Client ID** and the Root URL using the corresponding launcher for the region.
+
+Staging region is fixed.
+
+- Staging: [https://launcher-staging.rna1.blindside-dev.com/](https://launcher-staging.rna1.blindside-dev.com/)
+
+Production will vary for each region. Check out:
+
+- North America: https://launcher.rna1.blindsidenetworks.com/
+- Canada: https://launcher.rna2.blindsidenetworks.com/
+- Europe: https://launcher.reu1.blindsidenetworks.com/
+- Oceania (Australia): https://launcher.roc2.blindsidenetworks.com/
+
+Click on **Save**
+
+Once saved, click on the newly created **greenlight** Client. Change the **Access Type** from *public* to *confidential* and click on **Save** 
+
+Click on the Tab **Credentials** and take note of the **Secret** value. (E.g. 1bf0b042-b503-11ec-b909-0242ac120002)
+
+### 
+
+### Add an Identity Provider
+
+Click on the section **Identity Providers** (left menu bar, under Configuration) and click on **Add a provider**. Selecting **SAML v2.0**
+
+Scroll down to the bottom and input the URL for the IdP descriptor provided by the client into **Import from URL**. (E.g. `<IDP_METADATA_URL>` for an App registered on Azure AD)
+
+Click on **Import,** and click on **Save**
+
+Here is the tricky part. In most cases this should be enough for completing the set up, but there may be special adjustments required.
+
+#### Azure AD
+
+Since Azure used FQDN for the Claims that define SAML attributes, we need to map the attributes received with the ones KeyCloak uses.
+
+Click on **Mappers**
+
+Assuming that the customer made the changes we required for the attributes passed to KeyCloak, we use the next configuration, otherwise we need to check the claims produced by the IdP using a Tool such as SAML Tracer Extension installed to Chrome (or equivalent on Firefox).
+
+Email
+
+Click on **Create**
+
+- Input *email* for **Name**
+- Select *force* for **Sync Mode Override**
+- Select *Attribute Importer* to **Mapper Type**
+- Input *http://schemas.xmlsoap.org/ws/2005/05/identity/claims/email* for **Attribute Name**
+- Input *Email* for **Friendly Name**
+- Input email for **User Attribute Name**
+
+Click on **Save**
+
+First Name
+
+Click on **Create**
+
+- Input *firstname* for **Name**
+- Select *force* for **Sync Mode Override**
+- Select *Attribute Importer* to **Mapper Type**
+- Input *http://schemas.xmlsoap.org/ws/2005/05/identity/claims/firstname* for **Attribute Name**
+- Input *First Name* for **Friendly Name**
+- Input firstname for **User Attribute Name**
+
+Click on **Save**
+
+Last Name
+
+Click on **Create**
+
+- Input *lastname* for **Name**
+- Select *force* for **Sync Mode Override**
+- Select *Attribute Importer* to **Mapper Type**
+- Input *http://schemas.xmlsoap.org/ws/2005/05/identity/claims/lastname* for **Attribute Name**
+- Input Last*Name* for **Friendly Name**
+- Input lastname for **User Attribute Name**
+
+Click on **Save**
+
+### SSO with IdP only
+
+KeyCloak is able to handle local accounts and take care of password recovery, email verification etc. and also multiple authentication systems at the same time. But most customers, and specially those using SAML, will want to use only one authentication method. In those cases it is necessary to set up a rule to disable the main page and forward the request directly to the IdP.
+
+Click on the section **Authentication** (left menu bar, under Configuration) and click on the Tab **Flows** (which should be enabled by default). Select **Browser** from the drop-down menu (which may be selected by default already), and from the row *Identity Provider Redirector* click on **Actions -> Config**
+
+Input *saml* for **Alias**, and **Default Identity Provider,** and click on **Save**
+
+### First Broker Login
+
+There may be cases when the information required by Keycloak is not passed by the IdP. In such cases, by default KeyCloak offers an option to the users for typing the information manually. But this is something most customers would want to avoid. We should always set up a policy for First Login
+
+Click on the section **Authentication** (left menu bar, under Configuration) and click on the Tab **Flows** (which should be enabled by default). Select **First Broker Login** from the drop-down menu (which may be selected by default already), and click on **Copy** (so we don;t alter the default flow). Replace *Copy of* with *custom,*and click on **Ok**.
+
+**Custom First Broker Login**will now be selected. From the row *Review Profile (review profile config)*, change the **Requirement** to *Alternative.* Click on **Actions -> Config**. Set **Update Profile on First Login** to *off* and click on **Save**.
+
+## Load Balancer Setup
+
+Sign into the Load Balancer, Scroll down to Greenlight and click on Create (or Update).
+
+Select openid as the authentication method
+
+- Input KC realm URL corresponding for the region (E.g. https://kc-staging.rna1.blindside-dev.com/auth/realms/bn-staging) for **Openid connect issuer**
+- Input *greenlight* for **Openid connect client id**
+- Input the Client ID obtained when setting up the Client (E.g. 1bf0b042-b503-11ec-b909-0242ac120002) for **Openid connect client secret**.

@@ -81,6 +81,243 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Help Center",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "help/getting-started/getting-started-with-personal-rooms",
+              "help/getting-started/in-application-authorization",
+              "help/getting-started/google-oauth2",
+              "help/getting-started/office-365-oauth2",
+              "help/getting-started/saml-auth",
+              "help/getting-started/saml-auth-setup",
+              "help/getting-started/saml-auth-deprecated"
+            ]
+          },
+          {
+            "group": "User Guide",
+            "pages": [
+              "help/user-guide/join-the-audio",
+              "help/user-guide/share-a-webcam",
+              "help/user-guide/send-public-and-private-chat-messages",
+              "help/user-guide/raise-hand",
+              "help/user-guide/set-a-status",
+              "help/user-guide/respond-to-polls",
+              "help/user-guide/join-breakout-rooms",
+              "help/user-guide/use-shared-notes",
+              "help/user-guide/use-the-multi-user-whiteboard",
+              "help/user-guide/view-closed-captions",
+              "help/user-guide/make-webcams-larger",
+              "help/user-guide/move-webcams-in-a-live-session",
+              "help/user-guide/close-the-presentationenlarge-the-webcams",
+              "help/user-guide/how-do-i-change-my-webcam-background",
+              "help/user-guide/access-the-options-menu"
+            ]
+          },
+          {
+            "group": "Presenter Guide",
+            "pages": [
+              "help/presenter-guide/upload-a-presentation-enable-for-download",
+              "help/presenter-guide/share-my-screen",
+              "help/presenter-guide/use-the-presentation-controls",
+              "help/presenter-guide/share-an-external-audiovideo-link",
+              "help/presenter-guide/use-pollingquzzing",
+              "help/presenter-guide/raise-hand"
+            ]
+          },
+          {
+            "group": "Moderator Guide",
+            "pages": [
+              "help/moderator-guide/manage-users",
+              "help/moderator-guide/givetake-presenter-role",
+              "help/moderator-guide/promotedemoteremove-a-user",
+              "help/moderator-guide/start-and-stop-recording",
+              "help/moderator-guide/create-and-manage-breakout-rooms",
+              "help/moderator-guide/use-closed-captions",
+              "help/moderator-guide/how-to-configure-guest-policy",
+              "help/moderator-guide/lock-viewers-ability-to-use-their-micwebcamchatshared-notes",
+              "help/moderator-guide/how-to-lock-or-unlock-users-to-enable-or-disable-private-chat-messages",
+              "help/moderator-guide/clear-the-public-chat",
+              "help/moderator-guide/end-meeting-on-logout",
+              "help/moderator-guide/how-do-i-use-the-per-user-whiteboard",
+              "help/moderator-guide/using-smart-slides-for-one-click-polling",
+              "help/moderator-guide/learning-analytics-dashboard"
+            ]
+          },
+          {
+            "group": "Admin",
+            "pages": [
+              "help/admin/accessing-the-administrator-panel",
+              "help/admin/managing-users",
+              "help/admin/managing-recordings",
+              "help/admin/site-settings"
+            ]
+          },
+          {
+            "group": "Overview",
+            "pages": [
+              "help/overview/overview-of-personal-rooms-interface",
+              "help/overview/how-do-i-create-my-own-rooms",
+              "help/overview/can-i-invite-attendees-to-my-meetings",
+              "help/overview/how-do-i-find-manage-recordings",
+              "help/overview/can-i-delete-my-personal-rooms"
+            ]
+          },
+          {
+            "group": "Premium",
+            "pages": [
+              "help/premium/overview-of-premium-features",
+              "help/premium/premium-tier-customizations",
+              "help/premium/premium-hosting-road-map",
+              "help/premium/how-do-i-download-a-recording",
+              "help/premium/can-i-prevent-users-from-downloading-a-recording",
+              "help/premium/how-long-until-my-recording-is-available-for-viewing",
+              "help/premium/how-do-i-invite-a-guest-to-a-live-meeting",
+              "help/premium/options-for-giving-students-visibility-of-other-students-webcams"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "help/faq/what-are-the-minimum-requirements-for-bigbluebutton",
+              "help/faq/what-are-the-features-in-bigbluebutton",
+              "help/faq/how-many-users-can-i-have-in-a-bigbluebutton-session-at-one-time",
+              "help/faq/how-many-webcams-can-i-share-in-a-meeting",
+              "help/faq/connection-status",
+              "help/faq/where-are-the-layout-options",
+              "help/faq/where-do-i-find-keyboard-shortcuts-in-bigbluebutton",
+              "help/faq/lti-features",
+              "help/faq/does-the-pin-number-for-a-conference-change",
+              "help/faq/is-bigbluebutton-gdpr-compliant",
+              "help/faq/where-is-meeting-data-stored-in-europe",
+              "help/faq/where-is-the-hosting-location-for-australia-customers",
+              "help/faq/whitelisting-bigbluebutton-servers-for-the-firewall",
+              "help/faq/can-users-connect-to-bigbluebutton-from-within-china",
+              "help/faq/why-is-there-no-bigbluebutton-mobile-application",
+              "help/faq/can-i-play-a-video-using-screen-sharing",
+              "help/faq/common-youtube-external-video-playback-error",
+              "help/faq/using-chromes-built-in-closed-captioning",
+              "help/faq/how-to-share-ipadiphone-screen-using-screen-share-in-bigbluebutton",
+              "help/faq/how-to-mirror-your-ipadiphone-screen-to-a-mac-computer-with-quicktime",
+              "help/faq/how-do-i-capture-the-browsers-console-chrome-firefox",
+              "help/faq/antivirus-software-causes-issues-while-connecting-to-a-bigbluebutton-session",
+              "help/faq/media-server-has-no-available-resources-error-2002",
+              "help/faq/bigbluebutton-is-not-susceptible-to-the-log4j-venerability"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "help/troubleshooting/known-issues",
+              "help/troubleshooting/user-is-getting-disconnected",
+              "help/troubleshooting/client-periodically-disconnectsreconnects",
+              "help/troubleshooting/users-unable-to-share-their-webcam",
+              "help/troubleshooting/why-do-i-not-see-my-webcam-in-the-recording",
+              "help/troubleshooting/after-allowing-the-browser-permissions-on-mac-os-i-am-still-unable-to-join-my-audio-in-bigbluebutton",
+              "help/troubleshooting/mac-os-updates-bigbluebutton-media-permissions",
+              "help/troubleshooting/students-are-not-able-to-see-join-their-meeting",
+              "help/troubleshooting/students-are-not-able-to-view-their-concluded-meeting-recordings",
+              "help/troubleshooting/pdf-that-contains-scanned-content-does-not-display-correctly",
+              "help/troubleshooting/latex-documents-not-converting-correctly",
+              "help/troubleshooting/how-to-disable-ipv6",
+              "help/troubleshooting/important-information-for-users-of-the-bigbluebutton-html5-client",
+              "help/troubleshooting/where-do-i-find-the-bigbluebutton-network-status-page-link"
+            ]
+          },
+          {
+            "group": "Release Notes",
+            "pages": [
+              "help/releases/whats-new-in-bigbluebutton-27",
+              "help/releases/whats-new-in-bigbluebutton-spring-2023",
+              "help/releases/whats-new-in-bigbluebutton-august-2022-release",
+              "help/releases/reactions-bar",
+              "help/releases/timer-and-stopwatch",
+              "help/releases/how-do-i-enable-dark-mode",
+              "help/releases/how-do-i-change-the-screen-layout",
+              "help/releases/screen-layout-grid-layout",
+              "help/releases/as-a-moderator-how-can-i-push-my-layout-to-everyone",
+              "help/releases/webcam-pagination-and-active-talker",
+              "help/releases/how-do-i-pin-a-webcam",
+              "help/releases/disable-self-view-of-webcam",
+              "help/releases/how-do-i-adjust-my-webcams-brightness",
+              "help/releases/how-do-i-change-my-webcams-background",
+              "help/releases/camera-as-content",
+              "help/releases/how-do-i-use-the-multi-user-whiteboard",
+              "help/releases/how-do-i-move-shared-notes-to-the-whiteboard",
+              "help/releases/download-of-original-presentation",
+              "help/releases/how-do-i-use-my-browsers-built-in-speech-recognition",
+              "help/releases/invite-moderators-to-breakout-rooms",
+              "help/releases/how-to-export-a-breakout-rooms-shared-notes",
+              "help/releases/how-to-export-a-breakout-rooms-whiteboard-annotations",
+              "help/releases/longer-pin-numbers-and-updates-to-remove-user"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "Canvas LMS",
+            "pages": [
+              "integrations/canvas/faq-what-are-conferences",
+              "integrations/canvas/creating-and-starting-a-conference",
+              "integrations/canvas/inviting-course-members-to-a-conference",
+              "integrations/canvas/viewing-recordings",
+              "integrations/canvas/locating-deleting-recordings",
+              "integrations/canvas/ending-a-conference-in-canvas",
+              "integrations/canvas/deleting-a-conference",
+              "integrations/canvas/using-bigbluebutton-with-appointments",
+              "integrations/canvas/faq-how-does-the-duration-value-affect-users-ability-to-enter-a-conference-in-canvas",
+              "integrations/canvas/faq-how-long-will-recordings-appear-in-canvas",
+              "integrations/canvas/faq-why-has-my-recording-not-appeared",
+              "integrations/canvas/faq-what-are-protected-recording-links",
+              "integrations/canvas/faq-can-we-automatically-enable-all-conferences-to-be-recorded",
+              "integrations/canvas/faq-can-i-add-participants-to-an-existing-conference",
+              "integrations/canvas/faq-integrating-your-own-bigbluebutton-server-with-canvas",
+              "integrations/canvas/faq-integration-with-canvas-studio",
+              "integrations/canvas/troubleshooting-students-are-not-able-to-seejoin-their-canvas-conferences",
+              "integrations/canvas/troubleshooting-students-are-not-able-to-view-their-concluded-conference-recordings",
+              "integrations/canvas/troubleshooting-record-enabled-conference-not-appearing-for-viewing",
+              "integrations/canvas/troubleshooting-enabling-recording-for-all-canvas-conferences",
+              "integrations/canvas/troubleshooting-how-to-hide-the-allow-attendees-to-selections"
+            ]
+          },
+          {
+            "group": "Moodle LMS",
+            "pages": [
+              "integrations/moodle/creating-a-bigbluebuttonbn-activity",
+              "integrations/moodle/activity-room-settings",
+              "integrations/moodle/default-recording-settings",
+              "integrations/moodle/advanced-recording-settings",
+              "integrations/moodle/schedule-for-session",
+              "integrations/moodle/advanced-participant-settings",
+              "integrations/moodle/common-module-settings",
+              "integrations/moodle/enable-activity-completion",
+              "integrations/moodle/importing-recording-links",
+              "integrations/moodle/faq-can-i-add-a-presentationdocument-to-my-roomactivity-ahead-of-time",
+              "integrations/moodle/faq-how-do-i-control-visibilityaccess-to-recordings",
+              "integrations/moodle/faq-how-do-i-edit-recording-namesdescriptions",
+              "integrations/moodle/faq-how-does-grouping-work",
+              "integrations/moodle/troubleshooting-after-updating-to-version-22x-i-am-no-longer-able-to-see-the-list-of-recordings-in-my-course",
+              "integrations/moodle/troubleshooting-how-do-i-downgrade-the-moodle-plugin",
+              "integrations/moodle/troubleshooting-show-recordings-from-deleted-activities",
+              "integrations/moodle/troubleshooting-updating-bigbluebuttonbn-language-strings"
+            ]
+          },
+          {
+            "group": "Sakai LMS",
+            "pages": [
+              "integrations/sakai/faq-what-are-meetings",
+              "integrations/sakai/creating-a-bigbluebutton-meeting",
+              "integrations/sakai/default-recording-settings",
+              "integrations/sakai/faq-how-long-will-recordings-appear"
+            ]
+          }
+        ]
       }
     ]
   },

@@ -1,0 +1,40 @@
+---
+title: "Mac OS Updates & BigBlueButton Media Permissions"
+description: "After updating to Catalina (or later), you must explicitly give BigBlueButton screen sharing permissions in System Preferences. Mac OS users will..."
+---
+
+## After updating to Catalina (or later), you must explicitly give BigBlueButton screen sharing permissions in System Preferences.
+
+Mac OS users will note, after updating to Catalina version 10.15 (or later), they will be prompted to allow all media permissions and in some cases set specific system preferences to make use of sharing **microphone, webcam, or screen.**
+
+**We recommend entering your first BigBlueButton session after this OS update early to ensure adequate time to enable all settings and restart your browser.**
+
+For example, after updating to Catalina, the first time a presenter attempts to use the **screen sharing** they will be prompted by the mac OS to open their **system preferences** to enable screen recording for the current browser.
+
+![Screen_Shot_2019-10-09_at_11.32.08_AM.png](/images/Screen_Shot_2019-10-09_at_11.32.08_AM.png)
+
+If the user **denies** the application permissions the screen sharing function will be disabled in the **current** and **any future** session until they enable this permission (they will see an error 1136).
+
+To access the permissions
+
+1. Open your Mac's Security & Privacy preferences.  
+2. Click the Privacy tab.  
+3. Click the Lock icon and enter your Mac credentials to make changes.
+
+Here you can make changes for microphone, webcam, and screen recording (shown below).
+
+![Screen_Shot_2019-10-09_at_11.38.18_AM.png](/images/Screen_Shot_2019-10-09_at_11.38.18_AM.png)
+
+When **selecting the checkbox** for the selected browser(s) for screen recording, you will be prompted to restart their browser.
+
+![Screen_Shot_2019-10-09_at_12.53.17_PM.png](/images/Screen_Shot_2019-10-09_at_12.53.17_PM.png)
+
+Reopen your browser and re-enter your BigBlueButton session - you should now be able to share your screen.
+
+**2022-03-18** - Recently, we received reports that when Google Chrome 98 is updating but not yet restarted, Mac OS X may recognize the ID of the Google Chrome process and deny permission to share the screen.
+
+If this is the case, quit Chrome (this will complete the upgrade), and repeat the above procedure.  If you see that Google Chrome already has a checkbox next to it in the list, **uncheck Google Chrome and recheck it again**.
+
+You should now be able to share your screen again.
+
+**Update:** Google has fixes this issue in Chrome 100.

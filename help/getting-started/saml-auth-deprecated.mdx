@@ -1,0 +1,80 @@
+---
+title: "SAML Auth (Deprecated)"
+description: "What is SAML Auth? SAML (Security Assertion Markup Language) is an Authorization and Authentication protocol used to power single-sign-on and..."
+---
+
+## What is SAML Auth?
+
+SAML (Security Assertion Markup Language) is an Authorization and Authentication protocol used to power single-sign-on and identity management.
+
+Note: Our support for SAML is in beta, and it is being successfully tested with OpenCAS (which runs on Shibboleth), ClassLink, and QuickLaunchSSO.
+
+## What we need from you...
+
+In your institution's SAML Identity Provider, add two new apps or service providers for Personal Rooms - Staging and Personal Rooms Production.
+
+Staging must be set up prior to your Production instance. This staging environment will allow us to perform updates to your Personal Rooms instance with minimal downtime to your Production environment.
+
+## Staging
+
+Staging region is fixed and must be:
+
+- Staging: [https://launcher-staging.rna1.blindside-dev.com/auth/saml/metadata](https://launcher-staging.rna1.blindside-dev.com/auth/saml/metadata)
+
+Next include a callback (region is also fixed):
+
+- Staging: [https://launcher-staging.rna1.blindside-dev.com/auth/saml/callback](https://launcher-staging.rna1.blindsidenetworks.com/auth/saml/callback)
+
+Be sure to include, as part of the launch, the following parameters:
+
+- **user\_id** = which is a unique user id in your context.
+- **email** = which is the user email.
+- **name**= which is a displayName, commonName or fullName.
+
+You may also want to add:
+
+- **image** = which is a URL to the user avatar.
+- **roles** = which is a string with the role the user should be authenticated in Personal Rooms.
+
+Next we would need either:
+
+- An endpoint from where we can take your SAML IdP EntityDescriptor, which is a metadata file that includes your public certificate, endpoint, and some other info related to the IdP.
+
+Or 
+
+- The fingerprint of their certificate, and
+- The actual endpoint of their IdP.
+
+## Production
+
+Production will vary for each region. Check out:
+
+- North America: [https://launcher.rna1.blindsidenetworks.com/auth/saml/metadata](https://launcher.rna1.blindsidenetworks.com/auth/saml/metadata)
+- Europe: [https://launcher.reu1.blindsidenetworks.com/auth/saml/metadata](https://launcher.reu1.blindsidenetworks.com/auth/saml/metadata)
+- Oceana (Australia): [https://launcher.roc2.blindsidenetworks.com/auth/saml/metadata](https://launcher.roc2.blindsidenetworks.com/auth/saml/metadata)
+
+Next include a callback to (varies for each region):
+
+- North America: [https://launcher.rna1.blindsidenetworks.com/auth/saml/callback](https://launcher.rna1.blindsidenetworks.com/auth/saml/callback)
+- Europe: [https://launcher.reu1.blindsidenetworks.com/auth/saml/callback](https://launcher.reu1.blindsidenetworks.com/auth/saml/callback)
+- Oceana (Australia): [https://launcher.roc2.blindsidenetworks.com/auth/saml/callback](https://launcher.roc2.blindsidenetworks.com/auth/saml/callback)
+
+Be sure to include, as part of the launch, the following parameters:
+
+- **user\_id** = which is a unique user id in your context.
+- **email** = which is the user email.
+- **name**= which is a displayName, commonName or fullName.
+
+You may also want to add:
+
+- **image** = which is a URL to the user avatar.
+- **roles** = which is a string with the role the user should be authenticated in Personal Rooms.
+
+Next we would need either:
+
+- An endpoint from where we can take your SAML IdP EntityDescriptor, which is a metadata file that includes your public certificate, endpoint, and some other info related to the IdP.
+
+Or 
+
+- The fingerprint of their certificate, and
+- The actual endpoint of their IdP.

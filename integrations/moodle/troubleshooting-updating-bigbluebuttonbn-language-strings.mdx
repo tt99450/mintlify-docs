@@ -1,0 +1,74 @@
+---
+title: "Updating BigBlueButtonBN Language Strings"
+description: "The BigBlueButtonBN plugin follows Moodle rules for localization, which means the strings can be downloaded from the AMOS central repository (if they..."
+---
+
+The BigBlueButtonBN plugin follows Moodle rules for localization, which means the strings can be downloaded from the AMOS central repository (if they exist) and the strings can be customized for the Moodle server.
+
+# Automatic update
+
+Similar to any other Moodle module, you can update the language strings for BigBlueButtonBN by installing (or updating) the full language package in your Moodle server.
+
+This method is only recommended if you are using the language package(s) without customization because when you update the full package the customized strings will be overridden.
+
+## Updating the full package
+
+Installing the full language pack is very easy. As administrator, you only need to:
+
+- Go to Site administration -> Language -> Language packs
+- Select the language pack(s) to be installed.
+- Click on `Install selected language pack(s)`
+
+![](/images/mceclip0_12.png)
+
+If the strings for BigBlueButtonBN are translated to the language selected (in AMOS central repository), they will be automatically added to your Moodle server.
+
+Now, there may be cases where you already have a language pack installed but you just installed BigBlueButtonBN or you updated to the latest version and this one includes new strings not included in your already installed pack. In this case all you have to do is update the pack:
+
+- Click on `Update all installed language packs`
+
+![Screenshot_from_2018-06-20_10-38-06.png](/images/Screenshot_from_2018-06-20_10-38-06.png)
+
+If there are changes in any of the language packs, the new strings will be downloaded and included into your Moodle server.
+
+# Customized update
+
+The automatic update procedure is recommended as it fits to most Moodle deployments, but there may be cases where the strings have been customized either for the whole server or for some of the plugins (including BigBlueButtonBN) installed. This may be the case when more friendly language for young users is required or when Moodle or the plugin(s) are targeting a particular audience using a specific dialect.
+
+For this case, the best option is to do language customization
+
+- Go to Site administration -> Language -> Language customization
+
+![](/images/mceclip1_11.png)
+
+- Select the language to be customized
+
+![Screenshot_from_2018-06-20_10-51-21.png](/images/Screenshot_from_2018-06-20_10-51-21.png)
+
+- Click on `Open language pack for editing`
+
+![Screenshot_from_2018-06-20_10-52-11.png](/images/Screenshot_from_2018-06-20_10-52-11.png)
+
+- Click on `Continue`
+- Filter the strings by selecting the file that corresponds to the module that has to be updated.
+
+![Screenshot_from_2018-06-20_10-52-50.png](/images/Screenshot_from_2018-06-20_10-52-50.png)
+
+- Click on `Show strings`
+- Scroll down and you will see all the strings already translated and a box for adding the customized version if required.
+
+![Screenshot_from_2018-06-20_11-08-51.png](/images/Screenshot_from_2018-06-20_11-08-51.png)
+
+For adding those strings that are not included, you can just type the corresponding translation in the box.
+
+When you are done, click on `Save changes to the language pack`. The new strings will be included in your server.
+
+# Contributing with translations
+
+Moodle and BigBlueButton are not only open source projects but are also very open to receiving contributions from the community. If you are going to work on your translations, it would be great for you contribute your work. Not only will it be easier for you to update your files in the future, but thousands of other users may benefit from your contribution.  
+  
+Moodle provides [tools for contributing with translations](https://lang.moodle.org/) that go directly to the AMOS central repository.
+
+If this is your first time contributing to AMOS, there is a [video that will get you going with translations](https://www.youtube.com/watch?v=XClUZOuFfWo).
+
+And if you want more details of how this AMOS platform works, you can find the [AMOS manual](https://docs.moodle.org/dev/AMOS_manual) as well.

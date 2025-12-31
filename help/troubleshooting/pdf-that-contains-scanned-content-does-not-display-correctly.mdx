@@ -1,0 +1,20 @@
+---
+title: "PDF that contains scanned content does not display correctly"
+description: "Most portable document format (PDF) files uploaded to BigBlueButton will be converted and displayed exactly as the original. However, some PDF files..."
+---
+
+Most portable document format (PDF) files uploaded to BigBlueButton will be converted and displayed exactly as the original.
+
+However, some PDF files that comprise layers of scanned content don't convert correctly.  For example, consider the following PDF from a scanned notebook
+
+![mceclip0.png](/images/mceclip0_6.png)
+
+After uploading to BigBlueButton, some of the layers will not display
+
+![mceclip1.png](/images/mceclip1_6.png)
+
+The solution is to use [smallpdf.com/blog/flatten-pdf](https://smallpdf.com/blog/flatten-pdf) to flatten the PDF to JPG images and combine the JPEG images back into a single PDF.
+
+Here's how the flatten PDF from the scanned notebook displays in BigBlueButton.
+
+![mceclip2.png](/images/mceclip2_2.png)
