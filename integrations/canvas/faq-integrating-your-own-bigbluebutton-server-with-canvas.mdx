@@ -1,0 +1,29 @@
+---
+title: "Integrating your own BigBlueButton server with Canvas"
+description: "BigBlueButton is open source. If you wanted to setup your own BigBlueButton server with Canvas, you need to give the hostname and shared secret to..."
+---
+
+BigBlueButton is open source.  If you wanted to setup your own BigBlueButton server with Canvas, you need to give the hostname and shared secret to your CSM so they can make the updates.
+
+All you need to do is change two files in BigBlueButton for the audio to work.
+
+1. Edit `/opt/freeswitch/conf/dialplan/default/bbb_echo_test.xml` and change the text in bold
+
+```xml
+<include>
+   <extension name="bbb_echo_test_direct">
+   <condition field="destination_number" expression="^9196$|^9196(\d{5,20})$">
+```
+
+2. Edit `/opt/freeswitch/conf/dialplan/default/bbb_conference.xml` and change the text in bold in two places:
+
+```xml
+<extension name="bbb_conferences_ws">
+ <condition field="destination_number" expression="^(\d{5,20})$">
+...
+
+<extension name="bbb_conferences">
+ <condition field="destination_number" expression="^(\d{5,20})$">
+```
+
+After you make the above changes, restart BigBlueButton.

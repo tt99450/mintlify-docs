@@ -1,0 +1,79 @@
+---
+title: " SAML Auth"
+description: "What is SAML Auth? SAML (Security Assertion Markup Language) is an Authorization and Authentication protocol used to power single-sign-on and..."
+---
+
+# What is SAML Auth?
+
+SAML (Security Assertion Markup Language) is an Authorization and Authentication protocol used to power single-sign-on and identity management.
+
+Note: Our support for SAML is in beta, and it is being successfully tested with OpenCAS (which runs on Shibboleth), ClassLink, QuickLaunchSSO and Azure AD.
+
+# What we need from you...
+
+In your institution's SAML Identity Provider, add two new apps or service providers for Personal Rooms - Staging and Personal Rooms Production.
+
+Staging must be set up prior to your Production instance. This staging environment will allow us to perform updates to your Personal Rooms instance with minimal downtime to your Production environment.
+
+## 
+
+## Staging
+
+Staging region is fixed and the descriptor is specific for each Personal Rooms site. Blindside Networks should provide you with a &lt;CUSTOMER_IDENTIFIER&gt;. (E.g. bn-staging).
+
+Meta descriptor:
+
+- Staging: https://kc-staging.rna1.blindside-dev.com/auth/realms/&lt;CUSTOMER_IDENTIFIER&gt;/protocol/saml/descriptor
+
+EntityID and root for callback URL (region is also fixed):
+
+- Staging: https://kc-staging.rna1.blindside-dev.com/auth/realms/&lt;CUSTOMER_IDENTIFIER&gt;
+
+## 
+
+## Production
+
+Production will vary for each region. Check out the meta-descriptors:
+
+- North America: https://kc.rna1.blindsidenetworks.com/auth/realms/&lt;CUSTOMER_IDENTIFIER&gt;/protocol/saml/descriptor
+- Canada: https://kc.rna2.blindsidenetworks.com/auth/realms/&lt;CUSTOMER_IDENTIFIER&gt;/protocol/saml/descriptor
+- Europe: https://kc.reu1.blindsidenetworks.com/auth/realms/&lt;CUSTOMER_IDENTIFIER&gt;/protocol/saml/descriptor
+- Oceania (Australia): https://kc.roc2.blindsidenetworks.com/auth/realms/&lt;CUSTOMER_IDENTIFIER&gt;/protocol/saml/descriptor
+
+EntityID and root for callback URL (varies for each region):
+
+- North America: https://kc.rna1.blindsidenetworks.com/auth/realms/&lt;CUSTOMER_IDENTIFIER&gt;
+- Canada: https://kc.rna2.blindsidenetworks.com/auth/realms/&lt;CUSTOMER_IDENTIFIER&gt;
+- Europe:
+- https://kc.reu1.blindsidenetworks.com/auth/realms/&lt;CUSTOMER_IDENTIFIER&gt;
+- Oceania (Australia): https://kc.roc2.blindsidenetworks.com/auth/realms/&lt;CUSTOMER_IDENTIFIER&gt;
+
+## 
+
+## Required parameters
+
+Be sure to include, as part of the launch, the following parameters:
+
+- **user\_id** = which is a unique user id in your context.
+- **email** = which is the user email.
+- **firstname** = which can be normally found as givenName or GivenName.
+- **lastname** = which can be normally found as Surname.
+
+## 
+
+## Optional parameters
+
+You may also want to add:
+
+- **image** = which is a URL to the user avatar (only if your Personal Rooms site has avatars enabled).
+- **roles** = which is a string with the role the user should be authenticated in Personal Rooms (only if you have different functionality profiles per role).
+
+## 
+
+## Identity Provider Metadata
+
+Last and most important, we need to know the descriptor of your Identity Provider
+
+We would need either:
+
+- An endpoint from where we can take your SAML IdP EntityDescriptor, which is a metadata file that includes your public certificate, endpoint, and some other info related to the IdP.

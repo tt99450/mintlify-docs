@@ -1,0 +1,47 @@
+---
+title: "Webcam Pagination and Active Talker"
+description: "BigBlueButton adjusts the number of webcams visible to viewers and moderators based on the size of session. Pagination of Webcams To display webcams..."
+---
+
+BigBlueButton adjusts the number of webcams visible to viewers and moderators based on the size of session.
+
+## Pagination of Webcams
+
+## To display webcams within the boundaries of server resources, viewers will see (up to) 5 webcams at a time, with the ability to page through available webcam streams.
+
+Instructors will see up to 25 webcams with the ability to paginate as well.
+
+If there are more webcams streams available above these thresholds, then BigBlueButton client will show left/right arrows to let the user paginate between the available webcams.
+
+For example, in a session with 8 users all sharing webcams, viewers would see five (5) webcams at a time (see screen shot below).
+
+![5wc.PNG](/images/5wc.PNG)
+
+However, the instructor in this session sees all 8 webcams.
+
+(The user can also adjust the layout to change the size of webcams relative to the presentation -- here in the screenshot below we made the webcams a bit larger than the presentation.)
+
+![8wc.PNG](/images/8wc.PNG)
+
+## Dynamic Adjustment of Viewable Webcams
+
+To keep the number of webcams streams manageable for larger sessions, the number of webcams visible to moderators and viewers will dynamically adjust downward as the session size increases. 
+
+The following table gives you the number of webcams shown to Moderators (teachers) and Viewers (students) based on size of session.
+
+|  |  |  |
+| --- | --- | --- |
+| **Size of session** | **Moderator** | **Viewer** |
+| < 30 users | 25 | 5 |
+| < 40 users | 20 | 4 |
+| < 50 users | 16 | 3 |
+| < 60 users | 12 | 3 |
+| Above 60 users | 8 | 2 |
+
+For example, in a session between 40 to 49 users, the moderators will see (up to) 16 webcams at a time, and the viewers will see (up to) 3 webcams at a time.
+
+## Active Talker
+
+To ensure each user sees who is talking, when pagination is active, the first page will display the webcams in order of **active talker**.
+
+For example, if a viewer is seeing the first five webcams, **they will see the five most recent active talkers**, with the most recent active talker always taking the left most webcam placement.

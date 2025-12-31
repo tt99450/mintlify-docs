@@ -1,0 +1,8 @@
+---
+title: "LaTeX documents not converting correctly"
+description: "For some LaTeX documents, the mathematical symbols using bitmap fonts many not convert well (whereas OTF and TTF fonts are handled well). Using..."
+---
+
+For some LaTeX documents, the mathematical symbols using bitmap fonts many not convert well (whereas OTF and TTF fonts are handled well).
+
+Using `\usepackage{lmodern}` along with the Math font package `\usepackage{newtxmath}` and a monospaced font such as `\usepackage[ttdefault=true]{AnonymousPro}` should resolve the conversion problem.

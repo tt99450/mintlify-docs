@@ -1,0 +1,39 @@
+---
+title: "Longer PIN numbers and updates to remove user"
+description: "We pleased to announce the following enhancements to BigBlueButton for increased security and moderation of a session. 1. The PIN number for each..."
+---
+
+We pleased to announce the following enhancements to BigBlueButton for increased security and moderation of a session.
+
+**1. The PIN number for each conference is now 9 digits**
+
+If your instance of BigBlueButton has dial-in numbers available, the dial-in + PIN number will appear in the chat.
+
+The PIN numbers are now 9 digits in length.
+
+![mceclip0.png](/images/mceclip0_17.png)
+
+When a user dials into your session, their phone number will appear in the User’s list in one of three formats (depending on their carrier):
+
+1. 613265XXXX (phone number with last 4 digits masked)
+2. Unknown (no caller ID)
+3. FREDERICK DIXON (caller ID in upper case)
+
+Here is an example of a phone user with caller ID.
+
+![mceclip1.png](/images/mceclip1_12.png)
+
+As a moderator, you can click on the phone user.  A menu will appear letting you mute/unmute their microphone or remove them from the session.
+
+**2. Removal of a user persists for the duration of the current session**
+
+You can click on any name in the Users list (phone user or regular user), and choose [Remove user](/help/moderator-guide/promotedemoteremove-a-user).
+
+Removal now persists for the duration of the session.  Specifically,
+
+- If you remove a phone user, they won’t be able to dial back into the session from the same phone.
+- If you remove a regular user, they won’t be able to rejoin the session in a similar manner.
+
+For example, if a student joined through the learning management system (LMS), they would be unable to rejoin the current session through the LMS.  The same applies to a Personal Rooms link or Guest invite link.
+
+Again, the removal is only for the current session.  A removed user can still join other BigBlueButton sessions or the same session again if restarted at a later time.

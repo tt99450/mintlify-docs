@@ -1,0 +1,16 @@
+---
+title: "Known Issues"
+description: "These are the known issues that we are working on resolving. Known issues/bugs These are the known issues that we are working on resolving...."
+---
+
+These are the known issues that we are working on resolving.
+
+## Known issues/bugs
+
+These are the known issues that we are working on resolving.
+
+- **(2022-01-27) Audio returning from breakout rooms sometimes does not reconnect**.  Sometimes a user returning from breakout room needs to refresh the page to rejoin audio in the main room.  We are working to improve this experience.  For the moment, you loose audio when rejoining, you can refresh your browser and rejoin the main room with audio (the client will fully reload in under 5 seconds).
+- **Audio is sometimes out of sync with webcam video.**  In BigBlueButton, the audio and video travel through two different channels.  In some recordings, they can be about a second out of sync.  We are investigating further as to why this is happening.
+- **Connectivity issues with Spectrum Internet**.  We've seen issues with some customers of Spectrum Internet getting periodically disconnected after recent network updates.  The fix is to [disable IPV6](/help/troubleshooting/how-to-disable-ipv6) on their router.  We are working on an update to resolve this issue.
+- **Safari Mobile (iPad/iOS) does not allow users to share their screen.**  Currently, neither Android or iOS devices implement the screen share API for the browser.
+- **Error 1136: Permission to capture the screen needs to be granted** If your chrome is open, and it's half way through updating, then screen-share will not be recognized and you might get this error. To overcome this, restart Chrome (and let it finish updating) and then you will be able to screen share again.

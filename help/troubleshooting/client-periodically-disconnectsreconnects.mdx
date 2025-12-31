@@ -1,0 +1,42 @@
+---
+title: "Client periodically disconnects/reconnects"
+description: "If you are experiencing issues where you can connect to a BigBlueButton session and your client periodically reconnects -- causing your..."
+---
+
+If you are experiencing issues where you can connect to a BigBlueButton session and your client periodically reconnects -- causing your microphone/webcam/screen sharing to stop -- it may be an issue with your internet connection.
+
+An occasional disconnect is not unexpected and, if the internet drop was momentary, you can quickly log back in by simply refreshing your browser (you can refresh anytime in fact to reload the client and setup new connections).
+
+The refresh button is located to the left of the URL.
+
+![](/images/34040900020109)
+
+If you are getting regularly disconnected/reconnected, open
+
+  https://demo.bigbluebutton.org/
+
+and join a test session (use Chrome or FireFox on the desktop, Safari on iOS).  Join the audio. Share your webcam.  Are you able to connect and maintain a connection?
+
+If your client still periodically and repeatedly reconnects in the test session, the issue may be within your internet connection (router or firewall).
+
+To validate if the issue is with your internet connection, a good test is to connect via a *different* network (this keeps everything the same, changing only the network connection). If you have a smart phone, you can connect through the phone's wireless hotspot.
+
+1. Use you smart phone to setup a temporary wireless hotspot
+
+2. Connect your computer to the phone's wireless hotspot
+
+3. Join a test session again at https://demo.bigbluebutton.org/
+
+If the test session still disconnects with the hotspot, the issue may be with you computer and not the internet connection.
+
+1. If you have anti-virus software installed, the software may be mistakenly closing the browsers connection to the BigBlueButton server.  Try temporarily disabling any "real-time" monitoring of the software and test again.
+
+2. Try *both* Chrome and FireFox.
+
+2. Try from a different home computer.
+
+On the other hand, if using the hotspot your connection is now stable (no disconnects), then the issue is likely with your internet connection router or firewall.
+
+If you are behind a corporate firewall, one option is to have them [whitelist the BigBlueButton](/help/faq/whitelisting-bigbluebutton-servers-for-the-firewall) servers based on wildcard domain name.
+
+If you are connecting from home, the issue might be how your router is handling IPV6 (we've had recent reports from some **Spectrum** customers getting periodically disconnected).  Try [disabling IPV6 on your computer or router](/help/troubleshooting/how-to-disable-ipv6) and then test again using https://demo.bigbluebutton.org/

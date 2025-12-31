@@ -1,0 +1,98 @@
+---
+title: "Important Information for users of the BigBlueButton HTML5 Client"
+description: "This document contains important information for early users of the BigBlueButton HTML5 client. Earlier this year we announced that we will be..."
+---
+
+## This document contains important information for early users of the BigBlueButton HTML5 client.
+
+Earlier this year we announced that we will be transitioning all users to the BigBlueButton HTML5 client (no more Flash client) for (see [blog post](https://blindsidenetworks.com/2019/03/15/html5-client-is-coming/)).
+
+This document contains the latest information on the BigBlueButton HTML5 client (referred hereafter as simply "HTML5 client").
+
+## Table of Contents:
+
+1. [Recommended browsers](#recommended-browsers)
+2. [Minimum bandwidth requirements](#minimum-bandwidth-requirements)
+3. [Features still in development](#features-still-in-development)
+4. [Differences from the Flash client](#differences-from-the-flash-client)
+5. [Known issues/bugs](#known-issuesbugs)
+
+The following article is actively updated, please be sure to check back regularly to ensure you are up to date.
+
+## Recommended Browsers
+
+The recommended browsers are
+
+- **Desktop/Laptop:**Chrome or Firefox (latest versions)
+- **Mobile iOS (12.2+):** Safari
+- **Mobile Android (6.0+)**: Chrome
+
+**At this time IE and EDGE browsers are not supported browsers.**
+
+Java is no longer required for screen sharing.
+
+## Minimum Bandwidth Requirements
+
+### For the all users, we recommend (a minimum of)
+
+- 0.5 Mbits/s upload bandwidth
+- 1.0 Mbits/sec download bandwidth
+
+### For instructors wanting to share their screen, we recommend (a minimum of)
+
+- 1.0 Mbits/s upload bandwidth
+- 1.0 Mbits/sec download bandwidth
+
+### The same bandwidth recommendations apply to **mobile devices:**
+
+1. For data network, we recommended **4G LTE**for best results or **minimum 3G Network** to use audio, view presentation content and receive screen sharing.
+2. For connection via wireless, we recommend **private** versus public networks where possible.
+3. To reduce bandwidth usage, users can turn off webcams on their mobile devices (see below).
+
+For a list of recommended settings for Desktop/Laptop users see: [Minimum Requirements for BigBlueButton](/help/faq/what-are-the-minimum-requirements-for-bigbluebutton).
+
+## Features still in development
+
+These features were present in the Flash client and are note yet in the HTML5 client
+
+- **Show Slide Thumbnails:**At this time the slide navigation does not show thumbnails when using the slide menu to navigate to specific slides.
+- **Managing webcams:** The Flash client allowed users to individually close webcams.  This feature is not yet implemented in the HTML5 client.
+- **Links in slides not clickable**: when uploading slides with clickable links, they could be clicked in the Flash client. Currently, they are not clickable in the HTML5 client.
+
+## Differences from the Flash client
+
+- **Layout Dropdown:** The Flash client had a layout menu that let moderators push down layout changes in windows to all viewers.  The HMTL5 client does not use windows (it uses panels that show/hide).  We are going to add capabilities for the moderator to show/hide the presentation area in a future update.
+- **Track users in breakout rooms**: The Flash client would inform moderators of which users were in which breakout room.
+
+Currently, when webcams are shared in a session, a user can minimize the presentation area and have the shared webcams take over the presentation area (which is good for creating a video chat-type session).
+
+To close the presentation, select the **"X"** located in the upper right hand corner of the presentation.
+
+![Screen_Shot_2019-03-04_at_3.31.21_PM.png](/images/Screen_Shot_2019-03-04_at_3.31.21_PM.png)
+
+Once closed the webcam streams will take up the full screen of the BigBlueButton interface.
+
+![Screen_Shot_2019-03-04_at_3.43.21_PM.png](/images/Screen_Shot_2019-03-04_at_3.43.21_PM.png)
+
+To restore the presentation and minimize the webcams, select the **Presentation Icon** located in the bottom right hand corner of the screen.
+
+If no webcams are being shared in the meeting, the user cannot close the presentation window.
+
+There is no limit on the number of webcams that can be shared, but there is a practical limit in terms of bandwidth -- probably 16 webcams is a good number.  At higher number of webcams you may see some webcams stop updating.
+
+A user can disable all incoming webcam streams using the by selecting the Settings menu.
+
+![](/images/mceclip0_9.png)
+
+and then choose "Data savings" and turn off "Enable webcams".
+
+![](/images/mceclip1_8.png)
+
+Clicking the "Save" button will then turn off all webcams (which is good when on a mobile device with limited bandwidth).
+
+- **Shared Notes:** shared notes are now located in the side panel to the left of the presentation area where the users list and chat messaging are located. To view and edit the shared notes, click on the "Shared Notes" link.
+
+![Screen_Shot_2019-03-14_at_4.34.48_PM.png](/images/Screen_Shot_2019-03-14_at_4.34.48_PM.png)
+
+- **Moderator Unmute:** Due to privacy concerns moderators are by default not able to unmute users (you can contact us to have this feature enabled for your account).
+- **Multiuser Whiteboard between slides:** Currently, multiuser whiteboard only applies to the current slide.  When the presenter changes to another slide, they need to re-engage multi-user whiteboard.

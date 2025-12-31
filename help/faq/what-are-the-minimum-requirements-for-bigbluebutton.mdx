@@ -1,0 +1,78 @@
+---
+title: "What are the minimum requirements for BigBlueButton?"
+description: "This page gives you a summary of the requirements -- browser, OS, and bandwidth -- for running BigBlueButton. Most people with average bandwidth,..."
+---
+
+## 
+
+This page gives you a summary of the requirements -- browser, OS, and bandwidth -- for running BigBlueButton.
+
+Most people with average bandwidth, recent computer, and latest version of Chrome, FireFox, or Edge should meet all the minimum requirements.
+
+# High Level Requirements
+
+## Recommended Browsers
+
+The recommended browsers are:
+
+- **Desktop/Laptop:**Chrome, Firefox or Edge (latest versions).
+- **Mobile iOS (12.2+):** Safari Mobile
+- **Mobile Android (10.0+)**: Chrome Mobile
+
+**Note: IE** and **legacy EDGE** browsers are not supported**.**
+
+In terms of operating systems, BigBlueButton runs within the browser, so it's independent from the underlying operating system.   For example, Windows 10 or Windows 11 are both fine as they can run the latest versions of the above browsers.
+
+## Desktop/Laptop Users
+
+### The following settings are recommended for all users connecting to BigBlueButton via desktop or laptop device:
+
+1. For computer, you need a **laptop or desktop computer**with (at least) **4G of memory and a 2+ Ghz processor** (any computer bought in the last three years should be fine), or any Chromebook with 4G of memory and a 1.5+ Ghz processor.
+2. For bandwidth, you must have at **least 1.0 Mbits/second upstream**and **2 Mbits/second downstream.** To check bandwidth use, [speedtest.net](https://speedtest.net/).
+3. For browsers, **we recommend Google Chrome,****Mozilla FireFox or Microsoft Edge**.
+4. For audio,**we strongly recommend using a headset**.  A headset will ensure that others can hear your voice clearly and you don’t cause echo or background noise for others.  You do not need to buy an expensive one -- any basic headset with a built-in microphone will work.
+
+A laptop with a built-in webcam and microphone will be sufficient as well if you’re in a quiet area.
+
+# Detailed Requirements
+
+The following are more detailed requirements.
+
+## Network connectivity
+
+Each user should be able to make the following TCP/IP and UDP network connections.
+
+|  |  |  |
+| --- | --- | --- |
+| **Protocol** | **Port(s)** | **Description** |
+| TCP/IP | 80 | HTTP |
+| TCP/IP | 443 | HTTPS |
+| UDP | 16384-32768 | Encrypted WebRTC audio, video, and screen share media stream (DTLS-SRTP) |
+
+## 
+
+Note: If a [firewall](/help/faq/whitelisting-bigbluebutton-servers-for-the-firewall) that blocks the UDP connections for the user, it would cause the media connections to "tunnel" through port 443, which, if is also behind a firewall, the user may experience performance issues with sharing and viewing audio/video.
+
+## 
+
+## Mobile Device Users
+
+### The following settings are recommended for all users connecting to BigBlueButton from a mobile device:
+
+1. For data network, we recommended **4G LTI** for best results or **minimum 3G Network** to use audio, view presentation content, and receive screen sharing.
+2. For connection via wireless, we recommend **private** versus public networks.
+3. For device settings, we recommend **reducing device usage** while connecting to BigBlueButton; close applications that may run in the background and reduce browsing activities.
+
+### Additional Recommendations for Moderator/Presenters
+
+We recommend Moderators and Presenters connect from a desktop or laptop device whenever possible to ensure all features and functions available in BigBlueButton are accessible to the user.
+
+Moderators and presenters can join BigBlueButton using a mobile device, however, use of more bandwidth intensive features such as the screen sharing may be limited.
+
+**IMPORTANT: at this time screen sharing is not supported from mobile devices. Presenters who wish to use the screen sharing function should use a laptop, desktop, or Chromebook device.**
+
+Screen sharing uses more bandwidth than sharing a webcam.  To broadcast screen sharing takes about 1 Mbits/sec of upstream bandwidth.  Therefor, for the current presenter -- such as when a viewer (student) is made presenter by a moderator -- we recommend the presenter have upstream bandwidth of at least **2 Mbits/sec**.
+
+**We recommend moderators or presenters connect through a wired network (not wireless) if possible.**If connecting from a wireless network that is not reliable, you may experience periodic disconnects or gaps in your audio.
+
+## 

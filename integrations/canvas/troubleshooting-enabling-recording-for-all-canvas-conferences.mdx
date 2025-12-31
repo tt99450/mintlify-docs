@@ -1,0 +1,23 @@
+---
+title: "Enabling recording for all Canvas Conferences"
+description: "With a bit of Javascript, and the ability for Canvas to have your own theme with custom CSS/Javascript, you can enabled this option for all..."
+---
+
+With a bit of Javascript, and the ability for Canvas to have your own theme with custom CSS/Javascript, you can enabled this option for all instructors at your institution.
+
+The following video shows how you to set 'Enable recording for this conference' to true (and prevent the instructor from disabling it).  See
+
+[https://youtu.be/7oITHgBU8jg](https://youtu.be/7oITHgBU8jg)
+
+Here is the custom JavaScript snippet to upload to your theme (or add to any existing JavaScript you have in your theme).
+
+```
+/* Force conferences to be recorded */  
+$("button.new-conference-btn").live("click",  
+ function() {  
+  rec = $("#web_conference_user_settings_record")[0];  
+  if (rec) { rec.checked = true; rec.disabled = true; }  
+ }  
+);  
+ 
+```
