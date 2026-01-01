@@ -71,19 +71,11 @@
         "tab": "Help Center",
         "groups": [
           {
-            "group": "Getting Started",
-            "pages": [
-              "help/getting-started/getting-started-with-personal-rooms",
-              "help/getting-started/in-application-authorization",
-              "help/getting-started/google-oauth2",
-              "help/getting-started/office-365-oauth2",
-              "help/getting-started/saml-auth",
-              "help/getting-started/saml-auth-setup",
-              "help/getting-started/saml-auth-deprecated"
-            ]
+            "group": "Overview",
+            "pages": ["help/overview", "help/videos"]
           },
           {
-            "group": "User Guide",
+            "group": "Getting Started",
             "pages": [
               "help/user-guide/join-the-audio",
               "help/user-guide/share-a-webcam",
@@ -130,25 +122,6 @@
               "help/moderator-guide/how-do-i-use-the-per-user-whiteboard",
               "help/moderator-guide/using-smart-slides-for-one-click-polling",
               "help/moderator-guide/learning-analytics-dashboard"
-            ]
-          },
-          {
-            "group": "Admin",
-            "pages": [
-              "help/admin/accessing-the-administrator-panel",
-              "help/admin/managing-users",
-              "help/admin/managing-recordings",
-              "help/admin/site-settings"
-            ]
-          },
-          {
-            "group": "Overview",
-            "pages": [
-              "help/overview/overview-of-personal-rooms-interface",
-              "help/overview/how-do-i-create-my-own-rooms",
-              "help/overview/can-i-invite-attendees-to-my-meetings",
-              "help/overview/how-do-i-find-manage-recordings",
-              "help/overview/can-i-delete-my-personal-rooms"
             ]
           },
           {
@@ -246,6 +219,10 @@
         "tab": "Integrations",
         "groups": [
           {
+            "group": "Overview",
+            "pages": ["integrations/overview"]
+          },
+          {
             "group": "Canvas LMS",
             "pages": [
               "integrations/canvas/faq-what-are-conferences",
@@ -301,6 +278,56 @@
               "integrations/sakai/default-recording-settings",
               "integrations/sakai/faq-how-long-will-recordings-appear"
             ]
+          }
+        ]
+      },
+      {
+        "tab": "Personal Rooms",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["help/personal-rooms/overview"]
+          },
+          {
+            "group": "Personal Rooms",
+            "pages": [
+              "help/personal-rooms/overview-of-personal-rooms-interface",
+              "help/personal-rooms/how-do-i-create-my-own-rooms",
+              "help/personal-rooms/can-i-invite-attendees-to-my-meetings",
+              "help/personal-rooms/how-do-i-find-manage-recordings",
+              "help/personal-rooms/can-i-delete-my-personal-rooms"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "help/getting-started/getting-started-with-personal-rooms",
+              "help/getting-started/in-application-authorization",
+              "help/getting-started/google-oauth2",
+              "help/getting-started/office-365-oauth2",
+              "help/getting-started/saml-auth",
+              "help/getting-started/saml-auth-setup",
+              "help/getting-started/saml-auth-deprecated"
+            ]
+          },
+          {
+            "group": "Admin",
+            "pages": [
+              "help/personal-rooms/admin/accessing-the-administrator-panel",
+              "help/personal-rooms/admin/managing-users",
+              "help/personal-rooms/admin/managing-recordings",
+              "help/personal-rooms/admin/site-settings"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Wide",
+        "layout": "wide",
+        "groups": [
+          {
+            "group": "Wide",
+            "pages": ["wide/hello"]
           }
         ]
       }
