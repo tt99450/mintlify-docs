@@ -1,0 +1,48 @@
+---
+title: "Roles & Environment"
+description: "Understand moderator, presenter, and viewer roles — and how to assign them during a session."
+icon: "users"
+---
+
+BigBlueButton uses three roles to manage permissions and responsibilities during a session.
+
+## Role Overview
+
+| Role | Can present? | Can manage users? | Can record? | Assigned how? |
+|---|---|---|---|---|
+| **Moderator** | Yes (when presenter) | Yes | Yes | Set when joining or by room config |
+| **Presenter** | Yes | No | No | Assigned by moderator |
+| **Viewer** | No | No | No | Default role for participants |
+
+<Note>A session can have **multiple moderators** but only **one active presenter** at a time.</Note>
+
+## Assign the Presenter Role
+
+Transfer the presenter role to allow another user to control slides, share their screen, or run polls:
+
+- Click on a user in the user list and select **Make presenter**
+- The current presenter automatically becomes a viewer
+- You can take back the presenter role at any time
+
+See [Give/Take Presenter Role](/help/moderator-guide/givetake-presenter-role) for details.
+
+## Promote and Demote Users
+
+Moderators can change a user's role during the session:
+
+- **Promote a viewer to moderator** — gives them user management capabilities
+- **Demote a moderator to viewer** — removes management permissions
+- **Remove a user** — eject them from the session entirely
+
+See [Promote/Demote/Remove a User](/help/moderator-guide/promotedemoteremove-a-user) for step-by-step instructions.
+
+## Co-Teaching Setup
+
+For sessions with multiple instructors:
+
+1. Have both instructors join as **moderators**
+2. Assign the **presenter** role to whoever is actively teaching
+3. Swap the presenter role as needed throughout the session
+4. Both moderators retain the ability to manage users, breakout rooms, and recording regardless of who is presenting
+
+<Tip>Coordinate with your co-teacher beforehand about when you'll swap presenter roles to keep transitions smooth.</Tip>
