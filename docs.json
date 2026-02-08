@@ -11,73 +11,103 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Help Center",
+        "tab": "Getting Started",
         "groups": [
           {
-            "group": "Overview",
-            "pages": ["index", "help/overview", "help/videos"]
+            "group": "Welcome",
+            "pages": ["getting-started/welcome", "help/overview", "help/videos"]
           },
           {
-            "group": "Getting Started",
+            "group": "Before You Teach",
+            "pages": ["getting-started/before-you-teach"]
+          },
+          {
+            "group": "Accessibility",
+            "pages": ["getting-started/accessibility"]
+          },
+          {
+            "group": "Interface Overview",
+            "pages": ["getting-started/interface-overview"]
+          },
+          {
+            "group": "Quick Reference",
+            "pages": ["getting-started/quick-reference"]
+          }
+        ]
+      },
+      {
+        "tab": "Prepare",
+        "groups": [
+          {
+            "group": "Set Up Your Room",
+            "pages": ["prepare/setup-rooms"]
+          },
+          {
+            "group": "Create Engaging Content",
+            "pages": ["prepare/create-engaging-content"]
+          }
+        ]
+      },
+      {
+        "tab": "Educate",
+        "groups": [
+          {
+            "group": "Manage Class",
             "pages": [
-              "help/user-guide/join-the-audio",
-              "help/user-guide/share-a-webcam",
-              "help/user-guide/send-public-and-private-chat-messages",
-              "help/user-guide/raise-hand",
-              "help/user-guide/set-a-status",
-              "help/user-guide/respond-to-polls",
-              "help/user-guide/join-breakout-rooms",
-              "help/user-guide/use-shared-notes",
-              "help/user-guide/use-the-multi-user-whiteboard",
-              "help/user-guide/view-closed-captions",
-              "help/user-guide/make-webcams-larger",
-              "help/user-guide/move-webcams-in-a-live-session",
-              "help/user-guide/close-the-presentationenlarge-the-webcams",
-              "help/user-guide/how-do-i-change-my-webcam-background",
-              "help/user-guide/access-the-options-menu"
+              "educate/manage/roles-environment",
+              "educate/manage/managing-students",
+              "educate/manage/keeping-time"
             ]
           },
           {
-            "group": "Presenter Guide",
+            "group": "Build Relationships",
             "pages": [
-              "help/presenter-guide/upload-a-presentation-enable-for-download",
-              "help/presenter-guide/share-my-screen",
-              "help/presenter-guide/use-the-presentation-controls",
-              "help/presenter-guide/share-an-external-audiovideo-link",
-              "help/presenter-guide/use-pollingquzzing",
-              "help/presenter-guide/raise-hand"
+              "educate/relationships/create-connection",
+              "educate/relationships/collaborative-spaces",
+              "educate/relationships/set-the-mood"
             ]
           },
           {
-            "group": "Moderator Guide",
+            "group": "Teach",
             "pages": [
-              "help/moderator-guide/manage-users",
-              "help/moderator-guide/givetake-presenter-role",
-              "help/moderator-guide/promotedemoteremove-a-user",
-              "help/moderator-guide/start-and-stop-recording",
-              "help/moderator-guide/create-and-manage-breakout-rooms",
-              "help/moderator-guide/use-closed-captions",
-              "help/moderator-guide/how-to-configure-guest-policy",
-              "help/moderator-guide/lock-viewers-ability-to-use-their-micwebcamchatshared-notes",
-              "help/moderator-guide/how-to-lock-or-unlock-users-to-enable-or-disable-private-chat-messages",
-              "help/moderator-guide/clear-the-public-chat",
-              "help/moderator-guide/end-meeting-on-logout",
-              "help/moderator-guide/how-do-i-use-the-per-user-whiteboard",
-              "help/moderator-guide/using-smart-slides-for-one-click-polling",
-              "help/moderator-guide/learning-analytics-dashboard"
+              "educate/teach/deliver-content",
+              "educate/teach/facilitate-discussion",
+              "educate/teach/breakout-rooms"
             ]
           },
           {
-            "group": "Premium",
+            "group": "Active Learning",
             "pages": [
-              "help/premium/overview-of-premium-features",
-              "help/premium/premium-tier-customizations",
-              "help/premium/premium-hosting-road-map",
-              "help/premium/how-do-i-download-a-recording",
-              "help/premium/can-i-prevent-users-from-downloading-a-recording",
-              "help/premium/how-long-until-my-recording-is-available-for-viewing",
-              "help/premium/how-do-i-invite-a-guest-to-a-live-meeting",
-              "help/premium/options-for-giving-students-visibility-of-other-students-webcams"
+              "educate/active-learning/check-understanding",
+              "educate/active-learning/gather-input",
+              "educate/active-learning/collaborative-activities",
+              "educate/active-learning/learning-challenge-takeaways"
+            ]
+          },
+          {
+            "group": "Assess & Feedback",
+            "pages": ["educate/assess/learning-analytics-dashboard"]
+          }
+        ]
+      },
+      {
+        "tab": "Reflect",
+        "groups": [
+          {
+            "group": "After Class",
+            "pages": ["reflect/recordings", "reflect/review-your-class"]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "Resources",
+            "pages": [
+              "reference/practical-tips",
+              "reference/troubleshooting",
+              "reference/keyboard-shortcuts"
             ]
           },
           {
@@ -107,6 +137,19 @@
               "help/faq/antivirus-software-causes-issues-while-connecting-to-a-bigbluebutton-session",
               "help/faq/media-server-has-no-available-resources-error-2002",
               "help/faq/bigbluebutton-is-not-susceptible-to-the-log4j-venerability"
+            ]
+          },
+          {
+            "group": "Premium Features",
+            "pages": [
+              "help/premium/overview-of-premium-features",
+              "help/premium/premium-tier-customizations",
+              "help/premium/premium-hosting-road-map",
+              "help/premium/how-do-i-download-a-recording",
+              "help/premium/can-i-prevent-users-from-downloading-a-recording",
+              "help/premium/how-long-until-my-recording-is-available-for-viewing",
+              "help/premium/how-do-i-invite-a-guest-to-a-live-meeting",
+              "help/premium/options-for-giving-students-visibility-of-other-students-webcams"
             ]
           },
           {
