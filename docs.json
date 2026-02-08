@@ -342,12 +342,7 @@
                   "help/getting-started/saml-auth-setup",
                   "help/getting-started/saml-auth-deprecated"
                 ]
-              }
-            ]
-          },
-          {
-            "item": "Admin",
-            "groups": [
+              },
               {
                 "group": "Admin",
                 "pages": [
