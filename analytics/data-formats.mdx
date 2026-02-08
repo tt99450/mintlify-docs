@@ -1,0 +1,170 @@
+---
+title: Data Formats for Alerts
+description: JSON data formats for LMS analytics integration
+---
+
+When your account is configured with a data-url, it will authenticate using JWT (using the same shared secret) and return back a JSON of information on who is present in the session.
+
+## Basic Course Roster
+
+Here's a sample JSON to display the course roster:
+
+```json
+{
+  "course": {
+    "id": 5,
+    "fullname": "Computer Applications (Fred)",
+    "shortname": "CST8090-401",
+    "groups": []
+  },
+  "enrollment": {
+    "students": [
+      {
+        "id": 3,
+        "firstname": "John",
+        "lastname": "Doe",
+        "groups": []
+      },
+      {
+        "id": 8,
+        "firstname": "Jane",
+        "lastname": "Doe",
+        "groups": []
+      }
+    ],
+    "instructors": [
+      {
+        "id": 9,
+        "firstname": "Fred",
+        "lastname": "Dixon",
+        "groups": []
+      }
+    ]
+  },
+  "session": {
+    "notifications": []
+  }
+}
+```
+
+## Extended Student Information
+
+The JSON can include additional information on each student (specified as `extraInformation`):
+
+```json
+{
+  "course": {
+    "id": 5,
+    "fullname": "Computer Applications (Fred)",
+    "shortname": "CST8090-401",
+    "groups": []
+  },
+  "enrollment": {
+    "students": [
+      {
+        "id": 3,
+        "firstname": "John",
+        "lastname": "Doe",
+        "groups": [],
+        "extraInformation": [
+          {
+            "key": "Activity Completion Rate",
+            "value": "0%"
+          },
+          {
+            "key": "Assignment Submissions",
+            "value": "0%"
+          },
+          {
+            "key": "Content Visited",
+            "value": "0%"
+          },
+          {
+            "key": "Current Grade",
+            "value": "N/A"
+          },
+          {
+            "key": "Logins",
+            "value": "6"
+          },
+          {
+            "key": "Risk Level",
+            "value": "N/A"
+          },
+          {
+            "key": "Time in Course",
+            "value": "N/A"
+          },
+          {
+            "key": "Engagement Score",
+            "value": "N/A"
+          },
+          {
+            "key": "Last Login Date",
+            "value": "2025-12-17"
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "firstname": "Jane",
+        "lastname": "Doe",
+        "groups": [],
+        "extraInformation": [
+          {
+            "key": "Activity Completion Rate",
+            "value": "2.94%"
+          },
+          {
+            "key": "Assignment Submissions",
+            "value": "0%"
+          },
+          {
+            "key": "Content Visited",
+            "value": "8.33%"
+          },
+          {
+            "key": "Current Grade",
+            "value": "N/A"
+          },
+          {
+            "key": "Logins",
+            "value": "2"
+          },
+          {
+            "key": "Risk Level",
+            "value": "N/A"
+          },
+          {
+            "key": "Time in Course",
+            "value": "32m"
+          },
+          {
+            "key": "Engagement Score",
+            "value": "1"
+          },
+          {
+            "key": "Last Login Date",
+            "value": "2025-11-25"
+          }
+        ]
+      }
+    ],
+    "instructors": [
+      {
+        "id": 9,
+        "firstname": "Fred",
+        "lastname": "Dixon",
+        "groups": []
+      }
+    ]
+  },
+  "session": {
+    "notifications": []
+  }
+}
+```
+
+<Note>
+The name/value pairs in `extraInformation` are arbitrary – every user can have a different set of values.
+</Note>

@@ -1,0 +1,77 @@
+---
+title: BN Analytics Overview
+description: Two-way integration of analytics with your LMS to give educators and administrators greater insight into student activities
+---
+
+Blindside Networks offers BigBlueButton hosting as software as a service (SaaS) for customers world-wide.
+
+In our SaaS offering, we provide two-way integration of analytics with your LMS to give educators and administrators greater insight into student activities.
+
+We call this value add from Blindside Networks "BN Analytics".
+
+## Overview
+
+BN Analytics enabled two-way sharing of data with the learning management system (LMS).
+
+### From the LMS
+
+The BigBlueButton client can display analytics from the LMS in BigBlueButton sessions. The display can answer questions such as:
+
+1. Who is absent from my class?
+2. What are key metrics for each student that can help me give more personalized feedback?
+3. Are there any alerts on a student that I should be aware of?
+
+Analytics from the BigBlueButton session can also be sent back to the LMS, or to an intermediate data warehouse, to enable unified reporting.
+
+With this unified data, the administrators and teachers can generate reports that combined data from the LMS and BigBlueButton to answers questions such as:
+
+1. Who attended my class?
+2. Were students active in the class (active learning is far more effective than passive learning).
+3. Based on engagement in the LMS and active learning in the live class, are there any students currently at risk?
+
+For assistance in setting up BN Analytics with Canvas, Moodle, or your own LMS, contact Blindside Networks at [https://blindsidenetworks.com/contact-us/](https://blindsidenetworks.com/contact-us/).
+
+### Absentee List
+
+When BigBlueButton starts a session, it can query the LMS for course roster and display absentee students.
+
+When a BigBlueButton session starts in Blindside Networks SaaS Hosting, the BigBlueButton server can request a roster from Moodle.
+
+![](/images/analytics/image_001.png)
+
+The request is handled by the BN Alerts sub-plugin in Moodle.
+
+To display absentee students, BigBlueButton shows an **Absent List** panel on the right that when clicked shows who is still absent.
+
+In the screen shot below, Jan Doe and John Doe are both absent.
+
+![Absent List](/images/analytics/image_002.png)
+
+### Student Analytics
+
+In addition to the course roster, BigBlueButton can receive additional data from the LMS for each student.
+
+This information might be the student's:
+
+- current grade
+- last login to the LMS
+- Total time spent in the LMS
+- … and any other information from the LMS.
+
+For example, in the screen shot below, Moodle has sent a rich set of information for the student.
+
+![](/images/analytics/image_003.png)
+
+By providing this data in the live session, it saves time for the teacher. For example, if a student was having difficulty answering a question, the teacher could use the analytics from the LMS to check when the last time the student logged into the LMS, for example.
+
+### Student Alerts
+
+In addition to analytics, the LMS can also send specific alerts that cause BigBlueButton to highlight an important issue with the student (red background), giving the educator insight into a potential problem and opportunity to improve the situation in the class.
+
+![](/images/analytics/image_004.png)
+
+The information could be also displayed as a warning (with yellow background).
+
+![](/images/analytics/image_005.png)
+
+The configuration of the roster, student analytics, and student alerts are all configurable by the administrator.
