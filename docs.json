@@ -359,14 +359,7 @@
           }
         ]
       }
-<<<<<<< HEAD
     ]
-=======
-    ],
-    "global": {
-      "anchors": []
-    }
->>>>>>> 6b8140f (First reorganization)
   },
   "logo": {
     "light": "/logo/light.svg",
