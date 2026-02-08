@@ -24,41 +24,57 @@
         "groups": [
           {
             "group": "Welcome",
-            "pages": ["getting-started/welcome", "help/overview", "help/videos"]
+            "pages": [
+              "getting-started/welcome",
+              "help/overview",
+              "help/videos"
+            ]
           },
           {
             "group": "Before You Teach",
-            "pages": ["getting-started/before-you-teach"]
+            "pages": [
+              "getting-started/before-you-teach"
+            ]
           },
           {
             "group": "Accessibility",
-            "pages": ["getting-started/accessibility"]
+            "pages": [
+              "getting-started/accessibility"
+            ]
           },
           {
             "group": "Interface Overview",
-            "pages": ["getting-started/interface-overview"]
+            "pages": [
+              "getting-started/interface-overview"
+            ]
           },
           {
             "group": "Quick Reference",
-            "pages": ["getting-started/quick-reference"]
+            "pages": [
+              "getting-started/quick-reference"
+            ]
           }
         ]
       },
       {
-        "tab": "Prepare",
+        "tab": "1-Prepare",
         "groups": [
           {
             "group": "Set Up Your Room",
-            "pages": ["prepare/setup-rooms"]
+            "pages": [
+              "prepare/setup-rooms"
+            ]
           },
           {
             "group": "Create Engaging Content",
-            "pages": ["prepare/create-engaging-content"]
+            "pages": [
+              "prepare/create-engaging-content"
+            ]
           }
         ]
       },
       {
-        "tab": "Educate",
+        "tab": "2-Educate",
         "groups": [
           {
             "group": "Manage Class",
@@ -95,16 +111,21 @@
           },
           {
             "group": "Assess & Feedback",
-            "pages": ["educate/assess/learning-analytics-dashboard"]
+            "pages": [
+              "educate/assess/learning-analytics-dashboard"
+            ]
           }
         ]
       },
       {
-        "tab": "Reflect",
+        "tab": "3-Reflect",
         "groups": [
           {
             "group": "After Class",
-            "pages": ["reflect/recordings", "reflect/review-your-class"]
+            "pages": [
+              "reflect/recordings",
+              "reflect/review-your-class"
+            ]
           }
         ]
       },
@@ -218,7 +239,9 @@
             "groups": [
               {
                 "group": "Overview",
-                "pages": ["integrations/overview"]
+                "pages": [
+                  "integrations/overview"
+                ]
               },
               {
                 "group": "Canvas LMS",
