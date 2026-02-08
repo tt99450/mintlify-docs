@@ -217,122 +217,144 @@
       },
       {
         "tab": "Integrations",
-        "groups": [
+        "menu": [
           {
-            "group": "Overview",
-            "pages": ["integrations/overview"]
-          },
-          {
-            "group": "Canvas LMS",
-            "pages": [
-              "integrations/canvas/faq-what-are-conferences",
-              "integrations/canvas/creating-and-starting-a-conference",
-              "integrations/canvas/inviting-course-members-to-a-conference",
-              "integrations/canvas/viewing-recordings",
-              "integrations/canvas/locating-deleting-recordings",
-              "integrations/canvas/ending-a-conference-in-canvas",
-              "integrations/canvas/deleting-a-conference",
-              "integrations/canvas/using-bigbluebutton-with-appointments",
-              "integrations/canvas/faq-how-does-the-duration-value-affect-users-ability-to-enter-a-conference-in-canvas",
-              "integrations/canvas/faq-how-long-will-recordings-appear-in-canvas",
-              "integrations/canvas/faq-why-has-my-recording-not-appeared",
-              "integrations/canvas/faq-what-are-protected-recording-links",
-              "integrations/canvas/faq-can-we-automatically-enable-all-conferences-to-be-recorded",
-              "integrations/canvas/faq-can-i-add-participants-to-an-existing-conference",
-              "integrations/canvas/faq-integrating-your-own-bigbluebutton-server-with-canvas",
-              "integrations/canvas/faq-integration-with-canvas-studio",
-              "integrations/canvas/troubleshooting-students-are-not-able-to-seejoin-their-canvas-conferences",
-              "integrations/canvas/troubleshooting-students-are-not-able-to-view-their-concluded-conference-recordings",
-              "integrations/canvas/troubleshooting-record-enabled-conference-not-appearing-for-viewing",
-              "integrations/canvas/troubleshooting-enabling-recording-for-all-canvas-conferences",
-              "integrations/canvas/troubleshooting-how-to-hide-the-allow-attendees-to-selections"
+            "item": "Canvas LMS",
+            "groups": [
+              {
+                "group": "Overview",
+                "pages": ["integrations/overview"]
+              },
+              {
+                "group": "Canvas LMS",
+                "pages": [
+                  "integrations/canvas/faq-what-are-conferences",
+                  "integrations/canvas/creating-and-starting-a-conference",
+                  "integrations/canvas/inviting-course-members-to-a-conference",
+                  "integrations/canvas/viewing-recordings",
+                  "integrations/canvas/locating-deleting-recordings",
+                  "integrations/canvas/ending-a-conference-in-canvas",
+                  "integrations/canvas/deleting-a-conference",
+                  "integrations/canvas/using-bigbluebutton-with-appointments",
+                  "integrations/canvas/faq-how-does-the-duration-value-affect-users-ability-to-enter-a-conference-in-canvas",
+                  "integrations/canvas/faq-how-long-will-recordings-appear-in-canvas",
+                  "integrations/canvas/faq-why-has-my-recording-not-appeared",
+                  "integrations/canvas/faq-what-are-protected-recording-links",
+                  "integrations/canvas/faq-can-we-automatically-enable-all-conferences-to-be-recorded",
+                  "integrations/canvas/faq-can-i-add-participants-to-an-existing-conference",
+                  "integrations/canvas/faq-integrating-your-own-bigbluebutton-server-with-canvas",
+                  "integrations/canvas/faq-integration-with-canvas-studio",
+                  "integrations/canvas/troubleshooting-students-are-not-able-to-seejoin-their-canvas-conferences",
+                  "integrations/canvas/troubleshooting-students-are-not-able-to-view-their-concluded-conference-recordings",
+                  "integrations/canvas/troubleshooting-record-enabled-conference-not-appearing-for-viewing",
+                  "integrations/canvas/troubleshooting-enabling-recording-for-all-canvas-conferences",
+                  "integrations/canvas/troubleshooting-how-to-hide-the-allow-attendees-to-selections"
+                ]
+              }
             ]
           },
           {
-            "group": "Moodle LMS",
-            "pages": [
-              "integrations/moodle/creating-a-bigbluebuttonbn-activity",
-              "integrations/moodle/activity-room-settings",
-              "integrations/moodle/default-recording-settings",
-              "integrations/moodle/advanced-recording-settings",
-              "integrations/moodle/schedule-for-session",
-              "integrations/moodle/advanced-participant-settings",
-              "integrations/moodle/common-module-settings",
-              "integrations/moodle/enable-activity-completion",
-              "integrations/moodle/importing-recording-links",
-              "integrations/moodle/faq-can-i-add-a-presentationdocument-to-my-roomactivity-ahead-of-time",
-              "integrations/moodle/faq-how-do-i-control-visibilityaccess-to-recordings",
-              "integrations/moodle/faq-how-do-i-edit-recording-namesdescriptions",
-              "integrations/moodle/faq-how-does-grouping-work",
-              "integrations/moodle/troubleshooting-after-updating-to-version-22x-i-am-no-longer-able-to-see-the-list-of-recordings-in-my-course",
-              "integrations/moodle/troubleshooting-how-do-i-downgrade-the-moodle-plugin",
-              "integrations/moodle/troubleshooting-show-recordings-from-deleted-activities",
-              "integrations/moodle/troubleshooting-updating-bigbluebuttonbn-language-strings"
+            "item": "Moodle LMS",
+            "groups": [
+              {
+                "group": "Moodle LMS",
+                "pages": [
+                  "integrations/moodle/creating-a-bigbluebuttonbn-activity",
+                  "integrations/moodle/activity-room-settings",
+                  "integrations/moodle/default-recording-settings",
+                  "integrations/moodle/advanced-recording-settings",
+                  "integrations/moodle/schedule-for-session",
+                  "integrations/moodle/advanced-participant-settings",
+                  "integrations/moodle/common-module-settings",
+                  "integrations/moodle/enable-activity-completion",
+                  "integrations/moodle/importing-recording-links",
+                  "integrations/moodle/faq-can-i-add-a-presentationdocument-to-my-roomactivity-ahead-of-time",
+                  "integrations/moodle/faq-how-do-i-control-visibilityaccess-to-recordings",
+                  "integrations/moodle/faq-how-do-i-edit-recording-namesdescriptions",
+                  "integrations/moodle/faq-how-does-grouping-work",
+                  "integrations/moodle/troubleshooting-after-updating-to-version-22x-i-am-no-longer-able-to-see-the-list-of-recordings-in-my-course",
+                  "integrations/moodle/troubleshooting-how-do-i-downgrade-the-moodle-plugin",
+                  "integrations/moodle/troubleshooting-show-recordings-from-deleted-activities",
+                  "integrations/moodle/troubleshooting-updating-bigbluebuttonbn-language-strings"
+                ]
+              }
             ]
           },
           {
-            "group": "Sakai LMS",
-            "pages": [
-              "integrations/sakai/faq-what-are-meetings",
-              "integrations/sakai/creating-a-bigbluebutton-meeting",
-              "integrations/sakai/default-recording-settings",
-              "integrations/sakai/faq-how-long-will-recordings-appear"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Personal Rooms",
-        "groups": [
-          {
-            "group": "Overview",
-            "pages": ["help/personal-rooms/overview"]
-          },
-          {
-            "group": "Personal Rooms",
-            "pages": [
-              "help/personal-rooms/overview-of-personal-rooms-interface",
-              "help/personal-rooms/how-do-i-create-my-own-rooms",
-              "help/personal-rooms/can-i-invite-attendees-to-my-meetings",
-              "help/personal-rooms/how-do-i-find-manage-recordings",
-              "help/personal-rooms/can-i-delete-my-personal-rooms"
-            ]
-          },
-          {
-            "group": "Getting Started",
-            "pages": [
-              "help/getting-started/getting-started-with-personal-rooms",
-              "help/getting-started/in-application-authorization",
-              "help/getting-started/google-oauth2",
-              "help/getting-started/office-365-oauth2",
-              "help/getting-started/saml-auth",
-              "help/getting-started/saml-auth-setup",
-              "help/getting-started/saml-auth-deprecated"
-            ]
-          },
-          {
-            "group": "Admin",
-            "pages": [
-              "help/personal-rooms/admin/accessing-the-administrator-panel",
-              "help/personal-rooms/admin/managing-users",
-              "help/personal-rooms/admin/managing-recordings",
-              "help/personal-rooms/admin/site-settings"
+            "item": "Sakai LMS",
+            "groups": [
+              {
+                "group": "Sakai LMS",
+                "pages": [
+                  "integrations/sakai/faq-what-are-meetings",
+                  "integrations/sakai/creating-a-bigbluebutton-meeting",
+                  "integrations/sakai/default-recording-settings",
+                  "integrations/sakai/faq-how-long-will-recordings-appear"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "Analytics",
-        "groups": [
+        "tab": "Premium",
+        "menu": [
           {
-            "group": "LMS Analytics",
-            "pages": [
-              "analytics/overview",
-              "analytics/configuration",
-              "analytics/moodle",
-              "analytics/canvas",
-              "analytics/data-formats",
-              "analytics/appendix"
+            "item": "Personal Rooms",
+            "groups": [
+              {
+                "group": "Personal Rooms",
+                "pages": [
+                  "help/personal-rooms/overview",
+                  "help/personal-rooms/overview-of-personal-rooms-interface",
+                  "help/personal-rooms/how-do-i-create-my-own-rooms",
+                  "help/personal-rooms/can-i-invite-attendees-to-my-meetings",
+                  "help/personal-rooms/how-do-i-find-manage-recordings",
+                  "help/personal-rooms/can-i-delete-my-personal-rooms"
+                ]
+              },
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "help/getting-started/getting-started-with-personal-rooms",
+                  "help/getting-started/in-application-authorization",
+                  "help/getting-started/google-oauth2",
+                  "help/getting-started/office-365-oauth2",
+                  "help/getting-started/saml-auth",
+                  "help/getting-started/saml-auth-setup",
+                  "help/getting-started/saml-auth-deprecated"
+                ]
+              }
+            ]
+          },
+          {
+            "item": "Admin",
+            "groups": [
+              {
+                "group": "Admin",
+                "pages": [
+                  "help/personal-rooms/admin/accessing-the-administrator-panel",
+                  "help/personal-rooms/admin/managing-users",
+                  "help/personal-rooms/admin/managing-recordings",
+                  "help/personal-rooms/admin/site-settings"
+                ]
+              }
+            ]
+          },
+          {
+            "item": "Analytics",
+            "groups": [
+              {
+                "group": "Analytics",
+                "pages": [
+                  "analytics/overview",
+                  "analytics/configuration",
+                  "analytics/moodle",
+                  "analytics/canvas",
+                  "analytics/data-formats",
+                  "analytics/appendix"
+                ]
+              }
             ]
           }
         ]
