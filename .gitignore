@@ -30,3 +30,8 @@ npm-debug.log*
 .env
 .env.local
 .env.*.local
+
+# Local
+.claude/skills/playwright-cli/
+.playwright-cli/
+content-audit-report.md

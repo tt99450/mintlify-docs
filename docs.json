@@ -140,36 +140,88 @@
             "pages": [
               "reference/practical-tips",
               "reference/troubleshooting",
-              "reference/keyboard-shortcuts"
+              "reference/keyboard-shortcuts",
+              {
+                "group": "FAQ",
+                "expanded": false,
+                "pages": [
+                  "help/faq/what-are-the-minimum-requirements-for-bigbluebutton",
+                  "help/faq/what-are-the-features-in-bigbluebutton",
+                  "help/faq/how-many-users-can-i-have-in-a-bigbluebutton-session-at-one-time",
+                  "help/faq/how-many-webcams-can-i-share-in-a-meeting",
+                  "help/faq/connection-status",
+                  "help/faq/where-are-the-layout-options",
+                  "help/faq/where-do-i-find-keyboard-shortcuts-in-bigbluebutton",
+                  "help/faq/lti-features",
+                  "help/faq/does-the-pin-number-for-a-conference-change",
+                  "help/faq/is-bigbluebutton-gdpr-compliant",
+                  "help/faq/where-is-meeting-data-stored-in-europe",
+                  "help/faq/where-is-the-hosting-location-for-australia-customers",
+                  "help/faq/whitelisting-bigbluebutton-servers-for-the-firewall",
+                  "help/faq/can-users-connect-to-bigbluebutton-from-within-china",
+                  "help/faq/why-is-there-no-bigbluebutton-mobile-application",
+                  "help/faq/can-i-play-a-video-using-screen-sharing",
+                  "help/faq/common-youtube-external-video-playback-error",
+                  "help/faq/using-chromes-built-in-closed-captioning",
+                  "help/faq/how-to-share-ipadiphone-screen-using-screen-share-in-bigbluebutton",
+                  "help/faq/how-to-mirror-your-ipadiphone-screen-to-a-mac-computer-with-quicktime",
+                  "help/faq/how-do-i-capture-the-browsers-console",
+                  "help/faq/antivirus-software-causes-issues-while-connecting-to-a-bigbluebutton-session",
+                  "help/faq/media-server-has-no-available-resources-error-2002",
+                  "help/faq/bigbluebutton-is-not-susceptible-to-the-log4j-venerability"
+                ]
+              }
             ]
           },
           {
-            "group": "FAQ",
+            "group": "User Guide",
+            "expanded": false,
             "pages": [
-              "help/faq/what-are-the-minimum-requirements-for-bigbluebutton",
-              "help/faq/what-are-the-features-in-bigbluebutton",
-              "help/faq/how-many-users-can-i-have-in-a-bigbluebutton-session-at-one-time",
-              "help/faq/how-many-webcams-can-i-share-in-a-meeting",
-              "help/faq/connection-status",
-              "help/faq/where-are-the-layout-options",
-              "help/faq/where-do-i-find-keyboard-shortcuts-in-bigbluebutton",
-              "help/faq/lti-features",
-              "help/faq/does-the-pin-number-for-a-conference-change",
-              "help/faq/is-bigbluebutton-gdpr-compliant",
-              "help/faq/where-is-meeting-data-stored-in-europe",
-              "help/faq/where-is-the-hosting-location-for-australia-customers",
-              "help/faq/whitelisting-bigbluebutton-servers-for-the-firewall",
-              "help/faq/can-users-connect-to-bigbluebutton-from-within-china",
-              "help/faq/why-is-there-no-bigbluebutton-mobile-application",
-              "help/faq/can-i-play-a-video-using-screen-sharing",
-              "help/faq/common-youtube-external-video-playback-error",
-              "help/faq/using-chromes-built-in-closed-captioning",
-              "help/faq/how-to-share-ipadiphone-screen-using-screen-share-in-bigbluebutton",
-              "help/faq/how-to-mirror-your-ipadiphone-screen-to-a-mac-computer-with-quicktime",
-              "help/faq/how-do-i-capture-the-browsers-console",
-              "help/faq/antivirus-software-causes-issues-while-connecting-to-a-bigbluebutton-session",
-              "help/faq/media-server-has-no-available-resources-error-2002",
-              "help/faq/bigbluebutton-is-not-susceptible-to-the-log4j-venerability"
+              "help/user-guide/join-the-audio",
+              "help/user-guide/share-a-webcam",
+              "help/user-guide/send-public-and-private-chat-messages",
+              "help/user-guide/use-shared-notes",
+              "help/user-guide/set-a-status",
+              "help/user-guide/raise-hand",
+              "help/user-guide/respond-to-polls",
+              "help/user-guide/join-breakout-rooms",
+              "help/user-guide/view-closed-captions",
+              "help/user-guide/close-the-presentationenlarge-the-webcams",
+              "help/user-guide/make-webcams-larger",
+              "help/user-guide/move-webcams-in-a-live-session",
+              "help/user-guide/access-the-options-menu"
+            ]
+          },
+          {
+            "group": "Moderator Guide",
+            "expanded": false,
+            "pages": [
+              "help/moderator-guide/manage-users",
+              "help/moderator-guide/promotedemoteremove-a-user",
+              "help/moderator-guide/givetake-presenter-role",
+              "help/moderator-guide/how-to-configure-guest-policy",
+              "help/moderator-guide/lock-viewers-ability-to-use-their-micwebcamchatshared-notes",
+              "help/moderator-guide/how-to-lock-or-unlock-users-to-enable-or-disable-private-chat-messages",
+              "help/moderator-guide/clear-the-public-chat",
+              "help/moderator-guide/start-and-stop-recording",
+              "help/moderator-guide/end-meeting-on-logout",
+              "help/moderator-guide/create-and-manage-breakout-rooms",
+              "help/moderator-guide/using-smart-slides-for-one-click-polling",
+              "help/moderator-guide/how-do-i-use-the-per-user-whiteboard",
+              "help/moderator-guide/use-closed-captions",
+              "help/moderator-guide/learning-analytics-dashboard"
+            ]
+          },
+          {
+            "group": "Presenter Guide",
+            "expanded": false,
+            "pages": [
+              "help/presenter-guide/upload-a-presentation-enable-for-download",
+              "help/presenter-guide/use-the-presentation-controls",
+              "help/presenter-guide/share-my-screen",
+              "help/presenter-guide/share-an-external-audiovideo-link",
+              "help/presenter-guide/use-pollingquzzing",
+              "help/presenter-guide/raise-hand"
             ]
           },
           {
