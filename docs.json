@@ -175,7 +175,6 @@
           },
           {
             "group": "User Guide",
-            "expanded": false,
             "pages": [
               "help/user-guide/join-the-audio",
               "help/user-guide/share-a-webcam",
