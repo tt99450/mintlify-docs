@@ -1,0 +1,35 @@
+---
+title: "Troubleshooting Microphone"
+description: "Steps to verify and fix microphone input on Windows 10 and Mac OS X for BigBlueButton sessions."
+---
+
+On Windows or Mac OS X, if you are still unable to hear yourself in the echo test, visit our test server at
+
+https://demo.bigbluebutton.org/
+
+and join the audio with microphone and go through the steps below. These steps below are for the Chrome browser.
+
+1. Refresh the client (select the refresh button in your browser -- you don't need to login again, the client will automatically reload).
+2. Verify you have a working microphone.
+
+**On Windows 10**, right-click on the audio icon in the task bar and choose **Open Sound Settings**.
+
+![mceclip1.png](/images/360067003012.png)
+
+Windows will open a Settings window showing you the settings for your current input audio devices.
+
+![mceclip0.png](/images/360067214011.png)
+
+Talk into your microphone and you should see the energy bar highlight under **Test your microphone** as you speak. If there is no energy, try choosing a different microphone under **Choose your audio device**.
+
+Once you see energy in the microphone, close the Settings window, and leave and rejoin (or refresh) your session in BigBlueButton. When prompted to join the audio, choose Microphone and listen to ensure you hear yourself in the echo test.
+
+On **Mac OS X**, open System Preferences and type in sound. Choose **Sound input**.
+
+![mceclip3.png](/images/360067003132.png)
+
+As you talk, you need to see blue bars highlight on the **Input Level**. Tap your microphone — you should use see the blue energy bars move. If not, select a different microphone from the list.
+
+![mceclip4.png](/images/360067214071.png)
+
+Once you see energy in the microphone, close the Settings window, and leave and rejoin (or refresh) your session in BigBlueButton. When prompted to join the audio, choose Microphone and you should now hear yourself in the echo test. If not, verify on Mac OS X that [Chrome has permission to access the microphone](/help/troubleshooting/mac-os-updates-bigbluebutton-media-permissions).
