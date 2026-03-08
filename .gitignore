@@ -12,6 +12,9 @@ out/
 # Playwright MCP screenshots
 .playwright-mcp/
 
+# Temporary screenshots
+tmp/
+
 # OS files
 .DS_Store
 Thumbs.db
