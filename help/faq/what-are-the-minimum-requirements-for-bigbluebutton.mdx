@@ -5,7 +5,7 @@ description: "This page gives you a summary of the requirements -- browser, OS, 
 
 This page gives you a summary of the requirements -- browser, OS, and bandwidth -- for running BigBlueButton.
 
-Most people with average bandwidth, recent computer, and latest version of Chrome, FireFox, or Edge should meet all the minimum requirements.
+Most people with average bandwidth, recent computer, and latest version of Chrome, Firefox, or Edge should meet all the minimum requirements.
 
 # High Level Requirements
 
@@ -25,9 +25,9 @@ In terms of operating systems, BigBlueButton runs within the browser, so it's in
 
 ### Recommended settings for desktop or laptop users
 
-1. For computer, you need a **laptop or desktop computer **with (at least) **4G of memory and a 2+ Ghz processor** (any computer bought in the last three years should be fine), or any Chromebook with 4G of memory and a 1.5+ Ghz processor.
-2. For bandwidth, you must have at **least 1.0 Mbits/second upstream**and **2 Mbits/second downstream.** To check bandwidth use, [speedtest.net](https://speedtest.net/).
-3. For browsers,  we recommend **Google Chrome,** **Mozilla FireFox or Microsoft Edge**.
+1. For computer, you need a **laptop or desktop computer** with (at least) **4 GB of memory and a 2+ GHz processor** (any computer bought in the last three years should be fine), or any Chromebook with 4 GB of memory and a 1.5+ GHz processor.
+2. For bandwidth, you must have at **least 1.0 Mbits/second upstream** and **2 Mbits/second downstream.** To check bandwidth use, [speedtest.net](https://speedtest.net/).
+3. For browsers,  we recommend **Google Chrome,** **Mozilla Firefox or Microsoft Edge**.
 4. For audio, **we strongly recommend using a headset**. A headset will ensure that others can hear your voice clearly and you don’t cause echo or background noise for others. You do not need to buy an expensive one -- any basic headset with a built-in microphone will work.
 
 A laptop with a built-in webcam and microphone will be sufficient as well if you’re in a quiet area.
@@ -40,20 +40,19 @@ The following are more detailed requirements.
 
 Each user should be able to make the following TCP/IP and UDP network connections.
 
-|              |             |                                                                          |
-| ------------ | ----------- | ------------------------------------------------------------------------ |
 | **Protocol** | **Port(s)** | **Description**                                                          |
+| ------------ | ----------- | ------------------------------------------------------------------------ |
 | TCP/IP       | 80          | HTTP                                                                     |
 | TCP/IP       | 443         | HTTPS                                                                    |
 | UDP          | 16384-32768 | Encrypted WebRTC audio, video, and screen share media stream (DTLS-SRTP) |
 
-Note: If a [firewall](/help/faq/whitelisting-bigbluebutton-servers-for-the-firewall) that blocks the UDP connections for the user, it would cause the media connections to "tunnel" through port 443, which, if is also behind a firewall, the user may experience performance issues with sharing and viewing audio/video.
+Note: If a [firewall](/help/faq/whitelisting-bigbluebutton-servers-for-the-firewall) that blocks the UDP connections for the user, it would cause the media connections to "tunnel" through port 443, which, if it is also behind a firewall, the user may experience performance issues with sharing and viewing audio/video.
 
 ## Mobile Device Users
 
 ### Recommended settings for mobile users
 
-1. For data network, we recommended **4G LTI** for best results or **minimum 3G Network** to use audio, view presentation content, and receive screen sharing.
+1. For data network, we recommended **4G LTE** for best results or **minimum 3G Network** to use audio, view presentation content, and receive screen sharing.
 2. For connection via wireless, we recommend **private** versus public networks.
 3. For device settings, we recommend **reducing device usage** while connecting to BigBlueButton; close applications that may run in the background and reduce browsing activities.
 
