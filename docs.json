@@ -167,7 +167,8 @@
                   "help/faq/how-do-i-capture-the-browsers-console",
                   "help/faq/antivirus-software-causes-issues-while-connecting-to-a-bigbluebutton-session",
                   "help/faq/media-server-has-no-available-resources-error-2002",
-                  "help/faq/bigbluebutton-is-not-susceptible-to-the-log4j-venerability"
+                  "help/faq/bigbluebutton-is-not-susceptible-to-the-log4j-venerability",
+                  "help/faq/webcam-pagination-and-active-talker"
                 ]
               }
             ]
