@@ -189,6 +189,11 @@
               "help/user-guide/make-webcams-larger",
               "help/user-guide/move-webcams-in-a-live-session",
               "help/user-guide/access-the-options-menu",
+              "help/releases/how-do-i-enable-dark-mode",
+              "help/releases/disable-self-view-of-webcam",
+              "help/releases/how-do-i-use-my-browsers-built-in-speech-recognition",
+              "help/releases/camera-as-content",
+              "help/releases/how-do-i-pin-a-webcam",
               "help/user-guide/using-away-available"
             ]
           },
@@ -209,7 +214,10 @@
               "help/moderator-guide/using-smart-slides-for-one-click-polling",
               "help/moderator-guide/how-do-i-use-the-per-user-whiteboard",
               "help/moderator-guide/use-closed-captions",
-              "help/moderator-guide/learning-analytics-dashboard"
+              "help/moderator-guide/learning-analytics-dashboard",
+              "help/releases/how-to-export-a-breakout-rooms-shared-notes",
+              "help/releases/how-to-export-a-breakout-rooms-whiteboard-annotations",
+              "help/releases/timer-and-stopwatch"
             ]
           },
           {
@@ -221,6 +229,7 @@
               "help/presenter-guide/share-my-screen",
               "help/presenter-guide/share-an-external-audiovideo-link",
               "help/presenter-guide/use-pollingquzzing",
+              "help/releases/how-do-i-use-the-multi-user-whiteboard",
               "help/presenter-guide/raise-hands",
               "help/presenter-guide/shared-notes-presenter"
             ]
@@ -256,31 +265,6 @@
               "help/troubleshooting/how-to-disable-ipv6",
               "help/troubleshooting/important-information-for-users-of-the-bigbluebutton-html5-client",
               "help/troubleshooting/where-do-i-find-the-bigbluebutton-network-status-page-link"
-            ]
-          },
-          {
-            "group": "Release Notes",
-            "pages": [
-              "help/releases/whats-new-in-bigbluebutton-27",
-              "help/releases/whats-new-in-bigbluebutton-august-2022-release",
-              "help/releases/timer-and-stopwatch",
-              "help/releases/how-do-i-enable-dark-mode",
-              "help/releases/how-do-i-change-the-screen-layout",
-              "help/releases/screen-layout-grid-layout",
-              "help/releases/as-a-moderator-how-can-i-push-my-layout-to-everyone",
-              "help/releases/how-do-i-pin-a-webcam",
-              "help/releases/disable-self-view-of-webcam",
-              "help/releases/how-do-i-adjust-my-webcams-brightness",
-              "help/releases/how-do-i-change-my-webcams-background",
-              "help/releases/camera-as-content",
-              "help/releases/how-do-i-use-the-multi-user-whiteboard",
-              "help/releases/how-do-i-move-shared-notes-to-the-whiteboard",
-              "help/releases/download-of-original-presentation",
-              "help/releases/how-do-i-use-my-browsers-built-in-speech-recognition",
-              "help/releases/invite-moderators-to-breakout-rooms",
-              "help/releases/how-to-export-a-breakout-rooms-shared-notes",
-              "help/releases/how-to-export-a-breakout-rooms-whiteboard-annotations",
-              "help/releases/longer-pin-numbers-and-updates-to-remove-user"
             ]
           }
         ]
