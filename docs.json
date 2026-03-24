@@ -184,15 +184,15 @@
               "help/user-guide/reactions-bar",
               "help/user-guide/respond-to-polls",
               "help/user-guide/join-breakout-rooms",
-              "help/user-guide/view-closed-captions",
               "help/user-guide/close-the-presentationenlarge-the-webcams",
               "help/user-guide/access-the-options-menu",
               "help/user-guide/using-away-available",
               "help/user-guide/make-webcams-larger",
               "help/user-guide/move-webcams-in-a-live-session",
               "help/releases/disable-self-view-of-webcam",
+              "help/releases/camera-as-content",
               "help/releases/how-do-i-use-my-browsers-built-in-speech-recognition",
-              "help/releases/camera-as-content"
+              "help/user-guide/view-closed-captions"
             ]
           },
           {
@@ -210,10 +210,10 @@
               "help/moderator-guide/using-smart-slides-for-one-click-polling",
               "help/moderator-guide/how-do-i-use-the-per-user-whiteboard",
               "help/moderator-guide/use-closed-captions",
-              "help/moderator-guide/learning-analytics-dashboard",
               "help/releases/timer-and-stopwatch",
               "help/moderator-guide/create-and-manage-breakout-rooms",
-              "help/moderator-guide/access-breakout-room-whiteboards-or-shared-notes"
+              "help/moderator-guide/access-breakout-room-whiteboards-or-shared-notes",
+              "help/moderator-guide/learning-analytics-dashboard"
             ]
           },
           {
