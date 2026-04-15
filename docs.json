@@ -343,6 +343,23 @@
                 ]
               }
             ]
+          },
+          {
+            "item": "Schoology LMS",
+            "groups": [
+              {
+                "group": "Schoology LMS",
+                "pages": [
+                  "what-are-conferences",
+                  "how-to-create-a-conference",
+                  "starting-and-editing-a-conference",
+                  "how-to-join-a-conference",
+                  "how-to-view-past-conferences",
+                  "deleting-a-conference",
+                  "ending-a-conference"
+                ]
+              }
+            ]
           }
         ]
       },
