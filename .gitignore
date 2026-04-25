@@ -38,3 +38,4 @@ npm-debug.log*
 .claude/skills/playwright-cli/
 .playwright-cli/
 content-audit-report.md
+audit/
