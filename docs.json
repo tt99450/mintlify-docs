@@ -151,11 +151,7 @@
                   "help/faq/where-are-the-layout-options",
                   "help/faq/lti-features",
                   "help/faq/does-the-pin-number-for-a-conference-change",
-                  "help/faq/is-bigbluebutton-gdpr-compliant",
                   "help/faq/where-is-meeting-data-stored-in-europe",
-                  "help/faq/where-is-the-hosting-location-for-australia-customers",
-                  "help/faq/whitelisting-bigbluebutton-servers-for-the-firewall",
-                  "help/faq/can-users-connect-to-bigbluebutton-from-within-china",
                   "help/faq/why-is-there-no-bigbluebutton-mobile-application",
                   "help/faq/can-i-play-a-video-using-screen-sharing",
                   "help/faq/common-youtube-external-video-playback-error",
@@ -164,9 +160,7 @@
                   "help/faq/how-to-mirror-your-ipadiphone-screen-to-a-mac-computer-with-quicktime",
                   "help/faq/how-do-i-capture-the-browsers-console",
                   "help/faq/antivirus-software-causes-issues-while-connecting-to-a-bigbluebutton-session",
-                  "help/faq/media-server-has-no-available-resources-error-2002",
-                  "help/faq/bigbluebutton-is-not-susceptible-to-the-log4j-venerability",
-                  "help/faq/webcam-pagination-and-active-talker"
+                  "help/faq/media-server-has-no-available-resources-error-2002"
                 ]
               }
             ]
@@ -257,8 +251,7 @@
               "help/troubleshooting/pdf-that-contains-scanned-content-does-not-display-correctly",
               "help/troubleshooting/latex-documents-not-converting-correctly",
               "help/troubleshooting/how-to-disable-ipv6",
-              "help/troubleshooting/important-information-for-users-of-the-bigbluebutton-html5-client",
-              "help/troubleshooting/where-do-i-find-the-bigbluebutton-network-status-page-link"
+              "help/troubleshooting/important-information-for-users-of-the-bigbluebutton-html5-client"
             ]
           }
         ]
@@ -415,6 +408,21 @@
                   "analytics/canvas",
                   "analytics/data-formats",
                   "analytics/appendix"
+                ]
+              }
+            ]
+          },
+          {
+            "item": "FAQ",
+            "groups": [
+              {
+                "group": "FAQ",
+                "pages": [
+                  "help/troubleshooting/blindside-networks-status-page",
+                  "help/faq/is-bigbluebutton-gdpr-compliant",
+                  "help/faq/where-is-the-hosting-location-for-australia-customers",
+                  "help/faq/whitelisting-bigbluebutton-servers-for-the-firewall",
+                  "help/faq/can-users-connect-to-bigbluebutton-from-within-china"
                 ]
               }
             ]

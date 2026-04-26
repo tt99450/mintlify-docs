@@ -1,101 +1,103 @@
 ---
 title: "Share my screen"
-description: "A presenter in BigBlueButton can use screen sharing to display content from their local desktop/laptop or Chromebook in Chrome and Firefox browsers."
+description: "Presenters can share their entire screen, an application window, or a browser tab."
 ---
 
-## A presenter in BigBlueButton can use screen sharing to display content from their local desktop/laptop or Chromebook in Chrome and Firefox browsers.
+While you can upload a Microsoft office document, PDF, textfile, or image, Presenters can also use screen sharing to share your entire screen, an application window, or a single browser tab.
 
-**Screen sharing is currently not supported on mobile devices. To share a screen, the presenter must use a desktop, laptop, or Chromebook.**
+<Note>
+  Mobile devices such a iPhone, iPad, and Android devices do not support screen sharing.
+</Note>
 
-Use screen sharing to show viewers dynamic content or content that cannot be uploaded into BigBlueButton as a static PDF; you can share your entire screen or an application window from your local desktop or laptop device.
+If the session is being recorded, screen sharing is captured in the recording and is viewable during playback.
 
-If the session is being recorded, screen sharing is included in the recording and will be viewable in the playback.
+## Confirm your presenter role
 
-**Safari, Internet Explorer, and Edge browsers currently do not support WebRTC-enabled screen share.**
-
-By default, the first **Moderator** to enter the BigBlueButton session is allocated the presenter role capabilities; if you are a viewer, you will need to request presenter status from the moderator.
-
-<Frame>
-  ![Screenshot 2026 03 16 At 4 34 45 PM](/images/Screenshot2026-03-16at4.34.45PM.png)
-</Frame>
-
-When a user has the presenter role, the **presenter icon** will appear over their avatar in the users list.
-
-## Share your screen
+By default, the first moderator to enter a BigBlueButton session is given the presenter role. If you are a viewer, request presenter status from the moderator before continuing.
 
 <Frame>
-  ![Screenshot 2026 03 17 At 12 58 32 AM](/images/Screenshot2026-03-17at12.58.32AM-1.png)
+  ![Presenter icon shown over a user avatar in the users list](/images/Screenshot2026-03-16at4.34.45PM.png)
 </Frame>
 
-Select the **Screen Share** button found in the media bar of the BigBlueButton interface.
+When a user has the presenter role, the **presenter icon** appears over their avatar in the users list.
+
+## Start sharing your screen
+
+To begin sharing, select the **Screen Share** button in the media bar.
 
 <Frame>
-  ![Screenshot 2026 03 17 At 12 44 24 AM](/images/Screenshot2026-03-17at12.44.24AM.png)
+  ![Screen Share button in the BigBlueButton media bar](/images/Screenshot2026-03-17at12.58.32AM-1.png)
 </Frame>
 
-Depending on your browser, you will be asked to share your whole screen, an application, or a browser window.
+Depending on your browser, you are prompted to share your entire screen, an application window, or a browser tab.
 
 <Frame>
-  ![Screenshot 2026 03 17 At 12 57 51 AM](/images/Screenshot2026-03-17at12.57.51AM.png)
+  ![Browser screen sharing prompt](/images/Screenshot2026-03-17at12.44.24AM.png)
 </Frame>
 
-Your presentation area will look like this, after confirming your screen share options.
+After you confirm your selection, your shared screen appears in the presentation area.
 
 <Frame>
-  ![Screenshot 2026 03 17 At 12 58 23 AM](/images/Screenshot2026-03-17at12.58.23AM.png)
+  ![Presentation area showing the shared screen](/images/Screenshot2026-03-17at12.57.51AM.png)
 </Frame>
 
-To stop sharing your screen, select the Screen Share button again.
-
-The next steps will vary depending on the browser you are using:
-
-- [Click here if using Chrome](#chrome)
-- [Click here if using Firefox](#firefox)
-
-## Chrome
-
-Be sure to open any applications or additional browser windows you wish to share before engaging the screen sharing in BigBlueButton.
+To stop sharing, select the **Screen Share** button again.
 
 <Frame>
-  ![Chrome](/images/chrome.png)
+  ![Stop screen sharing by selecting the Screen Share button](/images/Screenshot2026-03-17at12.58.23AM.png)
 </Frame>
 
-If you are using Chrome browser, you will be prompted to choose either your **Chrome Tab** **\[1\]** or an application **Window** **\[2\]** or **Entire Screen** **\[3\]**.
+<Tip>
+  Open any applications or browser windows you intend to share before you start screen sharing. This makes them available in the browser's selection dialog.
+</Tip>
 
-Once you have configured the screen share to your preference, select **Share** **\[4\]** to begin sharing with attendees.
+## Choose a sharing option for your browser
 
-**IMPORTANT NOTES:**
+The next steps depend on the browser you are using.
 
-- When sharing your **Entire Screen** **\[1\]**, users will see your screen even when navigating to another browser or application window. This setting is recommended if you plan to use several different applications and do not wish to reconfigure the screen share with each change.
-- When sharing an application **Window** **\[2\]**, users will only see the application selected; if you navigate outside the chosen application, the users will **not** see these actions. This setting is recommended if you plan to use the same application; sharing an application window also requires less bandwidth than sharing your entire screen.
-- Sharing your screen with **Chrome Tab** **\[3\]** on the latest version of Chrome will allow you to quickly switch between different tabs by going to the tab to share and clicking “**Share this tab instead**”.
+<Tabs>
+  <Tab title="Chrome">
+    In Chrome, you are prompted to choose **Chrome Tab** **\[1\]**, an application **Window** **\[2\]**, or **Entire Screen** **\[3\]**. After you configure your selection, select **Share** **\[4\]** to begin sharing with attendees.
+
+    <Frame>
+      ![Chrome screen sharing dialog with Chrome Tab, Window, Entire Screen, and Share options](/images/chrome.png)
+    </Frame>
+
+    Use the following guidance to choose the right option:
+
+    - **Entire Screen** — Attendees see your screen even when you switch to another browser or application. Use this option if you plan to move between several applications without reconfiguring screen sharing.
+    - **Window** — Attendees see only the selected application. If you navigate outside that application, attendees will not see those actions. This option uses less bandwidth than sharing your entire screen and works well when you stay in a single application.
+    - **Chrome Tab** — On the latest version of Chrome, you can switch tabs quickly by opening another tab and selecting **Share this tab instead**.
+
+    <Warning>
+      **Error 1136: Permission to capture the screen needs to be granted.** If Chrome is partway through an update when you start screen sharing, the browser may not register the request. To resolve this, restart Chrome, allow the update to finish, and then start screen sharing again.
+    </Warning>
+
+    <Frame>
+      ![Error 1136 permission to capture the screen message](/images/Screenshot2026-03-24at1.50.31PM.png)
+    </Frame>
+  </Tab>
+  <Tab title="Firefox">
+    In Firefox, you are asked for screen sharing permissions. Select **Allow** to continue.
+
+    <Frame>
+      ![Firefox screen sharing permission prompt](/images/Screenshot2026-03-24at1.44.24PM.png)
+    </Frame>
+
+    If you do not see the window you want to share, it is likely not open. Open the application or window, then start screen sharing again to see it in the list of available options.
+  </Tab>
+</Tabs>
+
+## What attendees see
+
+Attendees see your shared screen displayed in the presentation area of the BigBlueButton interface; it no longer loads in a separate window.
 
 <Frame>
-  ![Screenshot 2026 03 24 At 1 50 31 PM](/images/Screenshot2026-03-24at1.50.31PM.png)
+  ![Shared screen displayed in the BigBlueButton presentation area](/images/Screenshot2026-03-24at1.38.48PM.png)
 </Frame>
 
-- **Error 1136: Permission to capture the screen needs to be granted.** If your Chrome is open and it's halfway through updating, then screen share will not be recognized and you might get this error. To overcome this, restart Chrome (and let it finish updating) and then you will be able to screen share again.
+<Note>
+  When you are the presenter, your own BigBlueButton interface shows a mirrored broadcast of the shared screen. Attendees viewing another tab or application do not see this duplicated view.
+</Note>
 
-## Firefox
-
-Be sure to open any applications or additional browser windows you wish to share before engaging the screen sharing in BigBlueButton.
-
-<Frame>
-  ![Screenshot 2026 03 24 At 1 44 24 PM](/images/Screenshot2026-03-24at1.44.24PM.png)
-</Frame>
-
-If you are using Firefox browser, you will be asked for screen sharing permissions. Be sure to select **Allow**.
-
-If you do not see the window you would like to share, it may not be open. Be sure to open the application or window you intend to share, then restart the screen sharing. You should see the window in the list of available options.
-
-## What users see
-
-<Frame>
-  ![Screenshot 2026 03 24 At 1 38 48 PM](/images/Screenshot2026-03-24at1.38.48PM.png)
-</Frame>
-
-Users will see the screen share displayed in the presentation area of the BigBlueButton interface. It no longer loads into a separate window.
-
-![Screen\_Shot\_2019-05-01\_at\_4.01.39\_PM.png](/images/360027566512.png)
-
-When the presenter is in BigBlueButton, screen sharing will duplicate to create a mirrored broadcast of the screen. Don’t worry -- this is not what viewers see when in another tab or an application window.
+![Mirrored broadcast view of the shared screen](/images/360027566512.png)

@@ -1,36 +1,52 @@
 ---
 title: "Antivirus software causes issues while connecting to a BigBlueButton Session"
-description: "If when connecting to a BigBlueButton session, you encounter an error related to antivirus software, as attached in the screenshot below for Avast..."
+description: "Resolve antivirus connection errors by temporarily disabling the Web Shield in Avast or similar antivirus software."
 ---
 
-If when connecting to a BigBlueButton session, you encounter an error related to antivirus software, as attached in the screenshot below for Avast antivirus software, you will need to temporarily turn it off.
+Users running Avast or similar antivirus software may see a connection error when joining a BigBlueButton session. Temporarily disabling the antivirus **Web Shield** restores access.
 
-![Capture.PNG](/images/Capture.PNG)
+<Frame>
+  ![Antivirus connection error shown when joining a BigBlueButton session](/images/Capture.PNG)
+</Frame>
 
-Please follow the steps below to overcome the error: 
+## Disable the Web Shield
 
-1. Open your antivirus software
+To open the antivirus dashboard, launch your antivirus software.
 
-![2.PNG](/images/2.PNG)
+<Frame>
+  ![Avast antivirus dashboard](/images/2.PNG)
+</Frame>
 
-2. Click on **Protection** icon as highlighted below
+To open the protection settings, select **Protection** **[1]**.
 
-![3.png](/images/3.png)
+<Frame>
+  ![Protection icon highlighted in the Avast sidebar](/images/3.png)
+</Frame>
 
-3. Inside the Protection, click on the **Core Shields**
+To view the active shields, select **Core Shields** **[1]**.
 
-![4.PNG](/images/4.PNG)
+<Frame>
+  ![Core Shields option inside the Protection menu](/images/4.PNG)
+</Frame>
 
-4. Select **Web Shield** and turn it off.
+To disable web filtering, select **Web Shield** **[1]** and switch it off.
 
-![5.PNG](/images/5.PNG)
+<Frame>
+  ![Web Shield toggle inside Core Shields](/images/5.PNG)
+</Frame>
 
-5. Depending on the session requirement, select the option for how long you need to turn off the Web Shield.
+To choose the duration, select the option that matches how long the session will run.
 
-![6.PNG](/images/6.PNG)
+<Frame>
+  ![Duration options for disabling Web Shield](/images/6.PNG)
+</Frame>
 
-6. Once turned off, you will see the Web Shield icon turn to red from green.
+The **Web Shield** icon turns from green to red, confirming the shield is off.
 
-![7.PNG](/images/7.PNG)
+<Frame>
+  ![Web Shield icon shown in red after being disabled](/images/7.PNG)
+</Frame>
 
-**Once the settings have been changed, you should be able to connect to the session.**
+<Tip>
+  After the **Web Shield** is disabled, rejoin the BigBlueButton session. Re-enable the shield once the session ends to restore full protection.
+</Tip>

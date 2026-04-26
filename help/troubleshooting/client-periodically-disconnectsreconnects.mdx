@@ -1,42 +1,64 @@
 ---
 title: "Client periodically disconnects/reconnects"
-description: "If you are experiencing issues where you can connect to a BigBlueButton session and your client periodically reconnects -- causing your..."
+description: "Diagnose and resolve repeated disconnect/reconnect issues during a BigBlueButton session."
 ---
 
-If you are experiencing issues where you can connect to a BigBlueButton session and your client periodically reconnects -- causing your microphone/webcam/screen sharing to stop -- it may be an issue with your internet connection.
+Any user can troubleshoot a BigBlueButton client that repeatedly disconnects and reconnects, which interrupts microphone, webcam, and screen sharing. This guide helps you isolate whether the cause is your internet connection, your computer, or a router or firewall setting.
 
-An occasional disconnect is not unexpected and, if the internet drop was momentary, you can quickly log back in by simply refreshing your browser (you can refresh anytime in fact to reload the client and setup new connections).
+An occasional disconnect is not unexpected. If the drop is momentary, you can rejoin the session by refreshing your browser. You can refresh at any time to reload the client and establish new connections.
 
-The refresh button is located to the left of the URL.
+The browser refresh button sits to the left of the URL bar.
 
 ![Browser refresh button location to the left of the URL bar](/images/34040900020109.png)
 
-If you are getting regularly disconnected/reconnected, open
+## Run a test session
 
-  https://my.bigbluebutton.com/
+<Tip>
+  For a quick connectivity check before joining a full test session, run the self-test at [https://test.bigbluebutton.com/](https://test.bigbluebutton.com/). It checks your browser's ability to make network connections (especially WebRTC connections for media) to a BigBlueButton server.  The test page will give you a list of any failed attempts as well as the ability to download a PDF report of all tests.
+</Tip>
 
-and join a test session (use Chrome or Firefox on the desktop, Safari on iOS).  Join the audio. Share your webcam.  Are you able to connect and maintain a connection?
+To confirm whether the problem is reproducible, join a test session at [https://my.bigbluebutton.com/](https://my.bigbluebutton.com/) using **Chrome** or **Firefox** on the desktop, or **Safari** on iOS.
 
-If your client still periodically and repeatedly reconnects in the test session, the issue may be within your internet connection (router or firewall).
+Join the audio and share your webcam. If the connection holds, the original session may have had a transient issue.
 
-To validate if the issue is with your internet connection, a good test is to connect via a *different* network (this keeps everything the same, changing only the network connection). If you have a smart phone, you can connect through the phone's wireless hotspot.
+If the test session also disconnects repeatedly, the cause is likely your internet connection, your computer, or a router or firewall.
 
-1. Use your smart phone to setup a temporary wireless hotspot
+## Test on a different network
 
-2. Connect your computer to the phone's wireless hotspot
+To rule out your local network, connect through a different network while keeping everything else the same. A smart phone hotspot works well for this.
 
-3. Join a test session again at https://my.bigbluebutton.com/
+<Steps>
+  <Step title="Create a hotspot">
+    Set up a temporary wireless hotspot on your smart phone.
+  </Step>
+  <Step title="Switch networks">
+    Connect your computer to the phone's wireless hotspot.
+  </Step>
+  <Step title="Rejoin the test session">
+    Open [https://my.bigbluebutton.com/](https://my.bigbluebutton.com/) and join a test session again.
+  </Step>
+</Steps>
 
-If the test session still disconnects with the hotspot, the issue may be with your computer and not the internet connection.
+If the disconnects continue on the hotspot, the issue is likely with your computer rather than the network.
 
-1. If you have anti-virus software installed, the software may be mistakenly closing the browsers connection to the BigBlueButton server.  Try temporarily disabling any "real-time" monitoring of the software and test again.
+If the connection is stable on the hotspot, the issue is likely with your home or office router or firewall.
 
-2. Try *both* Chrome and Firefox.
+## Test your computer
 
-3. Try from a different home computer.
+If the hotspot test still disconnects, work through the following checks on your computer.
 
-On the other hand, if using the hotspot your connection is now stable (no disconnects), then the issue is likely with your internet connection router or firewall.
+To rule out anti-virus interference, temporarily disable any real-time monitoring in your anti-virus software and rejoin the test session. Some anti-virus tools mistakenly close the browser's connection to the BigBlueButton server.
 
-If you are behind a corporate firewall, one option is to have them [whitelist the BigBlueButton](/help/faq/whitelisting-bigbluebutton-servers-for-the-firewall) servers based on wildcard domain name.
+To rule out a browser-specific problem, test in both **Chrome** and **Firefox**.
 
-If you are connecting from home, the issue might be how your router is handling IPV6 (we've had recent reports from some **Spectrum** customers getting periodically disconnected).  Try [disabling IPV6 on your computer or router](/help/troubleshooting/how-to-disable-ipv6) and then test again using https://my.bigbluebutton.com/
+To rule out a hardware-specific problem, try joining from a different computer on the same network.
+
+## Resolve router or firewall issues
+
+If the hotspot test was stable, focus on your router or firewall.
+
+If you are behind a corporate firewall, ask your network administrator to [whitelist the BigBlueButton servers](/help/faq/whitelisting-bigbluebutton-servers-for-the-firewall) using the wildcard domain name.
+
+If you are connecting from home, your router may be mishandling IPv6. We have received reports from **Spectrum** customers experiencing periodic disconnects related to IPv6.
+
+To resolve IPv6-related disconnects, [disable IPv6 on your computer or router](/help/troubleshooting/how-to-disable-ipv6) and then retest at [https://my.bigbluebutton.com/](https://my.bigbluebutton.com/).
