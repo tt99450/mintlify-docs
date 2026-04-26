@@ -1,35 +1,44 @@
 ---
 title: "Troubleshooting Microphone"
-description: "Steps to verify and fix microphone input on Windows 10 and Mac OS X for BigBlueButton sessions."
+description: "Verify and fix microphone input on Windows 10 and macOS for BigBlueButton sessions."
 ---
 
-On Windows or Mac OS X, if you are still unable to hear yourself in the echo test, visit our test server at
+Any user who cannot hear themselves in the echo test can follow these steps to verify their microphone works in the operating system before rejoining a BigBlueButton session. These steps are for the Chrome browser.
 
-https://my.bigbluebutton.com/
+To confirm the issue, visit the test server at [https://my.bigbluebutton.com/](https://my.bigbluebutton.com/), join the audio with a microphone, and run the checks below.
 
-and join the audio with microphone and go through the steps below. These steps below are for the Chrome browser.
+## Refresh the client
 
-1. Refresh the client (select the refresh button in your browser -- you don't need to login again, the client will automatically reload).
-2. Verify you have a working microphone.
+To reload the client, select the refresh button in your browser. You do not need to log in again — the client reloads automatically and rejoins your session.
 
-**On Windows 10**, right-click on the audio icon in the task bar and choose **Open Sound Settings**.
+## Verify your microphone on Windows 10
 
-![mceclip1.png](/images/360067003012.png)
+To open the sound settings, right-click the audio icon in the task bar and select **Open Sound Settings**.
 
-Windows will open a Settings window showing you the settings for your current input audio devices.
+![Open Sound Settings from the Windows task bar](/images/360067003012.png)
 
-![mceclip0.png](/images/360067214011.png)
+Windows opens a Settings window showing your current input audio devices.
 
-Talk into your microphone and you should see the energy bar highlight under **Test your microphone** as you speak. If there is no energy, try choosing a different microphone under **Choose your audio device**.
+![Windows sound input settings](/images/360067214011.png)
 
-Once you see energy in the microphone, close the Settings window, and leave and rejoin (or refresh) your session in BigBlueButton. When prompted to join the audio, choose Microphone and listen to ensure you hear yourself in the echo test.
+Talk into your microphone. The energy bar under **Test your microphone** highlights as you speak.
 
-On **Mac OS X**, open System Preferences and type in sound. Choose **Sound input**.
+If there is no energy, select a different microphone under **Choose your input device**.
 
-![mceclip3.png](/images/360067003132.png)
+Once you see energy in the microphone, close the Settings window, then leave and rejoin (or refresh) your BigBlueButton session. When prompted to join the audio, select **Microphone** and listen for yourself in the echo test.
 
-As you talk, you need to see blue bars highlight on the **Input Level**. Tap your microphone — you should see the blue energy bars move. If not, select a different microphone from the list.
+## Verify your microphone on macOS
 
-![mceclip4.png](/images/360067214071.png)
+To open the sound settings, open **System Preferences**, type `sound`, and select **Sound input**.
 
-Once you see energy in the microphone, close the Settings window, and leave and rejoin (or refresh) your session in BigBlueButton. When prompted to join the audio, choose Microphone and you should now hear yourself in the echo test. If not, verify on Mac OS X that [Chrome has permission to access the microphone](/help/troubleshooting/mac-os-updates-bigbluebutton-media-permissions).
+![macOS Sound input preferences](/images/360067003132.png)
+
+Tap your microphone. The blue bars on the **Input Level** move as sound is detected.
+
+If the bars do not move, select a different microphone from the list.
+
+![macOS Input Level meter](/images/360067214071.png)
+
+Once you see energy in the microphone, close the Settings window, then leave and rejoin (or refresh) your BigBlueButton session. When prompted to join the audio, select **Microphone** and listen for yourself in the echo test.
+
+If you still hear nothing, verify that [Chrome has permission to access the microphone](/help/troubleshooting/mac-os-updates-bigbluebutton-media-permissions).

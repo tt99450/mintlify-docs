@@ -1,72 +1,83 @@
 ---
-title: "How to disable IPV6"
-description: "If your connection to BigBlueButton repeatedly reconnects, and you are connecting from home, your router might be inadvertently closing your connection...."
+title: "How to disable IPv6"
+description: "Disable IPv6 on Windows, macOS, or your Spectrum router to stop your home connection from dropping BigBlueButton sessions."
 ---
 
-If your connection to BigBlueButton repeatedly reconnects, and you are connecting from home, your router might be inadvertently closing your connection.
+If your connection to BigBlueButton repeatedly reconnects from home, your router may be inadvertently closing the connection. This is common on Spectrum networks in the US.
 
-If this is the case (especially if you are using Spectrum in the US), you can resolve this by disabling IPV6 on your computer or router.
+To resolve this, disable IPv6 on your computer or router using the steps below.
 
-## Disable IPV6 on Windows 10
+## Disable IPv6 on Windows 10
 
-On Windows 10, right-click on the “**Network ![Windows 10 Network Icon](/images/4r4aezh4fi2hu3r1ummexkzcvq8ht7n7.png "Windows 10 Network Icon") / Wi-Fi****![Windows 10 Network Icon](/images/pyzl69tqpolp0rn9k36jhwo3ee0g9zuu.png "Windows 10 Network Icon")**” icon on the bottom-right corner of your screen.  You'll see a pop-up menu.
+<Steps>
+  <Step title="Open the network menu">
+    Right-click the **Network ![Windows 10 Network Icon](/images/4r4aezh4fi2hu3r1ummexkzcvq8ht7n7.png "Windows 10 Network Icon") / Wi-Fi ![Windows 10 Network Icon](/images/pyzl69tqpolp0rn9k36jhwo3ee0g9zuu.png "Windows 10 Network Icon")** icon in the bottom-right corner of your screen. A pop-up menu appears.
 
-![Open Network Settings](/images/bbex32h65fl5fy97btps71ndozy5kmhc.png "Open Network Settings")
+    ![Open Network Settings](/images/bbex32h65fl5fy97btps71ndozy5kmhc.png "Open Network Settings")
+  </Step>
+  <Step title="Open the Network and Sharing Center">
+    Select **Open Network and Sharing Center**. The Settings dialog appears.
 
-Click **Open Network and Sharing Center**.  You'll see the Settings dialog.
+    ![Network Sharing Center](/images/iff9tqhfex8rwb1ubkd3y0mxrcqvokcr.png "Network Sharing Center")
+  </Step>
+  <Step title="Change adapter options">
+    Select **Change adapter options**. A list of network adapters appears. Locate the active adapter — either **Ethernet** or **Wi-Fi**.
 
-![Network Sharing Center](/images/iff9tqhfex8rwb1ubkd3y0mxrcqvokcr.png "Network Sharing Center")
+    ![Network Adapters](/images/5r6rgh3kkdietg84hx1n8vir509sfey1.png "Network Adapters")
+  </Step>
+  <Step title="Open adapter properties">
+    Right-click the active network adapter and select **Properties**.
 
-Click **Change adapter options** (highlighted in the picture above).  You'll see a list of network adaptors. Look for the currently active adaptor (it will be either **Ethernet** or **Wi-Fi**).
+    ![Adapter Properties](/images/xosvx7peb02jlb9f1cy6ulqq107o7d3g.png "Adapter Properties")
+  </Step>
+  <Step title="Disable IPv6">
+    In the **Properties** window, scroll to **Internet Protocol Version 6 (TCP/IPv6)**.
 
-![Network Adapters](/images/5r6rgh3kkdietg84hx1n8vir509sfey1.png "Network Adapters")
+    ![Properties Window](/images/8e4itodb1912szkqdjfl1818r1gmel2l.png "Properties Window")
 
-Right click on your active network adapter and select **Properties**.
+    Uncheck the **Internet Protocol Version 6 (TCP/IPv6)** checkbox, select **OK** to save the changes, and restart your computer.
+  </Step>
+</Steps>
 
-![Adapter Properties](/images/xosvx7peb02jlb9f1cy6ulqq107o7d3g.png "Adapter Properties")
+## Disable IPv6 on macOS
 
-In the **Properties** window, scroll down until you see **Internet Protocol Version 6 (TCP/IPv6)**.
+<Steps>
+  <Step title="Open Network preferences">
+    Open **System Preferences** and select the **Network** icon.
+  </Step>
+  <Step title="Select your network">
+    Select the network you are using — usually labeled **Wi-Fi**.
 
-![Properties Window](/images/8e4itodb1912szkqdjfl1818r1gmel2l.png "Properties Window")
+    ![Network preferences](/images/mceclip0_2.png)
+  </Step>
+  <Step title="Open advanced settings">
+    Select **Advanced…**.
 
-Un-check the **Internet Protocol Version 6 (TCP/IPv6)** checkbox, click on **OK** to save the changes, and restart your computer.
+    ![Advanced button](/images/mceclip1_3.png)
+  </Step>
+  <Step title="Open the TCP/IP tab">
+    Select the **TCP/IP** tab.
 
-## Disable IPV6 on Mac OS X
+    ![TCP/IP tab](/images/mceclip3.png)
+  </Step>
+  <Step title="Set IPv6 to link-local only">
+    Open the **Configure IPv6** drop-down menu and set it to **Link-local only**.
 
-To disable IPV6 on Mac OS X, do the following
+    ![Configure IPv6 menu](/images/mceclip4.png)
+  </Step>
+  <Step title="Save and restart">
+    Select **OK**, then restart your Mac.
+  </Step>
+</Steps>
 
-1. Open **System Preferences** and click the **Network** icon.
+## Disable IPv6 on your Spectrum router
 
-2. Select the network you are using - It will usually be labeled **Wi-Fi.**
+If you have the **rac2v1k** Spectrum router, you can disable IPv6 from the router's web-based interface.
 
-![mceclip0.png](/images/mceclip0_2.png)
+To sign in, find the URL and password on the back of the router — typically [http://192.168.1.1](http://192.168.1.1/) with `admin`/`admin`.
 
-3. Click the **Advanced…** button.
+Once signed in, select **Advanced** at the top, select **IPv6** on the left, and under **IPv6 LAN settings** choose **Disable**.
 
-![mceclip1.png](/images/mceclip1_3.png)
+![Disable IPv6 on Spectrum router](/images/mceclip0_3.png)
 
-4. Click the **TCP/IP** tab.
-
-![mceclip3.png](/images/mceclip3.png)
-
-5. Select the Configure IPv6 drop-down menu and set it to **Link-local only**.
-
-![mceclip4.png](/images/mceclip4.png)
-
-6. Click the **OK** button.
-
-Restart your Mac.
-
-## Disable IPV6 on your Spectrum Router
-
-If you have the **rac2v1k** spectrum router, you can disable IPV6 using the router's web-based interface.
-
-To login to the router's web-based interface, the URL and login password are on the back of the router.  It's likely [http://192.168.1.1](http://192.168.1.1/) and admin/admin.
-
-Once logged in, click **Advanced** (at the top), then click **IPV6** (left-hand side), and then under IPV6 LAN settings, choose **Disable** (as show below)
-
-![mceclip0.png](/images/mceclip0_3.png)
-
-then click **Apply**.
-
-After a few moments, the router will indicate the update is complete.  Try logging into the BigBlueButton session again.
+Select **Apply**. After a few moments, the router confirms the update is complete. Try joining the BigBlueButton session again.

@@ -223,19 +223,6 @@
             ]
           },
           {
-            "group": "Premium Features",
-            "pages": [
-              "help/premium/overview-of-premium-features",
-              "help/premium/premium-tier-customizations",
-              "help/premium/premium-hosting-road-map",
-              "help/premium/how-do-i-download-a-recording",
-              "help/premium/can-i-prevent-users-from-downloading-a-recording",
-              "help/premium/how-long-until-my-recording-is-available-for-viewing",
-              "help/premium/how-do-i-invite-a-guest-to-a-live-meeting",
-              "help/premium/options-for-giving-students-visibility-of-other-students-webcams"
-            ]
-          },
-          {
             "group": "Troubleshooting",
             "pages": [
               "help/troubleshooting/known-issues",
@@ -357,8 +344,21 @@
         ]
       },
       {
-        "tab": "Premium",
+        "tab": "Blindside Networks",
         "menu": [
+          {
+            "item": "Commercial Hosting",
+            "groups": [
+              {
+                "group": "Commercial Hosting",
+                "pages": [
+                  "help/premium/overview-of-premium-features",
+                  "help/premium/premium-tier-customizations",
+                  "help/premium/premium-hosting-road-map"
+                ]
+              }
+            ]
+          },
           {
             "item": "Personal Rooms",
             "groups": [
@@ -422,7 +422,12 @@
                   "help/faq/is-bigbluebutton-gdpr-compliant",
                   "help/faq/where-is-the-hosting-location-for-australia-customers",
                   "help/faq/whitelisting-bigbluebutton-servers-for-the-firewall",
-                  "help/faq/can-users-connect-to-bigbluebutton-from-within-china"
+                  "help/faq/can-users-connect-to-bigbluebutton-from-within-china",
+                  "help/premium/how-do-i-download-a-recording",
+                  "help/premium/can-i-prevent-users-from-downloading-a-recording",
+                  "help/premium/how-long-until-my-recording-is-available-for-viewing",
+                  "help/premium/how-do-i-invite-a-guest-to-a-live-meeting",
+                  "help/premium/options-for-giving-students-visibility-of-other-students-webcams"
                 ]
               }
             ]
