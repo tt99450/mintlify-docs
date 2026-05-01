@@ -1,52 +1,60 @@
 ---
-title: "Welcome to BigBlueButton"
-description: "BigBlueButton is an open-source virtual classroom with built-in tools for active learning and live analytics to ensure every student learns."
+title: "Welcome"
+description: "Find the resources you need to get started with BigBlueButton."
 icon: "hand-wave"
+mode: "frame"
 ---
 
-## Built for Teaching
+export const HeroCard = ({ filename, title, description, href }) => {
+  return (
+    <a className="group cursor-pointer pb-8 no-underline" href={href}>
+      <div className="overflow-hidden rounded-2xl">
+        <img
+          src={`/images/landing/${filename}.png`}
+          className="pointer-events-none w-full h-auto group-hover:scale-105 transition-all duration-200"
+        />
+      </div>
+      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">
+        {title}
+      </h3>
+      <span className="mt-1.5 text-gray-500 dark:text-zinc-400">{description}</span>
+    </a>
+  );
+};
 
-Unlike general-purpose video conferencing tools, every feature in BigBlueButton is designed around how people actually teach and learn..
+<div className="relative z-10 px-4 py-16 lg:py-32 lg:pb-24 max-w-5xl mx-auto">
+  <h1 className="block text-4xl font-medium text-center text-gray-900 dark:text-zinc-50 tracking-tight">
+    Welcome 
+  </h1>
 
-Our design draws on research-backed frameworks:
+  <div className="max-w-xl mx-auto px-4 mt-4 text-lg text-center text-gray-500 dark:text-zinc-500">
+    Welcome to guides, references, and resources for BigBlueButton — the complete virtual classroom for online learning.
+  </div>
 
-- **Vygotsky's Zone of Proximal Development** — tools for scaffolding and guided collaboration (breakout rooms, shared notes, multi-user whiteboard)
-- **Bloom's Taxonomy** — features that move learners from recall to creation (polls for checking understanding, collaborative activities, learning analytics)
-- **Active Learning Principles** — built-in engagement tools that keep students participating, not just watching
-
-The documentation is organized Prepare (before the class) → Educate (teaching) → Reflect (after the class).
-
-![Image](/images/image.png)
-
-## The Prepare → Educate → Reflect Workflow
-
-BigBlueButton documentation is organized around the natural teaching cycle:
-
-<CardGroup cols={3}>
-  <Card title="Prepare" icon="clipboard-check" href="/prepare/setup-rooms">
-    Set up your room, upload content, and configure settings before class begins.
-  </Card>
-  <Card title="Educate" icon="chalkboard-user" href="/educate/manage/roles-environment">
-    Manage your class, build relationships, deliver content, and engage students with active learning.
-  </Card>
-  <Card title="Reflect" icon="lightbulb" href="/reflect/recordings">
-    Review recordings, analyze engagement data, and improve your next session.
-  </Card>
-</CardGroup>
-
-## Explore the Documentation
-
-<CardGroup cols={2}>
-  <Card title="Before You Teach" icon="rocket" href="/getting-started/before-you-teach">
-    First-day checklist — test your audio, webcam, and presentation before going live.
-  </Card>
-  <Card title="Interface Overview" icon="display" href="/getting-started/interface-overview">
-    A guided tour of the BigBlueButton interface and its key regions.
-  </Card>
-  <Card title="Accessibility" icon="universal-access" href="/getting-started/accessibility">
-    Closed captions, keyboard navigation, and other accessibility features.
-  </Card>
-  <Card title="Quick Reference" icon="table" href="/getting-started/quick-reference">
-    Goal-based lookup table — find the right tool for what you want to do.
-  </Card>
-</CardGroup>
+  <div className="px-6 lg:px-0 mt-12 lg:mt-24 grid sm:grid-cols-2 gap-x-6 gap-y-4">
+    <HeroCard
+      filename="tutorial-videos"
+      title="Tutorial Videos"
+      description="Watch step-by-step videos to learn BigBlueButton."
+      href="/help/videos"
+    />
+    <HeroCard
+      filename="guides"
+      title="Educator Guide"
+      description="Read in-depth guides for preparing, teaching, and reflecting."
+      href="/getting-started/guides"
+    />
+    <HeroCard
+      filename="reference"
+      title="Quick Reference"
+      description="Look up keyboard shortcuts, FAQs, and quick references."
+      href="/getting-started/quick-reference"
+    />
+    <HeroCard
+      filename="troubleshooting"
+      title="Student Guide"
+      description="A quick dive into everything you need to use BigBlueButton."
+      href="/getting-started/student-guide"
+    />
+  </div>
+</div>

@@ -26,35 +26,46 @@
         "tab": "Getting Started",
         "groups": [
           {
-            "group": "Welcome",
+            "group": "Getting Started",
             "pages": [
               "getting-started/welcome",
-              "help/overview",
-              "help/videos"
+              "getting-started/pedagogy",
+              "getting-started/quick-reference",
+              "getting-started/accessibility",
+              {
+                "group": "FAQ",
+                "expanded": false,
+                "pages": [
+                  "help/faq/what-are-the-minimum-requirements-for-bigbluebutton",
+                  "help/faq/how-many-webcams-can-i-share-in-a-meeting",
+                  "help/faq/connection-status",
+                  "help/faq/does-the-pin-number-for-a-conference-change",
+                  "help/faq/where-is-meeting-data-stored-in-europe",
+                  "help/faq/why-is-there-no-bigbluebutton-mobile-application",
+                  "help/faq/can-i-play-a-video-using-screen-sharing",
+                  "help/faq/common-youtube-external-video-playback-error",
+                  "help/faq/using-chromes-built-in-closed-captioning",
+                  "help/faq/how-to-share-ipadiphone-screen-using-screen-share-in-bigbluebutton",
+                  "help/faq/how-to-mirror-your-ipadiphone-screen-to-a-mac-computer-with-quicktime",
+                  "help/faq/how-do-i-capture-the-browsers-console",
+                  "help/faq/antivirus-software-causes-issues-while-connecting-to-a-bigbluebutton-session",
+                  "help/faq/media-server-has-no-available-resources-error-2002"
+                ]
+              }
             ]
           },
           {
-            "group": "Before You Teach",
+            "group": "Learn the Basics",
             "pages": [
+              "help/videos",
               "getting-started/before-you-teach"
             ]
           },
           {
-            "group": "Accessibility",
+            "group": "Guides",
             "pages": [
-              "getting-started/accessibility"
-            ]
-          },
-          {
-            "group": "Interface Overview",
-            "pages": [
-              "getting-started/interface-overview"
-            ]
-          },
-          {
-            "group": "Quick Reference",
-            "pages": [
-              "getting-started/quick-reference"
+              "getting-started/student-guide",
+              "getting-started/guides"
             ]
           }
         ]
@@ -148,8 +159,6 @@
                   "help/faq/what-are-the-minimum-requirements-for-bigbluebutton",
                   "help/faq/how-many-webcams-can-i-share-in-a-meeting",
                   "help/faq/connection-status",
-                  "help/faq/where-are-the-layout-options",
-                  "help/faq/lti-features",
                   "help/faq/does-the-pin-number-for-a-conference-change",
                   "help/faq/where-is-meeting-data-stored-in-europe",
                   "help/faq/why-is-there-no-bigbluebutton-mobile-application",
@@ -341,6 +350,17 @@
                 ]
               }
             ]
+          },
+          {
+            "item": "LTI",
+            "groups": [
+              {
+                "group": "LTI",
+                "pages": [
+                  "integrations/lti"
+                ]
+              }
+            ]
           }
         ]
       },
@@ -447,12 +467,7 @@
         "label": "Support",
         "href": "mailto:support@blindsidenetworks.com"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
@@ -473,5 +488,8 @@
       "linkedin": "https://www.linkedin.com/company/bigbluebutton/"
     }
   },
-  "description": "You comprehensive guide to BigBlueButton"
+  "description": "You comprehensive guide to BigBlueButton",
+  "redirects": [
+    { "source": "/", "destination": "/getting-started/welcome", "permanent": true }
+  ]
 }

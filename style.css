@@ -1,0 +1,33 @@
+/* HeroCard: remove the default link border-bottom on landing-page tile links */
+a.mint-group,
+a.mint-group:hover {
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+  background-image: none !important;
+}
+
+/* Match mintlify.com/docs type scale */
+
+#content-area p,
+#content-area li {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+#content-area h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+#content-area h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+#content-area h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
