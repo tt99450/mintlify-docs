@@ -5,26 +5,9 @@ icon: "hand-wave"
 mode: "frame"
 ---
 
-export const HeroCard = ({ filename, title, description, href }) => {
-  return (
-    <a className="group cursor-pointer pb-8 no-underline" href={href}>
-      <div className="overflow-hidden rounded-2xl">
-        <img
-          src={`/images/landing/${filename}.png`}
-          className="pointer-events-none w-full h-auto group-hover:scale-105 transition-all duration-200"
-        />
-      </div>
-      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">
-        {title}
-      </h3>
-      <span className="mt-1.5 text-gray-500 dark:text-zinc-400">{description}</span>
-    </a>
-  );
-};
-
 <div className="relative z-10 px-4 py-16 lg:py-32 lg:pb-24 max-w-5xl mx-auto">
   <h1 className="block text-4xl font-medium text-center text-gray-900 dark:text-zinc-50 tracking-tight">
-    Welcome 
+    Welcome
   </h1>
 
   <div className="max-w-xl mx-auto px-4 mt-4 text-lg text-center text-gray-500 dark:text-zinc-500">
@@ -32,29 +15,48 @@ export const HeroCard = ({ filename, title, description, href }) => {
   </div>
 
   <div className="px-6 lg:px-0 mt-12 lg:mt-24 grid sm:grid-cols-2 gap-x-6 gap-y-4">
-    <HeroCard
-      filename="tutorial-videos"
-      title="Tutorial Videos"
-      description="Watch step-by-step videos to learn BigBlueButton."
-      href="/help/videos"
-    />
-    <HeroCard
-      filename="guides"
-      title="Educator Guide"
-      description="Read in-depth guides for preparing, teaching, and reflecting."
-      href="/getting-started/guides"
-    />
-    <HeroCard
-      filename="reference"
-      title="Quick Reference"
-      description="Look up keyboard shortcuts, FAQs, and quick references."
-      href="/getting-started/quick-reference"
-    />
-    <HeroCard
-      filename="troubleshooting"
-      title="Student Guide"
-      description="A quick dive into everything you need to use BigBlueButton."
-      href="/getting-started/student-guide"
-    />
+    <a className="group cursor-pointer pb-8 no-underline" href="/help/videos">
+      <div className="overflow-hidden rounded-2xl">
+        <img
+          src="/images/landing/tutorial-videos.png"
+          className="pointer-events-none w-full h-auto group-hover:scale-105 transition-all duration-200"
+        />
+      </div>
+      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">Tutorial Videos</h3>
+      <span className="mt-1.5 text-gray-500 dark:text-zinc-400">Watch step-by-step videos to learn BigBlueButton.</span>
+    </a>
+
+    <a className="group cursor-pointer pb-8 no-underline" href="/getting-started/guides">
+      <div className="overflow-hidden rounded-2xl">
+        <img
+          src="/images/landing/guides.png"
+          className="pointer-events-none w-full h-auto group-hover:scale-105 transition-all duration-200"
+        />
+      </div>
+      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">Educator Guide</h3>
+      <span className="mt-1.5 text-gray-500 dark:text-zinc-400">Read in-depth guides for preparing, teaching, and reflecting.</span>
+    </a>
+
+    <a className="group cursor-pointer pb-8 no-underline" href="/getting-started/quick-reference">
+      <div className="overflow-hidden rounded-2xl">
+        <img
+          src="/images/landing/reference.png"
+          className="pointer-events-none w-full h-auto group-hover:scale-105 transition-all duration-200"
+        />
+      </div>
+      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">Quick Reference</h3>
+      <span className="mt-1.5 text-gray-500 dark:text-zinc-400">Look up keyboard shortcuts, FAQs, and quick references.</span>
+    </a>
+
+    <a className="group cursor-pointer pb-8 no-underline" href="/getting-started/student-guide">
+      <div className="overflow-hidden rounded-2xl">
+        <img
+          src="/images/landing/troubleshooting.png"
+          className="pointer-events-none w-full h-auto group-hover:scale-105 transition-all duration-200"
+        />
+      </div>
+      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">Student Guide</h3>
+      <span className="mt-1.5 text-gray-500 dark:text-zinc-400">A quick dive into everything you need to use BigBlueButton.</span>
+    </a>
   </div>
 </div>
