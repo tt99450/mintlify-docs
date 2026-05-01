@@ -482,8 +482,5 @@
       "linkedin": "https://www.linkedin.com/company/bigbluebutton/"
     }
   },
-  "description": "You comprehensive guide to BigBlueButton",
-  "redirects": [
-    { "source": "/", "destination": "/getting-started/welcome", "permanent": true }
-  ]
+  "description": "You comprehensive guide to BigBlueButton"
 }
