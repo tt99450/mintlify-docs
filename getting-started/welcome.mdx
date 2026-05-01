@@ -14,49 +14,20 @@ mode: "frame"
     Welcome to guides, references, and resources for BigBlueButton — the complete virtual classroom for online learning.
   </div>
 
-  <div className="px-6 lg:px-0 mt-12 lg:mt-24 grid sm:grid-cols-2 gap-x-6 gap-y-4">
-    <a className="group cursor-pointer pb-8 no-underline" href="/help/videos">
-      <div className="overflow-hidden rounded-2xl">
-        <img
-          src="/images/landing/tutorial-videos.png"
-          className="pointer-events-none w-full h-auto group-hover:scale-105 transition-all duration-200"
-        />
-      </div>
-      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">Tutorial Videos</h3>
-      <span className="mt-1.5 text-gray-500 dark:text-zinc-400">Watch step-by-step videos to learn BigBlueButton.</span>
-    </a>
-
-    <a className="group cursor-pointer pb-8 no-underline" href="/getting-started/guides">
-      <div className="overflow-hidden rounded-2xl">
-        <img
-          src="/images/landing/guides.png"
-          className="pointer-events-none w-full h-auto group-hover:scale-105 transition-all duration-200"
-        />
-      </div>
-      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">Educator Guide</h3>
-      <span className="mt-1.5 text-gray-500 dark:text-zinc-400">Read in-depth guides for preparing, teaching, and reflecting.</span>
-    </a>
-
-    <a className="group cursor-pointer pb-8 no-underline" href="/getting-started/quick-reference">
-      <div className="overflow-hidden rounded-2xl">
-        <img
-          src="/images/landing/reference.png"
-          className="pointer-events-none w-full h-auto group-hover:scale-105 transition-all duration-200"
-        />
-      </div>
-      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">Quick Reference</h3>
-      <span className="mt-1.5 text-gray-500 dark:text-zinc-400">Look up keyboard shortcuts, FAQs, and quick references.</span>
-    </a>
-
-    <a className="group cursor-pointer pb-8 no-underline" href="/getting-started/student-guide">
-      <div className="overflow-hidden rounded-2xl">
-        <img
-          src="/images/landing/troubleshooting.png"
-          className="pointer-events-none w-full h-auto group-hover:scale-105 transition-all duration-200"
-        />
-      </div>
-      <h3 className="mt-5 text-gray-900 dark:text-zinc-50 font-medium">Student Guide</h3>
-      <span className="mt-1.5 text-gray-500 dark:text-zinc-400">A quick dive into everything you need to use BigBlueButton.</span>
-    </a>
+  <div className="mt-12 lg:mt-24">
+    <CardGroup cols={2}>
+      <Card title="Tutorial Videos" img="/images/landing/tutorial-videos.png" href="/help/videos">
+        Watch step-by-step videos to learn BigBlueButton.
+      </Card>
+      <Card title="Educator Guide" img="/images/landing/guides.png" href="/getting-started/guides">
+        Read in-depth guides for preparing, teaching, and reflecting.
+      </Card>
+      <Card title="Quick Reference" img="/images/landing/reference.png" href="/getting-started/quick-reference">
+        Look up keyboard shortcuts, FAQs, and quick references.
+      </Card>
+      <Card title="Student Guide" img="/images/landing/troubleshooting.png" href="/getting-started/student-guide">
+        A quick dive into everything you need to use BigBlueButton.
+      </Card>
+    </CardGroup>
   </div>
 </div>
