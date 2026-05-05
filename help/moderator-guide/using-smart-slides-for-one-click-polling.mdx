@@ -3,6 +3,196 @@ title: "Using Smart Slides for one-click polling"
 description: "BigBlueButton automatically extracts poll/quiz questions (and video links) from your uploaded slides."
 ---
 
+# Smart Slides
+
+Smart Slides is a BigBlueButton feature that detects specific patterns in your slide content and automatically displays a one-click button to trigger an interactive poll, quiz, or video. No setup is required beyond how you write your slide text.
+
+When BigBlueButton detects a supported pattern on the current slide, a **Smart Slides** button appears for the presenter. One click launches the interaction for students — the question and answer choices are pulled directly from the slide.
+
+Results appear live for the presenter, and the **Learning Analytics Dashboard (LAD)** aggregates all poll and quiz responses across the session so you can quickly identify students who may need additional support.
+
+> 📺 **Video overview:** [How Smart Slides work](https://www.youtube.com/watch?v=mze90AVni08)
+
+---
+
+## Smart Slide Types
+
+### 1. Single Choice Poll
+
+**Trigger:** A question followed by a lettered or bulleted list of answer options (A, B, C, …).
+
+Students see the question and select one answer. This is the most common Smart Slide type and requires no special syntax — just write a question and a list of choices.
+
+**Example slide text:**
+
+```
+What are the rings of Saturn made of?
+
+A. Iron
+B. Ice
+C. Granite
+D. Volcanic rocks
+E. Gummy bears
+```
+
+> -- *[insert screenshot: slide with question + lettered options, Smart Slides button visible in presenter toolbar]*
+
+---
+
+### 2. Quiz (Single Choice with Correct Answer)
+
+**Trigger:** Same as a Single Choice Poll, but with `__` (two underscores) appended to the correct answer.
+
+Adding `__` after an answer tells BigBlueButton that this is a quiz question — one with a definitive correct answer. The LAD will track who answered correctly and display a per-student breakdown in the **Quiz** tab.
+
+**To hide the correct answer from students:** change the color of the `__` characters to match the slide background. BigBlueButton still detects them; students don't see them.
+
+**Example slide text (answer visible during editing):**
+
+```
+What are the rings of Saturn made of?
+
+A. Iron
+B. Ice__
+C. Granite
+D. Volcanic rocks
+E. Gummy bears
+```
+
+**Same slide with hidden answer (Ice__ in white text on white background):**
+
+> -- *[insert screenshot: slide showing Ice__ with underscores in matching background color — appears identical to students but BigBlueButton detects the correct answer]*
+
+---
+
+### 3. Multiple Choice Poll
+
+**Trigger:** A question ending in `??` (two question marks), with a list of answer options.
+
+Students can select more than one answer. Use this when a question has multiple valid responses.
+
+**Example slide text:**
+
+```
+What two elements comprise table salt??
+
+A. Sodium
+B. Calcium
+C. Chloride
+D. Zinc
+```
+
+> -- *[insert screenshot: slide with ?? question, student view showing multi-select poll]*
+
+---
+
+### 4. Yes/No Poll
+
+**Trigger:** The text `(yes/no)` anywhere in the question.
+
+Launches a Yes/No response poll. Use for quick checks, opinion questions, or agreement prompts.
+
+**Example slide text:**
+
+```
+Did Einstein discover the atom (yes/no)?
+```
+
+> -- *[insert screenshot: slide with yes/no in question, poll response showing Yes / No options]*
+
+---
+
+### 5. True/False Poll
+
+**Trigger:** The text `(true/false)` anywhere in the question.
+
+Launches a True/False response poll. Functionally similar to Yes/No but uses True/False labels.
+
+**Example slide text:**
+
+```
+Did Einstein discover the atom (true/false)?
+```
+
+> -- *[insert screenshot: slide with true/false in question, poll response showing True / False options]*
+
+---
+
+### 6. Typed Response Poll
+
+**Trigger:** A question with no answer options listed below it.
+
+When BigBlueButton sees a question but no A, B, C choices, it treats it as an open-ended typed response. Students type their answer directly. Responses are collected and visible to the presenter.
+
+**Example slide text:**
+
+```
+Calculating time
+
+Two cars started from the same point at 5 am, traveling in opposite directions
+at 40 and 50 mph respectively. At what time will they be 450 miles apart?
+```
+
+> -- *[insert screenshot: slide with standalone question, student view showing text input field]*
+
+---
+
+### 7. External Video
+
+**Trigger:** A YouTube, Vimeo, or direct `.mp4` video URL placed on the slide (URL must be on a single unbroken line).
+
+BigBlueButton detects the link and shows a **Play External Video** button. One click shares the video with all participants in the synchronized shared player.
+
+**Single video example:**
+
+```
+https://youtu.be/v2Z4eANMNuA
+```
+
+**Multiple videos with labels:**
+
+You can place multiple video URLs on one slide. Add a comment after a `#` character on each URL to label the links — BigBlueButton displays the labels in a selection menu.
+
+```
+https://www.youtube.com/watch?v=-SM_HTxVcx0#Layout-Manager
+https://www.youtube.com/watch?v=tqkVEWO12tI#Uploading-Presentations
+https://www.youtube.com/watch?v=xeLOzKBUdIk#Using-Webcams
+```
+
+> -- *[insert screenshot: slide with multiple labeled video URLs, Smart Slides button showing pop-up link selection menu]*
+
+Direct `.mp4` links also work:
+
+```
+https://example.com/your-video.mp4
+```
+
+> **Note:** The video URL must be on a single continuous line with no line breaks.
+
+---
+
+## Quick Reference
+
+| Slide Content | Poll Type |
+|---|---|
+| Question + A, B, C… options | Single choice poll |
+| Question + A, B, C… options + `__` after one answer | Quiz (with correct answer) |
+| Question ending in `??` + options | Multiple choice poll |
+| Question containing `(yes/no)` | Yes/No poll |
+| Question containing `(true/false)` | True/False poll |
+| Question with no options | Typed response poll |
+| YouTube, Vimeo, or `.mp4` URL | Play external video |
+
+---
+
+## Learning Analytics Dashboard
+
+All poll and quiz results are aggregated automatically in the **Learning Analytics Dashboard (LAD)**, accessible during and after your session. The LAD shows response distributions per question and, for quiz questions, a per-student view of correct vs. incorrect answers — making it easy to identify who may need follow-up.
+
+> -- *[insert screenshot: LAD quiz tab showing student response graph]*
+
+# OLDER Content 
+
 BigBlueButton automatically extracts poll/quiz questions (and video links) from your uploaded slides. We call it **Smart Slides**. 
 
 When you have a slide deck with poll-type questions, you'll see a button to automatically start a poll.

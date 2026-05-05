@@ -39,3 +39,6 @@ npm-debug.log*
 .playwright-cli/
 content-audit-report.md
 audit/
+
+# Upload files 
+files/
