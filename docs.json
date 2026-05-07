@@ -291,25 +291,65 @@
             "item": "Moodle LMS",
             "groups": [
               {
-                "group": "Moodle LMS",
+                "group": "Overview",
                 "pages": [
-                  "integrations/moodle/creating-a-bigbluebuttonbn-activity",
-                  "integrations/moodle/activity-room-settings",
-                  "integrations/moodle/default-recording-settings",
-                  "integrations/moodle/advanced-recording-settings",
-                  "integrations/moodle/schedule-for-session",
-                  "integrations/moodle/advanced-participant-settings",
-                  "integrations/moodle/common-module-settings",
-                  "integrations/moodle/enable-activity-completion",
-                  "integrations/moodle/importing-recording-links",
-                  "integrations/moodle/faq-can-i-add-a-presentationdocument-to-my-roomactivity-ahead-of-time",
-                  "integrations/moodle/faq-how-do-i-control-visibilityaccess-to-recordings",
-                  "integrations/moodle/faq-how-do-i-edit-recording-namesdescriptions",
-                  "integrations/moodle/faq-how-does-grouping-work",
-                  "integrations/moodle/troubleshooting-after-updating-to-version-22x-i-am-no-longer-able-to-see-the-list-of-recordings-in-my-course",
-                  "integrations/moodle/troubleshooting-how-do-i-downgrade-the-moodle-plugin",
-                  "integrations/moodle/troubleshooting-show-recordings-from-deleted-activities",
-                  "integrations/moodle/troubleshooting-updating-bigbluebuttonbn-language-strings"
+                  "integrations/moodle/overview",
+                  "integrations/moodle/faq"
+                ]
+              },
+              {
+                "group": "Get Started",
+                "pages": [
+                  "integrations/moodle/get-started/create-your-first-activity",
+                  "integrations/moodle/get-started/join-your-first-session",
+                  "integrations/moodle/get-started/find-and-play-recordings"
+                ]
+              },
+              {
+                "group": "Teachers",
+                "pages": [
+                  "integrations/moodle/teachers/create-and-edit-activity",
+                  "integrations/moodle/teachers/room-settings",
+                  "integrations/moodle/teachers/participants-and-roles",
+                  "integrations/moodle/teachers/schedule-session",
+                  "integrations/moodle/teachers/presentations",
+                  "integrations/moodle/teachers/recording-settings",
+                  "integrations/moodle/teachers/recordings",
+                  "integrations/moodle/teachers/import-recording-links",
+                  "integrations/moodle/teachers/common-module-settings",
+                  "integrations/moodle/teachers/groups-and-grouping",
+                  "integrations/moodle/teachers/guest-access"
+                ]
+              },
+              {
+                "group": "Admins",
+                "pages": [
+                  "integrations/moodle/admins/install-and-configure",
+                  "integrations/moodle/admins/global-settings",
+                  "integrations/moodle/admins/recording-defaults",
+                  "integrations/moodle/admins/activity-completion",
+                  "integrations/moodle/admins/roles-and-capabilities",
+                  "integrations/moodle/admins/scheduled-tasks",
+                  "integrations/moodle/admins/language-customization",
+                  "integrations/moodle/admins/subplugins"
+                ]
+              },
+              {
+                "group": "Reference",
+                "pages": [
+                  "integrations/moodle/reference/activity-settings-reference",
+                  "integrations/moodle/reference/recording-settings-reference",
+                  "integrations/moodle/reference/completion-rules-reference",
+                  "integrations/moodle/reference/moodle-module-settings-reference"
+                ]
+              },
+              {
+                "group": "Troubleshooting",
+                "pages": [
+                  "integrations/moodle/troubleshooting/missing-recordings-after-upgrade",
+                  "integrations/moodle/troubleshooting/deleted-activity-recordings",
+                  "integrations/moodle/troubleshooting/downgrading-plugin",
+                  "integrations/moodle/troubleshooting/language-strings"
                 ]
               }
             ]

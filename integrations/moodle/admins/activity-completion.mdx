@@ -1,0 +1,32 @@
+---
+title: "Activity completion"
+description: "Enable activity completion for BigBlueButton in Moodle using live event callbacks from the BigBlueButton server."
+---
+
+BigBlueButton can participate in Moodle activity completion.
+
+![Activity completion overview in the BigBlueButton plugin](/images/mceclip1.png)
+
+## Requirement
+
+Activity completion depends on the BigBlueButton server sending live events back to Moodle, and on Moodle being configured to receive them.
+
+## Enable it
+
+1. Log in as an administrator.
+2. Open the BigBlueButton plugin settings.
+3. Enable **Register live events** or the equivalent site option.
+4. Save the setting.
+
+![Enable register live events in plugin settings](/images/mceclip0.png)
+
+## Test it
+
+If your Moodle server is behind a restrictive firewall, the callback might not reach Moodle correctly.
+
+A simple test is:
+
+1. enable live events
+2. create a test recording
+3. set a very low attendance threshold
+4. confirm that the completion signal is received and processed

@@ -1,0 +1,31 @@
+---
+title: "Missing recordings after upgrade"
+description: "Troubleshoot cases where course recording lists change or disappear after upgrading older BigBlueButton Moodle components."
+---
+
+In older Moodle deployments, a separate RecordingsBN plugin was sometimes used to show all recordings in a course. After upgrading to newer BigBlueButton Moodle releases, that workflow changed.
+
+## What changed
+
+Newer versions of BigBlueButton for Moodle can use BigBlueButton activities themselves to surface recordings, including **Recordings only** style activity patterns in older guidance.
+
+![Legacy notice after upgrading older recording workflows](/images/mceclip1_9.png)
+
+## Two common solutions
+
+### Add a dedicated activity for recordings
+
+An editing teacher can add a new BigBlueButton activity configured specifically to surface recordings for the course.
+
+![Add a BigBlueButton activity configured for recordings](/images/mceclip3_2.png)
+
+### Migrate older RecordingsBN instances
+
+If your site still has legacy RecordingsBN instances, an administrator may need to migrate them and then retire the old plugin.
+
+## Good checks
+
+- confirm the current plugin version
+- confirm the current activity type options available on your site
+- verify scheduled tasks and recording sync behavior
+- verify whether the site still depends on any legacy plugin workflow

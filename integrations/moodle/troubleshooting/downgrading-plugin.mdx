@@ -1,0 +1,28 @@
+---
+title: "Downgrading the plugin"
+description: "Understand the risks and high-level process involved in downgrading the BigBlueButton Moodle plugin."
+---
+
+Downgrading the Moodle plugin is possible, but it is risky and should be done carefully.
+
+## Before you downgrade
+
+At minimum:
+
+- back up the plugin code
+- back up the plugin database tables
+- confirm the exact plugin version you want to return to
+- understand that data created after the upgrade may be lost during a rollback
+
+## Typical downgrade model
+
+The older guidance for downgrading relied on:
+
+1. restoring the older plugin code
+2. updating stored plugin version values
+3. restoring backed-up database tables
+4. letting Moodle reconcile the database again
+
+## Strong recommendation
+
+Do not attempt a downgrade first in production. Test the full rollback path in a staging environment before changing a live Moodle site.

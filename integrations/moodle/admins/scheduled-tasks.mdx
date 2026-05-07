@@ -1,0 +1,25 @@
+---
+title: "Scheduled tasks"
+description: "Monitor the scheduled tasks BigBlueButton uses in Moodle for recording synchronization and background maintenance."
+---
+
+BigBlueButton uses Moodle scheduled tasks and background processing for maintenance work.
+
+## Common examples
+
+These tasks often handle:
+
+- pending recording synchronization
+- retrying recordings that were not found or were dismissed
+- background recording maintenance
+- notification processing
+
+## Why admins should care
+
+If recordings are delayed or missing, scheduled tasks are one of the first places to inspect.
+
+Use Moodle’s scheduled task administration screens to confirm:
+
+- tasks are enabled
+- cron is running
+- failures are not accumulating
