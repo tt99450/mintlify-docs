@@ -1,96 +1,84 @@
 ---
 title: "Premium Tier Customizations"
-description: "As part of upgrading to the Premium Tier hosting for BigBlueButton, Blindside Networks can customize various settings for your account. If you want..."
+description: "Premium Tier accounts can be customized with welcome messages, lock settings, dial-in visibility, recording policies, branding, and S3 transfer."
 ---
 
-As part of upgrading to the Premium Tier hosting for BigBlueButton, Blindside Networks can customize various settings for your account.
+As part of Premium Tier hosting, Blindside Networks can customize a range of account-level settings. To request any of the changes below, contact your Blindside Networks Customer Success Manager with a description of what you need.
 
-If you want any of these settings (shown below) changed, just contact your Blindside Networks Customer Success Manager with description of the changes.
+## Custom welcome message
 
-## Custom Welcome Message
+When users join a session, they see a welcome message in the chat with a grey background.
 
-When users join, they see a welcome message in the chat (with a grey background).
+![Welcome message in the chat](/images/360054824531.png)
 
-![mceclip1.png](/images/360054824531.png)
+We can replace the message with whatever text you choose.
 
-We can customize the welcome message to whatever you want.
+## Show dial-in number only to moderators
 
-## Show Dial-In Number only to Moderator
+All North American accounts include a default dial-in number, visible by default to both instructors and students. Some schools (especially K12) prefer to make the dial-in number visible only to moderators — for example, in a separate moderator-only welcome message.
 
-All accounts in North America have a default dial-in number, and by default the number is visible to both instructors and students.
+![Moderator-only welcome message with dial-in number](/images/360054706632.png)
 
-Some schools (especially K12) may want the dial-in number only visible to the moderator. For example, the second welcome message is only visible to the instructor.
+We can set whatever moderator-only welcome message you want.
 
-![mceclip2.png](/images/360054706632.png)
+## Default lock settings
 
-We can set whatever custom welcome message you want for the instructor.
-
-## Default Lock Settings
-
-Each instructor can use the Lock viewers to restrict viewers from accessing certain features
+Each instructor can use **Lock viewers** to restrict viewer access to specific features.
 
 ![Lock viewers panel with toggles for restricting viewer features](/images/25547412853645.png)
 
-Blindside Networks can specify for your account to have any of these lock settings as default.
+We can set any of these lock settings as defaults for your account. For example, you can configure every session to start with these locks in effect:
 
-For example, you may want students to not share:
-
-- microphone
-- private chat messages
-- edit shared notes
-
-With these settings as default, each session will start with the following lock settings in effect
+- Microphone
+- Private chat messages
+- Edit shared notes
 
 ![Default lock settings applied at session start, restricting microphone, private chat, and shared notes editing](/images/25547448779277.png)
 
-## 
-
 ## Ability to unmute users
 
-By default, for privacy, a moderator cannot unmute another user's microphone.  However, for K12, this is very useful for the educator to unmute a student's microphone.
+By default, moderators cannot unmute another user's microphone, for privacy. For K12, we can enable moderators to unmute student microphones directly.
 
-## Mute users
+## Mute users on join
 
-By default, users joining with microphone are unmuted.  We can set this so all users join as muted.
+By default, users joining with a microphone are unmuted. We can change the default so all users join muted.
 
-## Auto-Expire of Recordings
+## Auto-expire recordings
 
-If your school wants a policy that all recordings are automatically deleted after two years (730 days), for example, we can setup the auto deletion.  Just let know know how many days you want the recordings to last.
+If your school requires recordings to be deleted automatically after a set period — for example, two years (730 days) — we can configure auto-deletion. Tell us the retention you need.
 
-## Protected Recording Link
+## Protected recording links
 
-We can enable Protected Recording Links in your account, which will prevent viewers from copying and sharing recording links.
+We can enable Protected Recording Links so viewers cannot copy and share recording links.
 
 ## Don't record student webcams
 
 We can configure your account so student webcams are not visible in the recordings.
 
-## No recordings
+## Disable recording
 
 We can configure your account so no sessions are recorded.
 
-## Hide Viewer/Student names in chat of recordings
+## Hide viewer names in recording chat
 
-We can conceal student names in the chat in recordings.  The student/viewer names will show up as Viewer and the moderator/instructor names will show as normal.
+We can conceal student names in the chat of recordings. Student/viewer names appear as "Viewer" while moderator/instructor names display as normal.
 
-![mceclip0.png](/images/4410612992141.png)
+![Recording chat with viewer names anonymized](/images/4410612992141.png)
 
 ## Automatically end session when no moderators are present
 
-We can set an interval (such as 2 minutes) that when a session has started and a moderator is no longer present, BigBlueButton will automatically end the session.  This is useful in K12 where you want to prevent scenarios where the educator gets disconnected from a session (such as loosing internet), and their students are left behind unsupervised.
+We can set an interval (such as 2 minutes) after which BigBlueButton automatically ends a session that no longer has a moderator present. This is useful in K12 to avoid scenarios where the educator gets disconnected (for example, loses their internet connection) and students are left unsupervised.
 
-## Custom Logo
+## Custom logo
 
-We can place your logo in the upper left-hand corner of the BigBlueButton session.
+We can place your logo in the upper-left corner of the BigBlueButton session.
 
 ![BigBlueButton session with a custom logo placed in the upper left-hand corner](/images/21484012828941.png)
 
-## Custom background image for webcam URL
+## Custom default webcam background
 
-For additional branding, you can provide us an PNG or JPEG image at a HTTPS URL, and we can configure your account to use this as the default webcam background. 
+For additional branding, provide a PNG or JPEG image at an HTTPS URL, and we can configure your account to use it as the default webcam background. Users can still upload their own background.
 
-Users would still be able to upload their own background if they wanted.
+## Automatic transfer of recordings to an S3 bucket
 
-## Automatic transfer of recordings to S3 bucket
-
-## We can setup workflow so that once our infrastructure finishes processing of a recording, we can automatically transfer it to a write-only S3 bucket, hosted by the customer, along with a manifest with meta-data about the recording.
+We can set up a workflow so that once our infrastructure finishes processing a recording, it is automatically transferred to a write-only S3 bucket hosted by you, along with a manifest of the recording metadata.

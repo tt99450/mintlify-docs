@@ -1,73 +1,68 @@
 ---
-title: "Promote/demote/remove a user"
-description: "As a moderator, you can promote or demote other viewers' role status in the live meeting or remove a user from the meeting."
+title: "Promote, demote, or remove a user"
+description: "Moderators can promote viewers to moderator, demote moderators to viewer, or remove a user from the session."
 ---
 
-## As a moderator, you can promote or demote other viewers' role status in the live meeting or remove a user from the meeting.
-
-If a user has entered as a viewer, you can promote their role to moderator or demote a user from moderator to viewer.
+Moderators can [promote a viewer to moderator](#promote-to-moderator), [demote a moderator to viewer](#demote-to-viewer), or [remove a user](#remove-a-user) from the session.
 
 <Frame>
   ![Rolelist](/images/rolelist.png)
 </Frame>
 
-Moderators appear in the users list with a square **[1]** avatar icon, while viewers appear in the users list with a circular **[2]** avatar icon.
+In the user list, moderators have a **square** **[1]** avatar icon and viewers have a **circular** **[2]** avatar icon.
 
-Use cases for promoting a viewer to a moderator include:
+Common reasons to change a user's role:
 
-- Upgrading a guest speaker entering the session to the moderator role gives more control over the session to the speaker.
-- Promoting a user who was mistakenly assigned the viewer role in the LMS when the meeting was created.
-
-Use cases for demoting a moderator include:
-
-- Demoting a moderator who was mistakenly assigned the role in the LMS.
-- Demoting moderators to reduce the number of users who have unlimited access to the session.
+- Promote a guest speaker to moderator so they have full session control.
+- Promote a user who joined as a viewer because of an LMS misconfiguration.
+- Demote a moderator who was assigned the role by mistake.
+- Demote a moderator to reduce the number of users with full control.
 
 ## Promote to moderator
+
+To promote a viewer, select their avatar in the user list, then select **Promote to moderator**.
 
 <Frame>
   ![Screenshot 2026 03 16 At 8 13 26 PM](/images/Screenshot2026-03-16at8.13.26PM.png)
 </Frame>
 
-To promote a viewer to a moderator, select their avatar in the users list and choose **promote to moderator**.
-
 <Frame>
   ![Screenshot 2026 03 16 At 8 16 40 PM](/images/Screenshot2026-03-16at8.16.40PM.png)
 </Frame>
 
-The viewer **avatar** should change shapes from a circle to a square to indicate they now have moderator status.
+The avatar shape changes from a circle to a square to confirm the new role.
 
 ## Demote to viewer
+
+To demote a moderator, select their avatar in the user list, then select **Demote to viewer**.
 
 <Frame>
   ![Screenshot 2026 03 16 At 8 05 50 PM](/images/Screenshot2026-03-16at8.05.50PM.png)
 </Frame>
 
-To demote a moderator to a viewer, select their avatar in the users list and choose **demote to viewer**.
-
 <Frame>
   ![Screenshot 2026 03 16 At 8 18 50 PM](/images/Screenshot2026-03-16at8.18.50PM.png)
 </Frame>
 
-The moderator **avatar** should change shapes from a square to a circle to indicate they are now a viewer.
+The avatar shape changes from a square to a circle to confirm the new role.
 
 ## Remove a user
 
-To kick a user from the session, select their avatar in the users list and choose **Remove user**.
+To remove a user from the session, select their avatar in the user list and select **Remove user**.
 
 <Frame>
   ![Screenshot 2026 03 16 At 8 05 34 PM](/images/Screenshot2026-03-16at8.05.34PM.png)
 </Frame>
 
-Removal persists for the duration of the session. Specifically,
+Removal applies for the duration of the current session:
 
-- If you remove a phone user, they are not able to dial back into the session from the same phone.
-- If you remove a regular user, they are not able to rejoin the session in a similar manner.
+- Phone users cannot dial back in from the same phone.
+- Regular users cannot rejoin in the same way (LMS link, Personal Rooms link, Guest invite link).
 
-For example, if a student joined through the learning management system (LMS), they would be unable to rejoin the current session through the LMS. The same applies to a Personal Rooms link or Guest invite link.
+Selecting **Prevent this user from rejoining the session** blocks them for the rest of the current session only.
 
-If you choose **Prevent this user from rejoining the session**, they will not be able to rejoin for the duration of the current session.
+![Prevent user from rejoining checkbox](/images/mceclip0_16.png)
 
-![mceclip0.png](/images/mceclip0_16.png)
-
-Again, the removal is only for the current session. A removed user can still join other BigBlueButton sessions or the same session again if restarted at a later time.
+<Note>
+  Removal is per-session. A removed user can still join other BigBlueButton sessions, or the same session if it is restarted later.
+</Note>

@@ -1,14 +1,10 @@
 ---
 title: "Can I prevent users from downloading a recording?"
-description: "In the Premium Tier hosting, when users are viewing a recording, they can right-click on the video and choose \"Save Video As...\" to download the..."
+description: "BigBlueButton does not block recording downloads. Browser controls, network capture, and screen recording each give a determined user a way around any restriction."
 ---
 
-In the Premium Tier hosting, when users are viewing a recording, they can right-click on the video and choose "Save Video As..." to download the recording.
+Premium Tier viewers can right-click on a playing recording and select **Save video as…** to download it. BigBlueButton does not block this action.
 
-This feature is a function of the browser.  Even if Blindside Networks disabled this feature with JavaScript, it ultimately wouldn't prevent a determined user from downloading the recording.
+The download menu is a function of the browser. Disabling it with JavaScript would not stop a determined user from downloading the recording: they could inspect network traffic to find the underlying URL, or screen-record the playback into a separate video file.
 
-They could still, for example, view the network traffic and obtain the URL for the recording itself.
-
-They could also record their screen while the recording is playing and thus capture it into their own video file.
-
-As a result, we have not tried to restrict the ability to "Save video as..." in BigBlueButton.
+For these reasons, we have not added a restriction on **Save video as…** in BigBlueButton.

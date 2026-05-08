@@ -1,39 +1,49 @@
 ---
 title: "How do I use my browser's built-in speech recognition?"
-description: "By default, the automatic transcription language selector is disabled. To have your voice transcribed you must enable it."
+description: "Enable per-user automatic transcription using the browser's speech recognition, or view captions for any user who has enabled it."
 ---
 
-By default, the automatic transcription language selector is disabled. To have your voice transcribed, you must enable it by selecting the desired language from the drop-down selector from the join audio dialog.
+Any user can enable automatic transcription of their own voice using their browser's built-in speech recognition. Other users in the session can view those transcriptions without enabling transcription themselves.
 
-![Image](/images/19159091611021.png)
+## Enable transcription for your voice
 
-When a user selects a language for automatic transcription, a CC icon will display next to their name in the “who is talking” indicator.
+By default, the automatic transcription language selector is disabled. To have your voice transcribed, select the desired language from the dropdown in the join audio dialog.
 
-![mceclip4.png](/images/19159083423501.png)
+![Language dropdown in the join audio dialog](/images/19159091611021.png)
 
-You don’t need to have selected transcription of your audio to view the transcriptions for others.
+When transcription is active, a **CC** icon appears next to your name in the "who is talking" indicator.
 
-When one or more users have enabled transcription, a CC button will appear. To view the transcriptions for those with ‘CC’ in their “who is talking” icon, press the CC button.
+![CC indicator next to user name](/images/19159083423501.png)
 
-The placement of the ‘CC’ button depends on your device. For mobile devices, the ‘CC’ button is in the three dots at the top right corner.
+## View transcriptions for other users
 
-![mceclip7.png](/images/19159091612301.png)
+When at least one user has transcription enabled, a **CC** button appears for everyone. Select it to view captions for every speaker who has the **CC** indicator. You do not need your own audio transcribed to view captions for others.
 
-For desktop, the ‘CC’ button is in the bottom left.
+The location of the **CC** button depends on your device.
 
-![mceclip5.png](/images/19159091612685.png)
+On mobile, find the **CC** button in the three-dot menu in the top-right corner.
 
-Desktop users can also select the language that the captioning will display in by pressing the up arrow on the CC button.
+![CC button in the mobile three-dot menu](/images/19159091612301.png)
 
-![mceclip6.png](/images/19159091613197.png)
+On desktop, the **CC** button is in the lower-left corner.
 
-Note: The automatic transcription is only available for browsers that support Speech Recognition (Google Chrome, MS Edge, and Safari). If you join with non-supported browsers, you will see a warning at the bottom of the join audio dialog.
+![CC button in the lower-left on desktop](/images/19159091612685.png)
 
-![mceclip9.png](/images/19159083426957.png)
+Desktop users can change the caption display language by selecting the up arrow on the **CC** button.
 
-To enable automatic translations for users of Google Chrome, Microsoft Edge, and Safari, edit the `/etc/bigbluebutton/bbb-html5.yml` and add the following to the `public:` section then restart BigBlueButton.
+![Language menu on the CC button](/images/19159091613197.png)
 
-```
+<Note>
+  Automatic transcription is only available in browsers that support Speech Recognition — Chrome, Edge, and Safari. Joining from another browser displays a warning at the bottom of the join audio dialog.
+
+  ![Unsupported browser warning](/images/19159083426957.png)
+</Note>
+
+## Enable the feature on your server
+
+To enable automatic transcription for users of Chrome, Edge, and Safari, edit `/etc/bigbluebutton/bbb-html5.yml` and add the following to the `public:` section, then restart BigBlueButton:
+
+```yaml
 public:
   app:
     audioCaptions:

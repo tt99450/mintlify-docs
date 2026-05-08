@@ -1,19 +1,17 @@
 ---
 title: "Use Polling or Quizzing"
-description: "Presenters in BigBlueButton are able to initiate polls and quizzing throughout the live session; users can reply when prompted and contribute to the..."
+description: "Presenters can launch polls and quizzes during a session to gauge understanding, gather feedback, and review answers with the class."
 ---
 
-## Polling
+Presenters can [start a poll](#start-a-poll) to engage students, run informal pop quizzes, or gather quick feedback during a session. Presenters can also [run a quiz](#run-a-quiz) — a poll with a correct answer marked.
 
-As a presenter, you can use polling to engage students, perform test/exam reviews or pop quizzes, or use polling informally to collect information about your users.
-
-By default, the first **Moderator** to enter the BigBlueButton session is allocated the presenter role capabilities; if you are a viewer, you will need to request presenter status from the moderator.
+By default, the first moderator to enter the session receives the presenter role. If you are a viewer, request the presenter role from a moderator before starting a poll.
 
 <Frame>
   ![Screenshot 2026 03 17 At 1 34 30 PM](/images/Screenshot2026-03-17at1.34.30PM-2.png)
 </Frame>
 
-When a user has the presenter role, the **presenter icon** will appear over their avatar in the users list.
+When a user has the presenter role, a **presenter icon** appears over their avatar in the user list.
 
 ## Start a poll
 
@@ -21,90 +19,92 @@ When a user has the presenter role, the **presenter icon** will appear over the
   ![Findpolling](/images/findpolling.png)
 </Frame>
 
-Select the **Actions menu** **\[1\]** in the lower left-hand corner of the presentation window, then **Start a poll/quiz** **\[2\]**.
+To open the polling panel, select the **Actions menu** **[1]** in the lower-left corner of the presentation window, then **Start a poll/quiz** **[2]**.
 
 <Frame>
   ![Screenshot 2026 03 24 At 12 37 29 PM](/images/Screenshot2026-03-24at12.37.29PM.png)
 </Frame>
 
-The Poll option is selected by default. The panel will open with several options. You can also enter a question for the poll in the **Write your question** **\[1\]** section. Select from the **Response Types** **\[2\]** options to initiate a poll.
+The **Poll** option is selected by default. Enter a question in the **Write your question** **[1]** field, then pick one of the **Response Types** **[2]** to set how users answer.
 
 <Frame>
   ![Screenshot 2026 03 24 At 12 35 26 PM](/images/Screenshot2026-03-24at12.35.26PM.png)
 </Frame>
 
-For example, if you write **"Are insects animals?"** **\[1\]**, choose **Yes / No / Abstention** **\[2\]**, and select **Start poll \[4\]**, it will initiate the poll for all users.
+For example, type **"Are insects animals?"** **[1]**, choose **Yes / No / Abstention** **[2]**, then select **Start poll** **[4]** to push the poll to all users.
 
-When Start Poll is selected, BigBlueButton will poll all users:
+After you start the poll, every user receives a prompt to respond.
 
 <Frame>
   ![Screenshot 2026 03 16 At 3 29 09 PM](/images/Screenshot2026-03-16at3.29.09PM.png)
 </Frame>
 
-As users respond, such as clicking False, the presenter will see the live results.
+As users respond — for example, by selecting **Yes** — the presenter sees live results.
 
 <Frame>
   ![Screenshot 2026 03 24 At 12 45 54 PM](/images/Screenshot2026-03-24at12.45.54PM.png)
 </Frame>
 
-Here the poll/quiz panel shows the **Yes** response from the student. Note: Selecting **Anonymous Poll** will not show the student's name for each result.
+The poll panel shows each student's **Yes** response next to their name.
 
-Selecting **Publish results** will both publish the results to the chat:
+<Note>
+  Select **Anonymous Poll** before starting the poll to hide student names from the results.
+</Note>
+
+### Publish poll results
+
+Selecting **Publish results** posts the results to both the public chat and the current slide.
 
 <Frame>
   ![Pollresults](/images/pollresults-2.png)
 </Frame>
 
-and to the slide.
-
 <Frame>
   ![Screenshot 2026 03 24 At 12 21 54 PM](/images/Screenshot2026-03-24at12.21.54PM.png)
 </Frame>
 
-The published poll results can be moved, resized, deleted, or duplicated on the whiteboard.
+Once published to the slide, the results behave like any other whiteboard object — you can move, resize, duplicate, or delete them.
 
 <Frame>
   ![Screenshot 2026 03 16 At 3 51 58 PM](/images/Screenshot2026-03-16at3.51.58PM-1.png)
 </Frame>
 
-Published results appear in recordings both in the chat and slide as well.
+Published results also appear in the recording, in both the chat and the slide.
 
-## Quizzing
+## Run a quiz
 
-BigBlueButton now supports quizzing, which you can think of as polls with a correct answer.
-
-To do a quiz, select **Quiz** **\[1\]** and the options now show response types with multiple choices.
+A quiz is a poll with a correct answer marked. To start one, select **Quiz** **[1]** in the polling panel — the response types update to show multiple-choice options.
 
 <Frame>
   ![Screenshot 2026 03 24 At 12 09 52 PM](/images/Screenshot2026-03-24at12.09.52PM.png)
 </Frame>
 
-After selecting a Quiz, you can enter a question, such as **"Are insects animals?"** **\[1\]**, choose **Yes / No / Abstention** **\[2\]**, select **True \[3\]** as the correct answer, and select **Start quiz** **\[4\]**.
+To launch the quiz, enter a question such as **"Are insects animals?"** **[1]**, choose **Yes / No / Abstention** **[2]**, mark **True** **[3]** as the correct answer, then select **Start quiz** **[4]**.
 
 <Frame>
   ![Screenshot 2026 03 24 At 12 13 40 PM](/images/Screenshot2026-03-24at12.13.40PM.png)
 </Frame>
 
-After you select Start Quiz, users will see a prompt to respond to the quiz.
+Users see a prompt to respond to the quiz.
 
 <Frame>
   ![Screenshot 2026 03 16 At 3 32 27 PM](/images/Screenshot2026-03-16at3.32.27PM.png)
 </Frame>
 
-As before, the presenter will see the live results. Since it's a quiz with a correct answer, BigBlueButton will indicate if the student selected the correct answer.
+The presenter sees live results. Because the quiz has a correct answer, BigBlueButton indicates whether each student selected it.
 
 <Frame>
   ![Screenshot 2026 03 17 At 1 48 47 PM](/images/Screenshot2026-03-17at1.48.47PM.png)
 </Frame>
 
-When publishing the results, it will also show the correct answer unless you **unselect** Display correct answers to all participants.
-
-Here is what the published results look like in the chat with the correct result indicated.
+Published quiz results show the correct answer alongside each response, unless you clear **Display correct answers to all participants** before publishing.
 
 <Frame>
   ![Screenshot 2026 03 16 At 3 33 04 PM](/images/Screenshot2026-03-16at3.33.04PM.png)
 </Frame>
 
-You can also use quizzing with Smart Slides. The following video gives you an overview of how this works.
+### Quiz with Smart Slides
+
+You can also run a quiz directly from a Smart Slide. The video below walks through the workflow.
 
 <iframe src="https://www.youtube.com/embed/azCFKW40SGM" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />

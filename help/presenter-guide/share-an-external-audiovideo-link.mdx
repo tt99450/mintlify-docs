@@ -1,40 +1,42 @@
 ---
 title: "Share an External Audio/Video Link"
-description: "A presenter in BigBlueButton can share an external audio/video with users in the live session. The presenter role enables the assigned user to share and control video playback."
+description: "Presenters can share an external audio or video URL with everyone in the session and control playback for all users."
 ---
 
-The presenter role enables the assigned user to share and control video playback from an external video.
+Presenters can share an external audio or video URL with everyone in the session. BigBlueButton synchronizes playback for all users so the presenter can [start the video](#start-sharing-a-video), pause it, scrub the playhead, and [stop sharing](#stop-sharing-the-video) when done.
 
-Using the **Share an external video** command, you can share a URL for
+BigBlueButton supports URLs from:
 
 - YouTube
 - Vimeo
 - Instructure Media (previously called Arc)
 - Twitch and Dailymotion
 - Panopto
-- Direct link to a .mp4 file, as in [https://ubuntu.bigbluebutton.org/test/FredDixon.mp4](http://ubuntu.bigbluebutton.org/test/FredDixon.mp4)
-- Direct link to a .mp3 file, as in [https://ubuntu.bigbluebutton.org/test/audioSample.mp3](http://ubuntu.bigbluebutton.org/test/audioSample.mp3)
-- Direct link to a .mp4/.mp3 file shared in Dropbox (get a free Dropbox account at [dropbox.com/basic](https://www.dropbox.com/basic) to upload your videos).
+- A direct link to an `.mp4` file, for example [https://ubuntu.bigbluebutton.org/test/FredDixon.mp4](http://ubuntu.bigbluebutton.org/test/FredDixon.mp4)
+- A direct link to an `.mp3` file, for example [https://ubuntu.bigbluebutton.org/test/audioSample.mp3](http://ubuntu.bigbluebutton.org/test/audioSample.mp3)
+- A direct link to an `.mp4` or `.mp3` file shared in Dropbox (get a free Dropbox account at [dropbox.com/basic](https://www.dropbox.com/basic) to upload your videos)
 
 <Warning>
-  When using this feature, the video does not appear in the processed recordings.
+  Externally shared videos do not appear in the processed recordings.
 </Warning>
 
-Select the **'+' Action menu [1]** and choose **Share an external video [2]**.
+## Start sharing a video
+
+To share a video, select the **'+' Actions menu** **[1]**, then **Share an external video** **[2]**.
 
 <Frame>
   ![Externalvideo](/images/externalvideo.png)
 </Frame>
 
-A dialog box appears. Paste in the URL to your video and select **Share a new video**.
+In the dialog box, paste your video URL and select **Share a new video**.
 
 <Frame>
   ![Screenshot 2026 03 16 At 4 24 08 PM](/images/Screenshot2026-03-16at4.24.08PM.png)
 </Frame>
 
-The video appears in the presentation area, and BigBlueButton synchronizes playback for all users. At any time you can:
+The video appears in the presentation area, and BigBlueButton synchronizes playback for everyone in the session. As presenter, you can:
 
-- Start/Pause the video
+- Start or pause the video
 - Move the playhead
 - Stop sharing
 
@@ -42,10 +44,12 @@ The video appears in the presentation area, and BigBlueButton synchronizes playb
   ![Screenshot 2026 03 16 At 4 17 22 PM](/images/Screenshot2026-03-16at4.17.22PM.png)
 </Frame>
 
-To stop sharing, select the **X** in the upper right-hand corner of the presentation area.
+## Stop sharing the video
+
+To stop sharing, select the **X** in the upper-right corner of the presentation area.
 
 <Frame>
   ![Stopsharing](/images/stopsharing.png)
 </Frame>
 
-When you stop sharing, the presentation area reverts to the previous presentation.
+The presentation area reverts to the previous presentation.

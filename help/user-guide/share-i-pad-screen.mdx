@@ -1,51 +1,58 @@
 ---
 title: "Share iPad screen"
+description: "Share an iPad screen in a BigBlueButton session by mirroring the iPad to a Mac and screen-sharing the QuickTime window."
 ---
 
-While a presenter can join a BigBlueButton session on an iPad through Safari, the browser does not provide the means to share the screen.
+Safari on iPad cannot share its screen directly into BigBlueButton. To share an iPad screen, mirror the iPad to a Mac using QuickTime Player, then screen-share the QuickTime window from the Mac in your BigBlueButton session.
 
-If you have an Mac computer, you can connect your iPad to the computer, record the screen using QuickTime Player, and then share the connected screen in a BigBlueButton session.
+The result is that other users in the session see your iPad screen as a live view.
 
-The result is that other users in the session will see you iPad screen.  Here's how to do it.
+## Connect the iPad to your Mac
 
-1. Connect your iPad through a USB-C cable.  You'll get prompted to allow it to connect.  Select **Allow**.
+Connect your iPad to your Mac with a USB-C cable. When the iPad prompts you, select **Allow**.
 
 <Frame>
-  ![Image](/images/image-30.png)
+  ![iPad Allow connection prompt](/images/image-30.png)
 </Frame>
 
-2. To verify your Mac has connected to your iPad, **open the Finder**. You should see your iPad listed in Locations.  In the screen shot below it shows as **iPad Pro (2)**.
+To verify the connection, open **Finder**. Your iPad appears under **Locations** — for example, **iPad Pro (2)** in the screenshot below.
 
 <Frame>
-  ![Image](/images/image-32.png)
+  ![Finder showing connected iPad in Locations](/images/image-32.png)
 </Frame>
 
-3. Launch **QuickTime Player** and choose **New Movie Recording**
+## Mirror the iPad with QuickTime Player
+
+Open **QuickTime Player** and select **New Movie Recording**.
 
 <Frame>
-  ![Image](/images/image-31.png)
+  ![QuickTime Player New Movie Recording menu](/images/image-31.png)
 </Frame>
 
-4. Select the source menu (dow next to the red Record button.  
-   <Frame>
-     ![Image](/images/image-39.png)
-   </Frame>
-5.  In the pop-up menu, choose the name of your iPad you saw a few moments ago in the Finder window. In the screenshot below it again appeared as **iPad Pro (2).**
+Select the **arrow** next to the red **Record** button to open the source menu.
 
 <Frame>
-  ![Image](/images/image-33.png)
+  ![QuickTime source menu next to the Record button](/images/image-39.png)
 </Frame>
 
-Note,  don't have to actually record the iPad screen in Quicktime player.  The purpose of the above is to have QuickTime Player display your iPad screen on your Mac. Now that it's visible in its own window, you can screen share that window using BigBlueButton.
-
-6. To share the iPad window, click on the Share screen at the bottom of BigBlueButton's display.  Select **Window**, then select **Movie Recording**, then select **Share**.
+In the source menu, choose your iPad by name (for example, **iPad Pro (2)**).
 
 <Frame>
-  ![Image](/images/image-36.png)
+  ![QuickTime source menu with iPad selected](/images/image-33.png)
 </Frame>
 
-BigBlueButton will share iPad screen to all users in the session.  This is a live view of your iPad, so anything you do on your iPad will be visible to everyone in the BigBlueButton session
+You do not need to actually record. The goal is to display your iPad screen on the Mac so it can be screen-shared.
+
+## Screen-share the QuickTime window
+
+In BigBlueButton, select **Share screen** in the media bar. Choose **Window**, then **Movie Recording**, then **Share**.
 
 <Frame>
-  ![Image](/images/image-37.png)
+  ![Browser screen-share dialog with Movie Recording window selected](/images/image-36.png)
+</Frame>
+
+BigBlueButton shares the iPad screen to all users in the session. Anything you do on the iPad is visible to everyone live.
+
+<Frame>
+  ![iPad screen shared in a BigBlueButton session](/images/image-37.png)
 </Frame>
