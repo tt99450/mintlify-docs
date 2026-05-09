@@ -408,8 +408,7 @@
                 "group": "Commercial Hosting",
                 "pages": [
                   "help/premium/overview-of-premium-features",
-                  "help/premium/premium-tier-customizations",
-                  "help/premium/premium-hosting-road-map"
+                  "help/premium/premium-tier-customizations"
                 ]
               }
             ]
@@ -474,7 +473,6 @@
                 "group": "FAQ",
                 "pages": [
                   "help/troubleshooting/blindside-networks-status-page",
-                  "help/faq/is-bigbluebutton-gdpr-compliant",
                   "help/faq/where-is-the-hosting-location-for-australia-customers",
                   "help/faq/whitelisting-bigbluebutton-servers-for-the-firewall",
                   "help/faq/can-users-connect-to-bigbluebutton-from-within-china",
