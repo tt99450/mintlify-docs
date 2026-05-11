@@ -1,22 +1,221 @@
 ---
 title: "Activity settings reference"
-description: "Reference guide to the major settings areas available when creating or editing a BigBlueButton activity in Moodle."
+description: "Comprehensive reference for all major settings available when adding or editing a BigBlueButton activity in Moodle."
 ---
 
-Use this page as a quick reference for the main settings areas available in a BigBlueButton activity.
+Use this page as a technical reference for the full set of options you may see when adding or editing a BigBlueButton activity in a Moodle course.
 
-## Main sections
+The exact form can vary by Moodle version, BigBlueButton version, and installed subplugins.
 
-- General activity information
-- Room settings
-- Recording settings
-- Participant and role settings
-- Presentation content
-- Schedule settings
-- Common module settings
+<Note>This page focuses on the core BigBlueButton activity settings provided by Moodle. Subplugins and site-specific extensions can add, remove, or override additional options.</Note>
 
-## Best way to use this page
+## General
 
-If you are trying to accomplish a task, start in the [Teachers](/integrations/moodle/teachers/create-and-edit-activity) section.
+### Instance type
 
-Use this page when you already know the setting name or section you need.
+The **Instance type** determines how the activity behaves for live sessions and recordings.
+
+- **Room with recordings**: standard mode for running live sessions and publishing their recordings.
+- **Room only**: live room without recording playback management in the activity.
+- **Recordings only**: no new live room launch, but previously created/imported recordings remain accessible.
+
+Use this setting when you need to convert a live room into a recordings portal, or when you want to disable live usage after delivery.
+
+### Room name
+
+The room name is the activity title shown in the course and on the activity page. Use a descriptive name (for example, week/topic + class type) so students can quickly identify the correct room.
+
+### Show more...
+
+Expanding **Show more...** in the General section exposes additional Moodle fields.
+
+- **Description**: rich text editor for instructional context, joining notes, or policy reminders.
+- **Display description on course page**: shows the description directly on the course page under the activity link.
+
+Use this when you want students to see joining instructions without opening the activity first.
+
+## Room settings
+
+These settings control default room behavior for each live session.
+
+- **Welcome message**: pre-populated message posted when users enter the room. Useful for agenda, etiquette, and first-step instructions.
+- **Wait for moderator**: blocks viewer entry until a moderator joins. Useful for managed starts and exam supervision.
+- **The session may be recorded**: enables recording controls in-session. Disable for privacy-sensitive meetings.
+
+For operational guidance, see [Room settings](/integrations/moodle/teachers/room-settings).
+
+## Recording view
+
+- **Show only imported links**: filters the recording list to imported recording links only. Useful when you curate a subset of recordings for learners.
+
+For broader recording workflows, see [Recording settings](/integrations/moodle/teachers/recording-settings).
+
+## Lock settings
+
+Lock settings define default participant restrictions when a session starts.
+
+- **Disable webcams**
+- **Disable microphones**
+- **Disable private chat**
+- **Disable public chat**
+- **Disable shared notes**
+- **Hide user list**
+
+Use these defaults to enforce classroom format (lecture-style, assessment mode, or moderated discussion). Moderators can typically adjust locks during the live session if permissions allow.
+
+## Presentation content
+
+The **Presentation content** area controls what files are available at session start.
+
+- **Pre-uploaded presentations**: define default slides/content before users join.
+- **Drag-and-drop uploads**: quick file drop directly in the form.
+- **File picker integration**: choose content from Moodle repositories.
+
+Common file picker sources include:
+
+- **Upload a file**
+- **URL downloader**
+- **Private files**
+- **Content bank**
+- **Server files**
+- **Recent files**
+- **Wikimedia integration**
+
+Use repository sources to standardize content reuse across courses and reduce duplicate uploads.
+
+For step-by-step instructions, see [Presentations](/integrations/moodle/teachers/presentations).
+
+## Role assigned during live session
+
+Role assignment maps Moodle identity context to BigBlueButton join roles.
+
+### Role mapping between Moodle and BBB
+
+Each mapping row has:
+
+- an **assignee type** (who the rule applies to)
+- a **BigBlueButton role** (how they enter)
+
+### Assignee types
+
+- **All users enrolled**: baseline rule for all enrolled participants.
+- **Moodle role**: applies to selected Moodle roles (for example, Teacher, Non-editing teacher, Student).
+- **User**: applies to a specific enrolled user.
+
+### BBB roles
+
+- **Viewer**: participant role with standard learner permissions.
+- **Moderator**: facilitator role with management controls.
+
+Use explicit mappings for co-teaching, teaching assistants, and role-exception handling.
+
+For practical mapping examples, see [Participants and roles](/integrations/moodle/teachers/participants-and-roles).
+
+## Guest access
+
+- **Allow guest access**: permits users outside enrolled participants to join through the guest workflow.
+- **Guests joining must be admitted by a moderator**: enables moderated lobby/admission behavior for guests.
+
+Use these options for guest speakers, observers, or external evaluators while preserving class control.
+
+## Session timing
+
+Session timing controls the activity join window.
+
+- **Open time**: earliest time users can join.
+- **Close time**: time after which joining is blocked.
+
+Use timing with or without **Wait for moderator** depending on whether you need strict calendar control, moderated entry, or both.
+
+For scheduling patterns, see [Schedule a session](/integrations/moodle/teachers/schedule-session).
+
+## Grade
+
+The **Grade** section integrates the activity with Moodle gradebook workflows. Depending on site configuration, this can include grade type/scale behavior and completion-by-grade usage.
+
+Use this when BigBlueButton participation should contribute to assessed outcomes.
+
+## Common module settings
+
+These are standard Moodle controls that still affect BigBlueButton activities.
+
+- **Availability**: show/hide activity on course page.
+- **ID number**: unique identifier for reporting/integration use cases.
+- **Force language**: override language for this activity context.
+- **Group mode**:
+	- **No groups**
+	- **Visible groups**
+	- **Separate groups**
+- **Grouping**: restrict activity context to selected group collection.
+- **Group/grouping access restrictions**: combine with access rules to control who can view/join.
+
+For detailed Moodle behavior, see [Common module settings](/integrations/moodle/teachers/common-module-settings).
+
+## Restrict access
+
+Use **Restrict access** for conditional availability.
+
+- **Conditional availability** (overall rule container)
+- **Date restrictions**
+- **Grade restrictions**
+- **Group restrictions**
+- **Activity completion restrictions**
+
+Combine rules to control visibility and entry based on progression policies.
+
+## Completion conditions
+
+Moodle completion determines how the activity is marked complete for each learner.
+
+- **No completion tracking**
+- **Manual completion**
+- **Automatic completion**
+
+BigBlueButton-specific automatic criteria can include:
+
+- **View activity**
+- **Attendance minutes**
+- **Chat participation**
+- **Talk participation**
+- **Raised hand**
+- **Poll votes**
+- **Emojis**
+- **Receive a grade**
+
+You may also see **Timeline reminders** related to completion deadlines and learner notifications.
+
+For administrator-level setup context, see [Activity completion](/integrations/moodle/admins/activity-completion) and [Completion rules reference](/integrations/moodle/reference/completion-rules-reference).
+
+## Tags
+
+Moodle **Tags** allow activity-level tagging for organization, search, and reporting workflows.
+
+Use tags to standardize categorization across courses (for example, webinar, office-hours, assessment).
+
+## Competencies
+
+If competency frameworks are enabled, the **Competencies** section links the activity to institutional competency outcomes.
+
+Use this when BigBlueButton sessions support tracked skills or program outcomes.
+
+## Standard Moodle controls
+
+At the bottom of the form, Moodle provides standard save/cancel actions:
+
+- **Save and return to course**
+- **Save and display**
+- **Cancel**
+
+Choose **Save and display** when you want to verify room behavior immediately after saving.
+
+## Additional guidance
+
+Expect differences between sites. The exact options shown can depend on:
+
+- Moodle version
+- BigBlueButton version
+- installed subplugins/extensions
+
+Additional enterprise or BNX-related settings may appear depending on your deployment and licensing profile.
+
+If you need task-based walkthroughs, start with [Create and edit activity](/integrations/moodle/teachers/create-and-edit-activity) and the pages in the Moodle Teachers section.

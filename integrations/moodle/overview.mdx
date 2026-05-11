@@ -5,6 +5,8 @@ description: "Use BigBlueButton in Moodle to create live classes, schedule sessi
 
 BigBlueButton for Moodle lets instructors create live virtual classrooms directly inside a Moodle course. You can use it to host lectures, office hours, group discussions, and recorded sessions without leaving the LMS.
 
+When a BigBlueButton activity is configured as **Room with recordings**, the activity page becomes the main place where users join the live room and access published recordings.
+
 ## What you can do
 
 - Create a BigBlueButton activity inside a course
@@ -27,9 +29,122 @@ BigBlueButton for Moodle lets instructors create live virtual classrooms directl
 
 The Moodle integration can be used in different ways depending on the activity type and recording settings. A course may use a live room, a room with recordings, or a recording-focused activity.
 
-### Recordings
+### Room with recordings view
 
-Processed recordings appear under the activity where they were created or were imported. Depending on permissions and settings, teachers can edit names and descriptions, publish or unpublish links, and control access.
+This is the default end-user experience for a BigBlueButton activity that supports both live access and recordings. The activity page typically shows the room details at the top, the join button for the live session, and a recordings section below the room information.
+
+Use this page when you want to understand what instructors and learners see before joining the session or opening a recording.
+
+#### Header area
+
+The header area usually includes:
+
+- the activity name
+- the BigBlueButton activity type label
+- the open date and time, if the activity is scheduled
+- course breadcrumb navigation so users can move back to the course easily
+
+#### Navigation tabs
+
+Depending on permissions and Moodle version, you may see tabs such as:
+
+- **BigBlueButton**
+- **Settings**
+- **Validate completion**
+- **More**
+
+The exact tabs shown can vary by role, activity configuration, and site version.
+
+#### AI features menu
+
+Some Moodle installations also show an **AI features** menu. Whether it appears depends on:
+
+- Moodle AI subsystem configuration
+- installed AI providers
+- user permissions
+
+If available, this menu may expose AI-assisted actions such as summaries or content generation.
+
+#### Session information
+
+The page may display a status message such as:
+
+- **This room is ready. You can join the session now.**
+
+Status messages change based on the session timing, moderator presence, room availability, and guest restrictions.
+
+#### Join session button
+
+Selecting **Join session** launches the BigBlueButton virtual classroom in a new tab or window.
+
+Users join with the role assigned by Moodle permissions and BBB role mappings:
+
+- teachers typically join as moderators
+- students typically join as viewers
+
+#### Recordings section
+
+When recordings are available, they appear in a recordings table below the live room details. The table is used to find, preview, and manage published recordings.
+
+Common columns include:
+
+- **Playback**
+- **Name**
+- **Description**
+- **Preview**
+- **Date**
+- **Duration**
+- **Toolbar/actions**
+
+#### Playback formats
+
+Recordings may provide more than one playback format, such as:
+
+- **Presentation**
+- **Video**
+- **Podcast**
+
+The available formats depend on the BigBlueButton server configuration, recording processing, and installed features.
+
+#### Recording management actions
+
+Depending on permissions, users may be able to:
+
+- view a recording
+- edit the recording name
+- edit the recording description
+- delete the recording
+
+Use [Manage recordings](/integrations/moodle/teachers/recordings) for the full recording workflow.
+
+#### Pagination and filtering
+
+If an activity has many recordings, the table may include pagination controls and a rows-per-page selector. These controls help users move between pages and narrow the visible list.
+
+#### Import recording links
+
+Some sites also show an **Import recording links** button. This lets teachers link external recordings into the activity, which is useful for migrated or externally hosted recordings.
+
+The button and import workflow depend on permissions and site configuration. See [Import recording links](/integrations/moodle/teachers/import-recording-links).
+
+#### Additional notes
+
+The interface may vary slightly depending on:
+
+- Moodle version
+- theme
+- BigBlueButton plugin version
+- installed extensions or subplugins
+
+Additional enterprise or BNX-related features may appear depending on the installation.
+
+If you are looking for the step-by-step join flow, see [Join your first session](/integrations/moodle/get-started/join-your-first-session). If you need the full recording workflow, see [Manage recordings](/integrations/moodle/teachers/recordings).
+
+### Recordings at a glance
+
+Processed recordings appear under the activity after the session is recorded and processed. From there, teachers can review the list, open a playback format, or manage recording visibility and metadata.
+
+For the full recording workflow, see [Manage recordings](/integrations/moodle/teachers/recordings).
 
 ### Groups
 
