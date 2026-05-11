@@ -1,524 +1,533 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "BigBlueButton",
-  "styling": {
-    "eyebrows": "breadcrumbs"
-  },
-  "colors": {
-    "primary": "#15803D",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Blog",
-          "icon": "newspaper",
-          "href": "https://bigbluebutton.org/blog"
-        }
-      ]
+    "$schema": "https://mintlify.com/docs.json",
+    "theme": "mint",
+    "name": "BigBlueButton",
+    "styling": {
+        "eyebrows": "breadcrumbs"
     },
-    "tabs": [
-      {
-        "tab": "Getting Started",
-        "groups": [
-          {
-            "group": "Getting Started",
-            "pages": [
-              "getting-started/welcome",
-              "getting-started/pedagogy",
-              "getting-started/quick-reference",
-              "getting-started/accessibility",
-              {
-                "group": "FAQ",
-                "expanded": false,
-                "pages": [
-                  "help/faq/what-are-the-minimum-requirements-for-bigbluebutton",
-                  "help/faq/how-many-webcams-can-i-share-in-a-meeting",
-                  "help/faq/connection-status",
-                  "help/faq/does-the-pin-number-for-a-conference-change",
-                  "help/faq/where-is-meeting-data-stored-in-europe",
-                  "help/faq/why-is-there-no-bigbluebutton-mobile-application",
-                  "help/faq/can-i-play-a-video-using-screen-sharing",
-                  "help/faq/common-youtube-external-video-playback-error",
-                  "help/faq/using-chromes-built-in-closed-captioning",
-                  "help/faq/how-to-mirror-your-ipadiphone-screen-to-a-mac-computer-with-quicktime",
-                  "help/faq/how-do-i-capture-the-browsers-console",
-                  "help/faq/antivirus-software-causes-issues-while-connecting-to-a-bigbluebutton-session"                ]
-              }
+    "colors": {
+        "primary": "#15803D",
+        "light": "#07C983",
+        "dark": "#15803D"
+    },
+    "favicon": "/favicon.svg",
+    "navigation": {
+        "global": {
+            "anchors": [
+                {
+                    "anchor": "Blog",
+                    "icon": "newspaper",
+                    "href": "https://bigbluebutton.org/blog"
+                }
             ]
-          },
-          {
-            "group": "Learn the Basics",
-            "pages": [
-              "help/videos",
-              "getting-started/before-you-teach"
-            ]
-          },
-          {
-            "group": "Guides",
-            "pages": [
-              "getting-started/student-guide",
-              "getting-started/guides"
-            ]
-          }
+        },
+        "tabs": [
+            {
+                "tab": "Getting Started",
+                "groups": [
+                    {
+                        "group": "Getting Started",
+                        "pages": [
+                            "getting-started/welcome",
+                            "getting-started/pedagogy",
+                            "getting-started/quick-reference",
+                            "getting-started/accessibility",
+                            {
+                                "group": "FAQ",
+                                "expanded": false,
+                                "pages": [
+                                    "help/faq/what-are-the-minimum-requirements-for-bigbluebutton",
+                                    "help/faq/how-many-webcams-can-i-share-in-a-meeting",
+                                    "help/faq/connection-status",
+                                    "help/faq/does-the-pin-number-for-a-conference-change",
+                                    "help/faq/where-is-meeting-data-stored-in-europe",
+                                    "help/faq/why-is-there-no-bigbluebutton-mobile-application",
+                                    "help/faq/can-i-play-a-video-using-screen-sharing",
+                                    "help/faq/common-youtube-external-video-playback-error",
+                                    "help/faq/using-chromes-built-in-closed-captioning",
+                                    "help/faq/how-to-mirror-your-ipadiphone-screen-to-a-mac-computer-with-quicktime",
+                                    "help/faq/how-do-i-capture-the-browsers-console",
+                                    "help/faq/antivirus-software-causes-issues-while-connecting-to-a-bigbluebutton-session"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "group": "Learn the Basics",
+                        "pages": [
+                            "help/videos",
+                            "getting-started/before-you-teach"
+                        ]
+                    },
+                    {
+                        "group": "Guides",
+                        "pages": [
+                            "getting-started/student-guide",
+                            "getting-started/guides"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "1-Prepare",
+                "groups": [
+                    {
+                        "group": "Set Up Your Room",
+                        "pages": [
+                            "prepare/setup-rooms"
+                        ]
+                    },
+                    {
+                        "group": "Create Engaging Content",
+                        "pages": [
+                            "prepare/create-engaging-content"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "2-Educate",
+                "groups": [
+                    {
+                        "group": "Manage Class",
+                        "pages": [
+                            "educate/manage/roles-environment",
+                            "educate/manage/managing-students",
+                            "educate/manage/keeping-time"
+                        ]
+                    },
+                    {
+                        "group": "Build Relationships",
+                        "pages": [
+                            "educate/relationships/create-connection",
+                            "educate/relationships/collaborative-spaces",
+                            "educate/relationships/set-the-mood"
+                        ]
+                    },
+                    {
+                        "group": "Teach",
+                        "pages": [
+                            "educate/teach/deliver-content",
+                            "educate/teach/facilitate-discussion",
+                            "educate/teach/breakout-rooms"
+                        ]
+                    },
+                    {
+                        "group": "Active Learning",
+                        "pages": [
+                            "educate/active-learning/check-understanding",
+                            "educate/active-learning/gather-input",
+                            "educate/active-learning/collaborative-activities",
+                            "educate/active-learning/learning-challenge-takeaways"
+                        ]
+                    },
+                    {
+                        "group": "Assess & Feedback",
+                        "pages": [
+                            "educate/assess/learning-analytics-dashboard"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "3-Reflect",
+                "groups": [
+                    {
+                        "group": "After Class",
+                        "pages": [
+                            "reflect/recordings",
+                            "reflect/review-your-class"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Reference",
+                "groups": [
+                    {
+                        "group": "Resources",
+                        "pages": [
+                            "reference/practical-tips",
+                            "reference/troubleshooting",
+                            "reference/keyboard-shortcuts",
+                            {
+                                "group": "FAQ",
+                                "expanded": false,
+                                "pages": [
+                                    "help/faq/what-are-the-minimum-requirements-for-bigbluebutton",
+                                    "help/faq/how-many-webcams-can-i-share-in-a-meeting",
+                                    "help/faq/connection-status",
+                                    "help/faq/does-the-pin-number-for-a-conference-change",
+                                    "help/faq/where-is-meeting-data-stored-in-europe",
+                                    "help/faq/why-is-there-no-bigbluebutton-mobile-application",
+                                    "help/faq/can-i-play-a-video-using-screen-sharing",
+                                    "help/faq/common-youtube-external-video-playback-error",
+                                    "help/faq/using-chromes-built-in-closed-captioning",
+                                    "help/faq/how-to-mirror-your-ipadiphone-screen-to-a-mac-computer-with-quicktime",
+                                    "help/faq/how-do-i-capture-the-browsers-console",
+                                    "help/faq/antivirus-software-causes-issues-while-connecting-to-a-bigbluebutton-session"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "group": "User Guide",
+                        "pages": [
+                            "help/user-guide/join-the-audio",
+                            "help/user-guide/share-a-webcam",
+                            "help/user-guide/send-public-and-private-chat-messages",
+                            "help/user-guide/use-shared-notes",
+                            "help/user-guide/raise-hand",
+                            "help/user-guide/reactions-bar",
+                            "help/user-guide/respond-to-polls",
+                            "help/user-guide/join-breakout-rooms",
+                            "help/user-guide/close-the-presentationenlarge-the-webcams",
+                            "help/user-guide/access-the-options-menu",
+                            "help/user-guide/using-away-available",
+                            "help/user-guide/make-webcams-larger",
+                            "help/user-guide/move-webcams-in-a-live-session",
+                            "help/releases/disable-self-view-of-webcam",
+                            "help/releases/camera-as-content",
+                            "help/releases/how-do-i-use-my-browsers-built-in-speech-recognition",
+                            "help/user-guide/view-closed-captions",
+                            "help/user-guide/share-i-pad-screen"
+                        ]
+                    },
+                    {
+                        "group": "Moderator Guide",
+                        "expanded": false,
+                        "pages": [
+                            "help/moderator-guide/manage-users",
+                            "help/moderator-guide/promotedemoteremove-a-user",
+                            "help/moderator-guide/givetake-presenter-role",
+                            "help/moderator-guide/how-to-configure-guest-policy",
+                            "help/moderator-guide/lock-viewers-ability-to-use-their-micwebcamchatshared-notes",
+                            "help/moderator-guide/clear-the-public-chat",
+                            "help/moderator-guide/start-and-stop-recording",
+                            "help/moderator-guide/end-meeting-on-logout",
+                            "help/moderator-guide/using-smart-slides-for-one-click-polling",
+                            "help/moderator-guide/how-do-i-use-the-per-user-whiteboard",
+                            "help/moderator-guide/use-closed-captions",
+                            "help/releases/timer-and-stopwatch",
+                            "help/moderator-guide/create-and-manage-breakout-rooms",
+                            "help/moderator-guide/access-breakout-room-whiteboards-or-shared-notes",
+                            "help/moderator-guide/learning-analytics-dashboard"
+                        ]
+                    },
+                    {
+                        "group": "Presenter Guide",
+                        "expanded": false,
+                        "pages": [
+                            "help/presenter-guide/upload-a-presentation-enable-for-download",
+                            "help/presenter-guide/use-the-presentation-controls",
+                            "help/presenter-guide/share-my-screen",
+                            "help/presenter-guide/share-an-external-audiovideo-link",
+                            "help/presenter-guide/use-pollingquzzing",
+                            "help/releases/how-do-i-use-the-multi-user-whiteboard",
+                            "help/presenter-guide/raise-hands",
+                            "help/presenter-guide/shared-notes-presenter"
+                        ]
+                    },
+                    {
+                        "group": "Troubleshooting",
+                        "pages": [
+                            "help/troubleshooting/known-issues",
+                            "help/troubleshooting/user-is-getting-disconnected",
+                            "help/troubleshooting/client-periodically-disconnectsreconnects",
+                            "help/troubleshooting/users-unable-to-share-their-webcam",
+                            "help/troubleshooting/why-do-i-not-see-my-webcam-in-the-recording",
+                            "help/troubleshooting/after-allowing-the-browser-permissions-on-mac-os-i-am-still-unable-to-join-my-audio-in-bigbluebutton",
+                            "help/troubleshooting/mac-os-updates-bigbluebutton-media-permissions",
+                            "help/troubleshooting/troubleshooting-microphone",
+                            "help/troubleshooting/students-are-not-able-to-see-join-their-meeting",
+                            "help/troubleshooting/students-are-not-able-to-view-their-concluded-meeting-recordings",
+                            "help/troubleshooting/pdf-that-contains-scanned-content-does-not-display-correctly",
+                            "help/troubleshooting/latex-documents-not-converting-correctly",
+                            "help/troubleshooting/how-to-disable-ipv6",
+                            "help/troubleshooting/important-information-for-users-of-the-bigbluebutton-html5-client"
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Integrations",
+                "menu": [
+                    {
+                        "item": "Canvas LMS",
+                        "groups": [
+                            {
+                                "group": "Overview",
+                                "pages": [
+                                    "integrations/overview"
+                                ]
+                            },
+                            {
+                                "group": "Canvas LMS",
+                                "pages": [
+                                    "integrations/canvas/faq-what-are-conferences",
+                                    "integrations/canvas/creating-and-starting-a-conference",
+                                    "integrations/canvas/inviting-course-members-to-a-conference",
+                                    "integrations/canvas/viewing-recordings",
+                                    "integrations/canvas/locating-deleting-recordings",
+                                    "integrations/canvas/ending-a-conference-in-canvas",
+                                    "integrations/canvas/deleting-a-conference",
+                                    "integrations/canvas/using-bigbluebutton-with-appointments",
+                                    "integrations/canvas/faq-how-does-the-duration-value-affect-users-ability-to-enter-a-conference-in-canvas",
+                                    "integrations/canvas/faq-how-long-will-recordings-appear-in-canvas",
+                                    "integrations/canvas/faq-why-has-my-recording-not-appeared",
+                                    "integrations/canvas/faq-what-are-protected-recording-links",
+                                    "integrations/canvas/faq-can-we-automatically-enable-all-conferences-to-be-recorded",
+                                    "integrations/canvas/faq-can-i-add-participants-to-an-existing-conference",
+                                    "integrations/canvas/faq-integrating-your-own-bigbluebutton-server-with-canvas",
+                                    "integrations/canvas/faq-integration-with-canvas-studio",
+                                    "integrations/canvas/troubleshooting-students-are-not-able-to-seejoin-their-canvas-conferences",
+                                    "integrations/canvas/troubleshooting-students-are-not-able-to-view-their-concluded-conference-recordings",
+                                    "integrations/canvas/troubleshooting-record-enabled-conference-not-appearing-for-viewing",
+                                    "integrations/canvas/troubleshooting-enabling-recording-for-all-canvas-conferences",
+                                    "integrations/canvas/troubleshooting-how-to-hide-the-allow-attendees-to-selections"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "item": "Moodle LMS",
+                        "groups": [
+                            {
+                                "group": "Overview",
+                                "pages": [
+                                    "integrations/moodle/overview",
+                                    "integrations/moodle/faq"
+                                ]
+                            },
+                            {
+                                "group": "Get Started",
+                                "pages": [
+                                    "integrations/moodle/get-started/create-your-first-activity",
+                                    "integrations/moodle/get-started/join-your-first-session",
+                                    "integrations/moodle/get-started/find-and-play-recordings"
+                                ]
+                            },
+                            {
+                                "group": "Teachers",
+                                "pages": [
+                                    "integrations/moodle/teachers/create-and-edit-activity",
+                                    "integrations/moodle/teachers/room-settings",
+                                    "integrations/moodle/teachers/participants-and-roles",
+                                    "integrations/moodle/teachers/schedule-session",
+                                    "integrations/moodle/teachers/presentations",
+                                    "integrations/moodle/teachers/recording-settings",
+                                    "integrations/moodle/teachers/recordings",
+                                    "integrations/moodle/teachers/import-recording-links",
+                                    "integrations/moodle/teachers/common-module-settings",
+                                    "integrations/moodle/teachers/groups-and-grouping",
+                                    "integrations/moodle/teachers/guest-access"
+                                ]
+                            },
+                            {
+                                "group": "Admins",
+                                "pages": [
+                                    "integrations/moodle/admins/install-and-configure",
+                                    "integrations/moodle/admins/global-settings",
+                                    "integrations/moodle/admins/recording-defaults",
+                                    "integrations/moodle/admins/activity-completion",
+                                    "integrations/moodle/admins/roles-and-capabilities",
+                                    "integrations/moodle/admins/scheduled-tasks",
+                                    "integrations/moodle/admins/language-customization",
+                                    "integrations/moodle/admins/subplugins"
+                                ]
+                            },
+                            {
+                                "group": "BNX",
+                                "pages": [
+                                    "integrations/moodle/bnx/activity-view",
+                                    "integrations/moodle/bnx/framework"
+                                ]
+                            },
+                            {
+                                "group": "Reference",
+                                "pages": [
+                                    "integrations/moodle/reference/activity-settings-reference",
+                                    "integrations/moodle/reference/recording-settings-reference",
+                                    "integrations/moodle/reference/completion-rules-reference",
+                                    "integrations/moodle/reference/moodle-module-settings-reference"
+                                ]
+                            },
+                            {
+                                "group": "Troubleshooting",
+                                "pages": [
+                                    "integrations/moodle/troubleshooting/missing-recordings-after-upgrade",
+                                    "integrations/moodle/troubleshooting/deleted-activity-recordings",
+                                    "integrations/moodle/troubleshooting/downgrading-plugin",
+                                    "integrations/moodle/troubleshooting/language-strings"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "item": "Sakai LMS",
+                        "groups": [
+                            {
+                                "group": "Sakai LMS",
+                                "pages": [
+                                    "integrations/sakai/faq-what-are-meetings",
+                                    "integrations/sakai/creating-a-bigbluebutton-meeting",
+                                    "integrations/sakai/default-recording-settings",
+                                    "integrations/sakai/faq-how-long-will-recordings-appear"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "item": "Schoology LMS",
+                        "groups": [
+                            {
+                                "group": "Schoology LMS",
+                                "pages": [
+                                    "what-are-conferences",
+                                    "how-to-create-a-conference",
+                                    "starting-and-editing-a-conference",
+                                    "how-to-join-a-conference",
+                                    "how-to-view-past-conferences",
+                                    "deleting-a-conference",
+                                    "ending-a-conference"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "item": "LTI",
+                        "groups": [
+                            {
+                                "group": "LTI",
+                                "pages": [
+                                    "integrations/lti"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "tab": "Blindside Networks",
+                "menu": [
+                    {
+                        "item": "Commercial Hosting",
+                        "groups": [
+                            {
+                                "group": "Commercial Hosting",
+                                "pages": [
+                                    "help/premium/overview-of-premium-features",
+                                    "help/premium/premium-tier-customizations"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "item": "Personal Rooms",
+                        "groups": [
+                            {
+                                "group": "Personal Rooms",
+                                "pages": [
+                                    "help/personal-rooms/overview",
+                                    "help/personal-rooms/overview-of-personal-rooms-interface",
+                                    "help/personal-rooms/how-do-i-create-my-own-rooms",
+                                    "help/personal-rooms/can-i-invite-attendees-to-my-meetings",
+                                    "help/personal-rooms/how-do-i-find-manage-recordings",
+                                    "help/personal-rooms/can-i-delete-my-personal-rooms"
+                                ]
+                            },
+                            {
+                                "group": "Getting Started",
+                                "pages": [
+                                    "help/getting-started/getting-started-with-personal-rooms",
+                                    "help/getting-started/in-application-authorization",
+                                    "help/getting-started/google-oauth2",
+                                    "help/getting-started/office-365-oauth2",
+                                    "help/getting-started/saml-auth",
+                                    "help/getting-started/saml-auth-setup",
+                                    "help/getting-started/saml-auth-deprecated"
+                                ]
+                            },
+                            {
+                                "group": "Admin",
+                                "pages": [
+                                    "help/personal-rooms/admin/accessing-the-administrator-panel",
+                                    "help/personal-rooms/admin/managing-users",
+                                    "help/personal-rooms/admin/managing-recordings",
+                                    "help/personal-rooms/admin/site-settings"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "item": "Analytics",
+                        "groups": [
+                            {
+                                "group": "Analytics",
+                                "pages": [
+                                    "analytics/overview",
+                                    "analytics/configuration",
+                                    "analytics/moodle",
+                                    "analytics/canvas",
+                                    "analytics/data-formats",
+                                    "analytics/appendix"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "item": "FAQ",
+                        "groups": [
+                            {
+                                "group": "FAQ",
+                                "pages": [
+                                    "help/troubleshooting/blindside-networks-status-page",
+                                    "help/faq/where-is-the-hosting-location-for-australia-customers",
+                                    "help/faq/whitelisting-bigbluebutton-servers-for-the-firewall",
+                                    "help/faq/can-users-connect-to-bigbluebutton-from-within-china",
+                                    "help/premium/how-do-i-download-a-recording",
+                                    "help/premium/can-i-prevent-users-from-downloading-a-recording",
+                                    "help/premium/how-long-until-my-recording-is-available-for-viewing",
+                                    "help/premium/how-do-i-invite-a-guest-to-a-live-meeting",
+                                    "help/premium/options-for-giving-students-visibility-of-other-students-webcams"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
         ]
-      },
-      {
-        "tab": "1-Prepare",
-        "groups": [
-          {
-            "group": "Set Up Your Room",
-            "pages": [
-              "prepare/setup-rooms"
-            ]
-          },
-          {
-            "group": "Create Engaging Content",
-            "pages": [
-              "prepare/create-engaging-content"
-            ]
-          }
+    },
+    "logo": {
+        "light": "/logo/light.svg",
+        "dark": "/logo/dark.svg"
+    },
+    "navbar": {
+        "links": [
+            {
+                "label": "Support",
+                "href": "mailto:support@blindsidenetworks.com"
+            }
         ]
-      },
-      {
-        "tab": "2-Educate",
-        "groups": [
-          {
-            "group": "Manage Class",
-            "pages": [
-              "educate/manage/roles-environment",
-              "educate/manage/managing-students",
-              "educate/manage/keeping-time"
-            ]
-          },
-          {
-            "group": "Build Relationships",
-            "pages": [
-              "educate/relationships/create-connection",
-              "educate/relationships/collaborative-spaces",
-              "educate/relationships/set-the-mood"
-            ]
-          },
-          {
-            "group": "Teach",
-            "pages": [
-              "educate/teach/deliver-content",
-              "educate/teach/facilitate-discussion",
-              "educate/teach/breakout-rooms"
-            ]
-          },
-          {
-            "group": "Active Learning",
-            "pages": [
-              "educate/active-learning/check-understanding",
-              "educate/active-learning/gather-input",
-              "educate/active-learning/collaborative-activities",
-              "educate/active-learning/learning-challenge-takeaways"
-            ]
-          },
-          {
-            "group": "Assess & Feedback",
-            "pages": [
-              "educate/assess/learning-analytics-dashboard"
-            ]
-          }
+    },
+    "contextual": {
+        "options": [
+            "copy",
+            "view",
+            "chatgpt",
+            "claude",
+            "perplexity",
+            "mcp",
+            "cursor",
+            "vscode"
         ]
-      },
-      {
-        "tab": "3-Reflect",
-        "groups": [
-          {
-            "group": "After Class",
-            "pages": [
-              "reflect/recordings",
-              "reflect/review-your-class"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Reference",
-        "groups": [
-          {
-            "group": "Resources",
-            "pages": [
-              "reference/practical-tips",
-              "reference/troubleshooting",
-              "reference/keyboard-shortcuts",
-              {
-                "group": "FAQ",
-                "expanded": false,
-                "pages": [
-                  "help/faq/what-are-the-minimum-requirements-for-bigbluebutton",
-                  "help/faq/how-many-webcams-can-i-share-in-a-meeting",
-                  "help/faq/connection-status",
-                  "help/faq/does-the-pin-number-for-a-conference-change",
-                  "help/faq/where-is-meeting-data-stored-in-europe",
-                  "help/faq/why-is-there-no-bigbluebutton-mobile-application",
-                  "help/faq/can-i-play-a-video-using-screen-sharing",
-                  "help/faq/common-youtube-external-video-playback-error",
-                  "help/faq/using-chromes-built-in-closed-captioning",
-                  "help/faq/how-to-mirror-your-ipadiphone-screen-to-a-mac-computer-with-quicktime",
-                  "help/faq/how-do-i-capture-the-browsers-console",
-                  "help/faq/antivirus-software-causes-issues-while-connecting-to-a-bigbluebutton-session"                ]
-              }
-            ]
-          },
-          {
-            "group": "User Guide",
-            "pages": [
-              "help/user-guide/join-the-audio",
-              "help/user-guide/share-a-webcam",
-              "help/user-guide/send-public-and-private-chat-messages",
-              "help/user-guide/use-shared-notes",
-              "help/user-guide/raise-hand",
-              "help/user-guide/reactions-bar",
-              "help/user-guide/respond-to-polls",
-              "help/user-guide/join-breakout-rooms",
-              "help/user-guide/close-the-presentationenlarge-the-webcams",
-              "help/user-guide/access-the-options-menu",
-              "help/user-guide/using-away-available",
-              "help/user-guide/make-webcams-larger",
-              "help/user-guide/move-webcams-in-a-live-session",
-              "help/releases/disable-self-view-of-webcam",
-              "help/releases/camera-as-content",
-              "help/releases/how-do-i-use-my-browsers-built-in-speech-recognition",
-              "help/user-guide/view-closed-captions",
-              "help/user-guide/share-i-pad-screen"
-            ]
-          },
-          {
-            "group": "Moderator Guide",
-            "expanded": false,
-            "pages": [
-              "help/moderator-guide/manage-users",
-              "help/moderator-guide/promotedemoteremove-a-user",
-              "help/moderator-guide/givetake-presenter-role",
-              "help/moderator-guide/how-to-configure-guest-policy",
-              "help/moderator-guide/lock-viewers-ability-to-use-their-micwebcamchatshared-notes",
-              "help/moderator-guide/clear-the-public-chat",
-              "help/moderator-guide/start-and-stop-recording",
-              "help/moderator-guide/end-meeting-on-logout",
-              "help/moderator-guide/using-smart-slides-for-one-click-polling",
-              "help/moderator-guide/how-do-i-use-the-per-user-whiteboard",
-              "help/moderator-guide/use-closed-captions",
-              "help/releases/timer-and-stopwatch",
-              "help/moderator-guide/create-and-manage-breakout-rooms",
-              "help/moderator-guide/access-breakout-room-whiteboards-or-shared-notes",
-              "help/moderator-guide/learning-analytics-dashboard"
-            ]
-          },
-          {
-            "group": "Presenter Guide",
-            "expanded": false,
-            "pages": [
-              "help/presenter-guide/upload-a-presentation-enable-for-download",
-              "help/presenter-guide/use-the-presentation-controls",
-              "help/presenter-guide/share-my-screen",
-              "help/presenter-guide/share-an-external-audiovideo-link",
-              "help/presenter-guide/use-pollingquzzing",
-              "help/releases/how-do-i-use-the-multi-user-whiteboard",
-              "help/presenter-guide/raise-hands",
-              "help/presenter-guide/shared-notes-presenter"
-            ]
-          },
-          {
-            "group": "Troubleshooting",
-            "pages": [
-              "help/troubleshooting/known-issues",
-              "help/troubleshooting/user-is-getting-disconnected",
-              "help/troubleshooting/client-periodically-disconnectsreconnects",
-              "help/troubleshooting/users-unable-to-share-their-webcam",
-              "help/troubleshooting/why-do-i-not-see-my-webcam-in-the-recording",
-              "help/troubleshooting/after-allowing-the-browser-permissions-on-mac-os-i-am-still-unable-to-join-my-audio-in-bigbluebutton",
-              "help/troubleshooting/mac-os-updates-bigbluebutton-media-permissions",
-              "help/troubleshooting/troubleshooting-microphone",
-              "help/troubleshooting/students-are-not-able-to-see-join-their-meeting",
-              "help/troubleshooting/students-are-not-able-to-view-their-concluded-meeting-recordings",
-              "help/troubleshooting/pdf-that-contains-scanned-content-does-not-display-correctly",
-              "help/troubleshooting/latex-documents-not-converting-correctly",
-              "help/troubleshooting/how-to-disable-ipv6",
-              "help/troubleshooting/important-information-for-users-of-the-bigbluebutton-html5-client"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Integrations",
-        "menu": [
-          {
-            "item": "Canvas LMS",
-            "groups": [
-              {
-                "group": "Overview",
-                "pages": [
-                  "integrations/overview"
-                ]
-              },
-              {
-                "group": "Canvas LMS",
-                "pages": [
-                  "integrations/canvas/faq-what-are-conferences",
-                  "integrations/canvas/creating-and-starting-a-conference",
-                  "integrations/canvas/inviting-course-members-to-a-conference",
-                  "integrations/canvas/viewing-recordings",
-                  "integrations/canvas/locating-deleting-recordings",
-                  "integrations/canvas/ending-a-conference-in-canvas",
-                  "integrations/canvas/deleting-a-conference",
-                  "integrations/canvas/using-bigbluebutton-with-appointments",
-                  "integrations/canvas/faq-how-does-the-duration-value-affect-users-ability-to-enter-a-conference-in-canvas",
-                  "integrations/canvas/faq-how-long-will-recordings-appear-in-canvas",
-                  "integrations/canvas/faq-why-has-my-recording-not-appeared",
-                  "integrations/canvas/faq-what-are-protected-recording-links",
-                  "integrations/canvas/faq-can-we-automatically-enable-all-conferences-to-be-recorded",
-                  "integrations/canvas/faq-can-i-add-participants-to-an-existing-conference",
-                  "integrations/canvas/faq-integrating-your-own-bigbluebutton-server-with-canvas",
-                  "integrations/canvas/faq-integration-with-canvas-studio",
-                  "integrations/canvas/troubleshooting-students-are-not-able-to-seejoin-their-canvas-conferences",
-                  "integrations/canvas/troubleshooting-students-are-not-able-to-view-their-concluded-conference-recordings",
-                  "integrations/canvas/troubleshooting-record-enabled-conference-not-appearing-for-viewing",
-                  "integrations/canvas/troubleshooting-enabling-recording-for-all-canvas-conferences",
-                  "integrations/canvas/troubleshooting-how-to-hide-the-allow-attendees-to-selections"
-                ]
-              }
-            ]
-          },
-          {
-            "item": "Moodle LMS",
-            "groups": [
-              {
-                "group": "Overview",
-                "pages": [
-                  "integrations/moodle/overview",
-                  "integrations/moodle/faq"
-                ]
-              },
-              {
-                "group": "Get Started",
-                "pages": [
-                  "integrations/moodle/get-started/create-your-first-activity",
-                  "integrations/moodle/get-started/join-your-first-session",
-                  "integrations/moodle/get-started/find-and-play-recordings"
-                ]
-              },
-              {
-                "group": "Teachers",
-                "pages": [
-                  "integrations/moodle/teachers/create-and-edit-activity",
-                  "integrations/moodle/teachers/room-settings",
-                  "integrations/moodle/teachers/participants-and-roles",
-                  "integrations/moodle/teachers/schedule-session",
-                  "integrations/moodle/teachers/presentations",
-                  "integrations/moodle/teachers/recording-settings",
-                  "integrations/moodle/teachers/recordings",
-                  "integrations/moodle/teachers/import-recording-links",
-                  "integrations/moodle/teachers/common-module-settings",
-                  "integrations/moodle/teachers/groups-and-grouping",
-                  "integrations/moodle/teachers/guest-access"
-                ]
-              },
-              {
-                "group": "Admins",
-                "pages": [
-                  "integrations/moodle/admins/install-and-configure",
-                  "integrations/moodle/admins/global-settings",
-                  "integrations/moodle/admins/recording-defaults",
-                  "integrations/moodle/admins/activity-completion",
-                  "integrations/moodle/admins/roles-and-capabilities",
-                  "integrations/moodle/admins/scheduled-tasks",
-                  "integrations/moodle/admins/language-customization",
-                  "integrations/moodle/admins/subplugins"
-                ]
-              },
-              {
-                "group": "Reference",
-                "pages": [
-                  "integrations/moodle/reference/activity-settings-reference",
-                  "integrations/moodle/reference/recording-settings-reference",
-                  "integrations/moodle/reference/completion-rules-reference",
-                  "integrations/moodle/reference/moodle-module-settings-reference"
-                ]
-              },
-              {
-                "group": "Troubleshooting",
-                "pages": [
-                  "integrations/moodle/troubleshooting/missing-recordings-after-upgrade",
-                  "integrations/moodle/troubleshooting/deleted-activity-recordings",
-                  "integrations/moodle/troubleshooting/downgrading-plugin",
-                  "integrations/moodle/troubleshooting/language-strings"
-                ]
-              }
-            ]
-          },
-          {
-            "item": "Sakai LMS",
-            "groups": [
-              {
-                "group": "Sakai LMS",
-                "pages": [
-                  "integrations/sakai/faq-what-are-meetings",
-                  "integrations/sakai/creating-a-bigbluebutton-meeting",
-                  "integrations/sakai/default-recording-settings",
-                  "integrations/sakai/faq-how-long-will-recordings-appear"
-                ]
-              }
-            ]
-          },
-          {
-            "item": "Schoology LMS",
-            "groups": [
-              {
-                "group": "Schoology LMS",
-                "pages": [
-                  "what-are-conferences",
-                  "how-to-create-a-conference",
-                  "starting-and-editing-a-conference",
-                  "how-to-join-a-conference",
-                  "how-to-view-past-conferences",
-                  "deleting-a-conference",
-                  "ending-a-conference"
-                ]
-              }
-            ]
-          },
-          {
-            "item": "LTI",
-            "groups": [
-              {
-                "group": "LTI",
-                "pages": [
-                  "integrations/lti"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Blindside Networks",
-        "menu": [
-          {
-            "item": "Commercial Hosting",
-            "groups": [
-              {
-                "group": "Commercial Hosting",
-                "pages": [
-                  "help/premium/overview-of-premium-features",
-                  "help/premium/premium-tier-customizations"
-                ]
-              }
-            ]
-          },
-          {
-            "item": "Personal Rooms",
-            "groups": [
-              {
-                "group": "Personal Rooms",
-                "pages": [
-                  "help/personal-rooms/overview",
-                  "help/personal-rooms/overview-of-personal-rooms-interface",
-                  "help/personal-rooms/how-do-i-create-my-own-rooms",
-                  "help/personal-rooms/can-i-invite-attendees-to-my-meetings",
-                  "help/personal-rooms/how-do-i-find-manage-recordings",
-                  "help/personal-rooms/can-i-delete-my-personal-rooms"
-                ]
-              },
-              {
-                "group": "Getting Started",
-                "pages": [
-                  "help/getting-started/getting-started-with-personal-rooms",
-                  "help/getting-started/in-application-authorization",
-                  "help/getting-started/google-oauth2",
-                  "help/getting-started/office-365-oauth2",
-                  "help/getting-started/saml-auth",
-                  "help/getting-started/saml-auth-setup",
-                  "help/getting-started/saml-auth-deprecated"
-                ]
-              },
-              {
-                "group": "Admin",
-                "pages": [
-                  "help/personal-rooms/admin/accessing-the-administrator-panel",
-                  "help/personal-rooms/admin/managing-users",
-                  "help/personal-rooms/admin/managing-recordings",
-                  "help/personal-rooms/admin/site-settings"
-                ]
-              }
-            ]
-          },
-          {
-            "item": "Analytics",
-            "groups": [
-              {
-                "group": "Analytics",
-                "pages": [
-                  "analytics/overview",
-                  "analytics/configuration",
-                  "analytics/moodle",
-                  "analytics/canvas",
-                  "analytics/data-formats",
-                  "analytics/appendix"
-                ]
-              }
-            ]
-          },
-          {
-            "item": "FAQ",
-            "groups": [
-              {
-                "group": "FAQ",
-                "pages": [
-                  "help/troubleshooting/blindside-networks-status-page",
-                  "help/faq/where-is-the-hosting-location-for-australia-customers",
-                  "help/faq/whitelisting-bigbluebutton-servers-for-the-firewall",
-                  "help/faq/can-users-connect-to-bigbluebutton-from-within-china",
-                  "help/premium/how-do-i-download-a-recording",
-                  "help/premium/can-i-prevent-users-from-downloading-a-recording",
-                  "help/premium/how-long-until-my-recording-is-available-for-viewing",
-                  "help/premium/how-do-i-invite-a-guest-to-a-live-meeting",
-                  "help/premium/options-for-giving-students-visibility-of-other-students-webcams"
-                ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@blindsidenetworks.com"
-      }
-    ]
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/bigbluebutton",
-      "github": "https://github.com/bigbluebutton",
-      "linkedin": "https://www.linkedin.com/company/bigbluebutton/"
-    }
-  },
-  "description": "You comprehensive guide to BigBlueButton"
+    },
+    "footer": {
+        "socials": {
+            "x": "https://x.com/bigbluebutton",
+            "github": "https://github.com/bigbluebutton",
+            "linkedin": "https://www.linkedin.com/company/bigbluebutton/"
+        }
+    },
+    "description": "You comprehensive guide to BigBlueButton"
 }

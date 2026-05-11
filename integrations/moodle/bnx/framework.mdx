@@ -1,0 +1,120 @@
+---
+title: "BNX framework and feature enhancements"
+description: "Understand the BNX platform capabilities, extensibility architecture, feature evolution, and release history."
+---
+
+BNX (BigBlueButton BN Experience) is a foundational enhancement framework for BigBlueButton in Moodle. Rather than modifying Moodle core, BNX provides a layered extension architecture that improves usability, supports workflow customisation, and enables future innovation through a shared ecosystem of sidecars.
+
+BNX is available as a Moodle plugin at [moodle.org/plugins/bbbext_bnx](https://moodle.org/plugins/bbbext_bnx).
+
+BNX provides:
+
+- shared UX improvements across the activity interface
+- an extensible enhancement architecture via sidecars
+- advanced session management capabilities
+- workflow customisation without intrusive core modifications
+- shared infrastructure powering the BNX extension ecosystem
+
+For the end-user activity interface changes introduced by BNX, see [BigBlueButton activity view with BNX](/integrations/moodle/bnx/activity-view).
+
+## PreSession lobby access
+
+BNX replaces the traditional **Wait for Moderator** behaviour with a moderated PreSession Lobby. Instead of being blocked at the join page, participants can enter the lobby and wait for a moderator to approve access.
+
+Key aspects of the PreSession Lobby:
+
+- participants are admitted to a waiting state rather than refused entry
+- moderators review and approve access from within the session
+- the workflow improves session readiness and coordination
+- it removes the confusion caused by hard rejections in the core wait-for-moderator flow
+
+## Enhanced recording experience
+
+BNX replaces the legacy recordings table implementation with a modernised interface that scales better for activities with large recording collections.
+
+Improvements include:
+
+- searchable recordings table
+- improved pagination and row-count controls
+- inline editing for recording names and descriptions
+- consistent playback format presentation
+- better toolbar organisation and action clarity
+
+For a full description of the recording interface, see [BigBlueButton activity view with BNX](/integrations/moodle/bnx/activity-view#enhanced-recordings-management).
+
+## Integrated reminder management
+
+Starting with BNX 1.1, the reminder functionality previously provided by the BN Reminders sidecar was consolidated into BNX. This gives administrators a single place to manage all reminder-related configuration.
+
+Capabilities include:
+
+- reminder scheduling tied to session dates
+- email content customisation
+- consolidated administration in the BNX activity settings
+
+## Integrated lock settings controls
+
+BNX 1.1 also absorbed the lock settings functionality previously managed by the `bnx_locksettings` sidecar.
+
+Lock controls available through BNX include:
+
+- webcam restrictions
+- microphone restrictions
+- chat controls
+- shared notes restrictions
+- lock-on-join behaviour
+
+## Improved guest access workflow
+
+BNX 1.0.1 introduced a dedicated guest access endpoint that replaces the Moodle core guest page in BNX contexts.
+
+Improvements include:
+
+- a dedicated `guest.php` endpoint with its own join form
+- a custom URL builder for guest links
+- improved logout and redirect handling after the session ends
+- a cleaner guest experience consistent with the rest of the BNX activity presentation
+
+## Smarter default configuration handling
+
+BNX 1.0.1 added support for auto-applied defaults that are managed centrally rather than depending on individual sidecar configurations.
+
+Benefits include:
+
+- reduced repetitive manual configuration when creating activities
+- consistent defaults applied across courses
+- defaults managed independently of sidecar installation state
+
+## Developer and extensibility improvements
+
+BNX provides a shared foundation for sidecar development within the BNX extension ecosystem.
+
+Developer-facing capabilities include:
+
+- shared debug helpers for BNX sidecars
+- reusable form customisation helpers for consistent mod form overrides
+- sidecar architecture support enabling modular capability extensions
+- improved maintainability through shared abstractions
+
+## Release history
+
+### BNX 1.1 — May 1, 2026
+
+- Migrated BN Reminders functionality and reminder data into BNX, consolidating reminder settings and email customisation into the core BNX experience (MD-90, MD-104).
+- Migrated lock settings controls from `bnx_locksettings` into BNX and absorbed the legacy sidecar configuration into BNX defaults (MD-107).
+- Refactored mod form header label overrides into a reusable helper to simplify BNX-driven form customisations (MD-100).
+- Added a shared developer debug helper for BNX sidecars.
+
+### BNX 1.0.1 — April 1, 2026
+
+- Added a BNX-specific guest access endpoint (`guest.php`) with its own join form, URL builder, and logout redirect flow, replacing the core guest page in BNX contexts (GIT-1).
+- Hides BBB server setup instructions in the activity settings when credentials are pre-configured (MD-98).
+- Improved recordings table UX (MD-94).
+- Added support for auto-set default settings decoupled from sidecars (MD-95, MD-97).
+
+### BNX 1.0 — March 11, 2026
+
+- First stable open-source release of `bbbext_bnx`.
+- Introduced the BNX Framework: BigBlueButton BN Experience is a foundational UX enhancement extension for BigBlueButton in Moodle, featuring moderator approval workflows and shared capabilities that power the BNX extension family.
+- Added PreSession Lobby access, replacing the Wait for Moderator flow.
+- Delivered an enhanced recording experience by improving the room recordings table and ensuring recording features work end-to-end.
