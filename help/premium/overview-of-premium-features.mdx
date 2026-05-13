@@ -56,29 +56,82 @@ Every BigBlueButton Enhanced account in North America includes a default dial-in
 
 ## Account customization
 
-We can configure account-specific [BigBlueButton Enhanced customizations](/help/premium/premium-tier-customizations), including:
+As part of BigBlueButton Enhanced hosting, Blindside Networks can customize a range of account-level settings. To request any of the changes below, contact your Blindside Networks Customer Success Manager with a description of what you need.
 
-- Welcome message
-- Show/hide dial-in number to users
-- Default lock settings
-- Sessions longer than 540 minutes
+### Custom welcome message
 
-## Frequently asked questions
+When users join a session, they see a welcome message in the chat with a grey background.
 
-### How is the cost of BigBlueButton Enhanced calculated?
+![Welcome message in the chat](/images/360054824531.png)
 
-BigBlueButton Enhanced costs are based on the maximum number of concurrent sessions (or, in some K12 cases, concurrent users) running at any one time. A concurrent session is any BigBlueButton session with two or more users that runs for more than 15 minutes.
+We can replace the message with whatever text you choose.
 
-In practice, you have multiple sessions throughout the day. The more that run at the same time, the more capacity we provision — so we charge based on concurrency.
+### Show dial-in number only to moderators
 
-A concurrent session is not tied to a specific user. There is no second login layer. Instructors and students join a BigBlueButton session by selecting a link in the LMS, and the session opens in their browser.
+All North American accounts include a default dial-in number, visible by default to both instructors and students. Some schools (especially K12) prefer to make the dial-in number visible only to moderators — for example, in a separate moderator-only welcome message.
 
-For pricing details, contact your LMS provider or [reach out to us directly](https://blindsidenetworks.com/contact/).
+![Moderator-only welcome message with dial-in number](/images/360054706632.png)
 
-### Can I track my concurrent sessions?
+We can set whatever moderator-only welcome message you want.
 
-Yes. We can provide a URL that displays a graph of your peak concurrent sessions.
+### Default lock settings
 
-### What happens if I exceed the number of concurrent sessions?
+Each instructor can use **Lock viewers** to restrict viewer access to specific features.
 
-BigBlueButton continues to work — there is no hard-coded limit on concurrent sessions. However, if your usage is significantly above the number of purchased concurrent sessions, we will reach out to discuss adding capacity.
+![Lock viewers panel with toggles for restricting viewer features](/images/25547412853645.png)
+
+We can set any of these lock settings as defaults for your account. For example, you can configure every session to start with these locks in effect:
+
+- Microphone
+- Private chat messages
+- Edit shared notes
+
+![Default lock settings applied at session start, restricting microphone, private chat, and shared notes editing](/images/25547448779277.png)
+
+### Ability to unmute users
+
+By default, moderators cannot unmute another user's microphone, for privacy. For K12, we can enable moderators to unmute student microphones directly.
+
+### Mute users on join
+
+By default, users joining with a microphone are unmuted. We can change the default so all users join muted.
+
+### Auto-expire recordings
+
+If your school requires recordings to be deleted automatically after a set period — for example, two years (730 days) — we can configure auto-deletion. Tell us the retention you need.
+
+### Protected recording links
+
+We can enable Protected Recording Links so viewers cannot copy and share recording links.
+
+### Don't record student webcams
+
+We can configure your account so student webcams are not visible in the recordings.
+
+### Disable recording
+
+We can configure your account so no sessions are recorded.
+
+### Hide viewer names in recording chat
+
+We can conceal student names in the chat of recordings. Student/viewer names appear as "Viewer" while moderator/instructor names display as normal.
+
+### Automatically end session when no moderators are present
+
+We can set an interval (such as 2 minutes) after which BigBlueButton automatically ends a session that no longer has a moderator present. This is useful in K12 to avoid scenarios where the educator gets disconnected (for example, loses their internet connection) and students are left unsupervised.
+
+### Custom logo
+
+We can place your logo in the upper-left corner of the BigBlueButton session.
+
+![BigBlueButton session with a custom logo placed in the upper left-hand corner](/images/21484012828941.png)
+
+### Custom default webcam background
+
+For additional branding, provide a PNG or JPEG image at an HTTPS URL, and we can configure your account to use it as the default webcam background. Users can still upload their own background.
+
+### Automatic transfer of recordings to an S3 bucket
+
+We can set up a workflow so that once our infrastructure finishes processing a recording, it is automatically transferred to a write-only S3 bucket hosted by you, along with a manifest of the recording metadata.
+
+For pricing, concurrent-session questions, and capacity, see the [BigBlueButton Enhanced FAQ](/help/premium/faq).
