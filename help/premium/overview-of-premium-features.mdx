@@ -1,11 +1,20 @@
 ---
 title: "Overview of BigBlueButton Enhanced"
-description: "BigBlueButton Enhanced hosting from Blindside Networks adds downloadable recordings, meeting analytics, personal rooms, guest invites, dial-in numbers, and account customization on top of BigBlueButton Essentials."
+description: "Blindside Networks started the BigBlueButton project in 2007 and, alongside a worldwide community, has led its development ever since."
 ---
 
-Blindside Networks started the BigBlueButton project in 2007 and, alongside a worldwide community, has led its development ever since. **BigBlueButton Enhanced** is our hosted offering that adds production features on top of the open-source platform: [enhanced recordings](#enhanced-recordings), [meeting analytics](#meeting-analytics), [personal rooms](#personal-rooms), [guest invites](#guest-invites), [dial-in numbers](#dial-in-number), and [account customization](#account-customization).
+**BigBlueButton Enhanced** is our hosted offering that adds production features on top of the open-source platform:
 
-If you use BigBlueButton Essentials built into your LMS, these features become available when you upgrade. To upgrade, contact your LMS provider — Instructure, Schoology, Jenzabar, or your Moodle Partner — who resells BigBlueButton Enhanced hosting directly.
+- [enhanced recordings](#enhanced-recordings), 
+- [meeting analytics](https://bigbluebutton.com/docs/#meeting-analytics),
+- [personal rooms](https://bigbluebutton.com/docs/#personal-rooms), 
+- [guest invites](https://bigbluebutton.com/docs/#guest-invites), 
+- [dial-in numbers](https://bigbluebutton.com/docs/#dial-in-number), and 
+- [account customization](https://bigbluebutton.com/docs/#account-customization).
+
+If you are already using BigBlueButton Essentials in Moodle, Canvas, or Schoology, these features become available when you upgrade. 
+
+To upgrade, contact your LMS provider — Instructure, Schoology, or your Moodle Partner — who can resell BigBlueButton Enhanced hosting directly.  You can also [contact us](https://blindsidenetworks.com/contact) directly.
 
 ## Enhanced recordings
 
@@ -15,11 +24,16 @@ Recordings are produced as a single video file containing all session content ex
 
 ### Recordings are permanent
 
-Recordings do not expire. They persist until you delete them.
+Recordings do not expire. They persist until you delete them.   We can setup a policy to 
+
+- automatically remove recordings after N days of creation
+- automatically remove recordings after N days of last access
+
+There is no cost for storage of the first 10k recordings (which for 95% of customers is all they will need). 
 
 ### Recordings are downloadable
 
-To [download a recording](/help/premium/how-do-i-download-a-recording), right-click within the playback area and select **Save video as…**.
+See how to [download a recording](/help/premium/how-do-i-download-a-recording).
 
 ### Recordings are protected (optional)
 
@@ -60,19 +74,13 @@ As part of BigBlueButton Enhanced hosting, Blindside Networks can customize a ra
 
 ### Custom welcome message
 
-When users join a session, they see a welcome message in the chat with a grey background.
+When users join a session, users can click on the meeting title to see additional information.  The left column is visible to everyone, the right column is only visible to moderators.
 
-![Welcome message in the chat](/images/360054824531.png)
+<Frame>
+  ![Image](/images/image.png)
+</Frame>
 
-We can replace the message with whatever text you choose.
-
-### Show dial-in number only to moderators
-
-All North American accounts include a default dial-in number, visible by default to both instructors and students. Some schools (especially K12) prefer to make the dial-in number visible only to moderators — for example, in a separate moderator-only welcome message.
-
-![Moderator-only welcome message with dial-in number](/images/360054706632.png)
-
-We can set whatever moderator-only welcome message you want.
+We can replace these messages with whatever text you choose.
 
 ### Default lock settings
 
@@ -90,7 +98,7 @@ We can set any of these lock settings as defaults for your account. For example,
 
 ### Ability to unmute users
 
-By default, moderators cannot unmute another user's microphone, for privacy. For K12, we can enable moderators to unmute student microphones directly.
+By default, moderators cannot unmute another user's microphone, for privacy. However, for K12 customers teaching young students, we can enable moderators to unmute student microphones directly.
 
 ### Mute users on join
 
@@ -133,5 +141,3 @@ For additional branding, provide a PNG or JPEG image at an HTTPS URL, and we can
 ### Automatic transfer of recordings to an S3 bucket
 
 We can set up a workflow so that once our infrastructure finishes processing a recording, it is automatically transferred to a write-only S3 bucket hosted by you, along with a manifest of the recording metadata.
-
-For pricing, concurrent-session questions, and capacity, see the [BigBlueButton Enhanced FAQ](/help/premium/faq).
