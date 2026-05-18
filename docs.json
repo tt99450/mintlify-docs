@@ -479,6 +479,18 @@
                         ]
                     },
                     {
+                        "item": "Product Updates",
+                        "groups": [
+                            {
+                                "group": "Product Updates",
+                                "pages": [
+                                    "product-updates",
+                                    "about-these-updates"
+                                ]
+                            }
+                        ]
+                    },
+                    {
                         "item": "FAQ",
                         "groups": [
                             {
